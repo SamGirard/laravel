@@ -12,7 +12,7 @@
   <body>
     <!-- nav -->
     <div id="nav" class="nav">
-      <img class="nav__logo" src="../images/Netflix-Logo.png" alt="asfnsafasf" />
+      <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
       <img class="nav__avatar" src="../images/netflix-avatar.png" alt="" />
     </div>
 
