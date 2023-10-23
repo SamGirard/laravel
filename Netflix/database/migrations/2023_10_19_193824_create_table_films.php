@@ -23,7 +23,7 @@ return new class extends Migration
             $table->unsignedBigInteger('producteur_id');
             $table->foreign('producteur_id')->references('id')->on('personnes');
             $table->integer('annee');
-            $table->text('rating');
+            $table->text('cote');
             $table->timestamps();
         });
     }

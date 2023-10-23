@@ -5,10 +5,10 @@
     @section('contenu')
     <!-- Netflix Originals -->
     <div class="row">
-      <h2>NETFLIX ORIGINALS</h2>
+      <h2>Les Classiques</h2>
       <a href="{{route('Netflix.film')}}">Voir plus de film</a>
       <div class="row__posters">
-        <img class="row__poster row__posterLarge" src='images/large-movie1.jpg' alt="" />
+        <img class="row__poster row__posterLarge" src='' alt="" />
 
         <img class="row__poster row__posterLarge" src="images/large-movie2.jpg" alt="" />
 

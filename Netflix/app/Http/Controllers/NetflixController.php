@@ -18,7 +18,7 @@ class NetflixController extends Controller
 
     public function plus()
     {
-        $film = Film::all();
+        $films = Film::all();
         return View('Netflix.film', compact('films'));
     }
 
