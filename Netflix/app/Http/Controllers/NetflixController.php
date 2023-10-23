@@ -14,7 +14,7 @@ class NetflixController extends Controller
     {
         $classics = Film::where('categorie', '=', 'classique')->get();
         $films = Film::all();
-        return View('Netflix.netflix', compact('films'));
+        return View('Netflix.netflix', compact('films', 'classics'));
     }
 
 
@@ -29,7 +29,7 @@ class NetflixController extends Controller
      */
     public function create()
     {
-        return View('Netflix.create');
+        
     }
 
     /**

@@ -10,7 +10,7 @@
 
         @if(count($classics))
             @foreach($classics as $classic)
-                <img class="row__poster row__posterLarge" src="{{$film->affiche}}" width="200px" height="400px">
+                <img class="row__poster row__posterLarge" src="{{$classic->affiche}}" width="200px" height="400px">
             @endforeach
         @else
 

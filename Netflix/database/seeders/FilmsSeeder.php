@@ -134,6 +134,132 @@ class FilmsSeeder extends Seeder
                 'cote' => '4 étoiles',
                 'categorie' => 'classique'
             ],
+            [
+                'id' => 11,
+                'titre' => 'Stranger Things',
+                'resume' => 'Une série de science-fiction qui se déroule dans les années 1980, où un groupe damis se lance à la recherche de leur ami d isparu, en rencontrant des phénomènes surnaturels et un laboratoire gouvernemental secret.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypHHTVz.jpg',
+                'duree' => '4 saisons',
+                'realisateur_id' => 4,
+                'producteur_id' => 5,
+                'annee' => 2016,
+                'cote' => '4,5 étoiles',
+                'categorie' => 'série'
+            ],
+            
+            [
+                'id' => 12,
+                'titre' => 'Black Mirror: Bandersnatch',
+                'resume' => 'Un film interactif de science-fiction qui permet aux spectateurs de prendre des décisions pour le protagoniste, Stefan, alors qu il travaille sur un jeu vidéo basé sur un livre déroutant.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/7mVFj7ssn4ojwygqzbU5hItRoP9.jpg',
+                'duree' => '1h30min (variable)',
+                'realisateur_id' => 6,
+                'producteur_id' => 5,
+                'annee' => 2018,
+                'cote' => '4,5 étoiles',
+                'categorie' => 'classique'
+            ],
+            [
+                'id' => 13,
+                'titre' => 'Breaking Bad',
+                'resume' => 'Un professeur de chimie diagnostiqué dun cancer se tourne vers la fabrication et la vente de méthamphétamine pour assurer lavenir financier de sa famille. Il plonge dans le monde du crime.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg',
+                'duree' => '5 saisons',
+                'realisateur_id' => 7,
+                'producteur_id' => 8,
+                'annee' => 2008,
+                'cote' => '5 étoiles',
+                'categorie' => 'série'
+            ],
+            [
+                'id' => 14,
+                'titre' => 'The Witcher',
+                'resume' => 'Geralt de Riv, un chasseur de monstres surnaturels, se bat pour trouver sa place dans un monde où les humains se révèlent souvent plus monstrueux que les créatures qu il chasse.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/4X7o1ssOEtpb4XAOpE7NIFGW3Qw.jpg',
+                'duree' => '2 saisons',
+                'realisateur_id' => 10,
+                'producteur_id' => 5,
+                'annee' => 2019,
+                'cote' => '4,5 étoiles',
+                'categorie' => 'série'
+            ],
+            [
+                'id' => 15,
+                'titre' => 'La La Land',
+                'resume' => 'Lhistoire de Mia, une aspirante actrice, et Sebastian, un musicien de jazz, qui tombent amoureux à Los Angeles tout en poursuivant leurs rêves artistiques.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/bHMfAx8OufG5j6OfQrbKsvJd8Ix.jpg',
+                'duree' => '2h8min',
+                'realisateur_id' => 11,
+                'producteur_id' => 12,
+                'annee' => 2016,
+                'cote' => '4,5 étoiles',
+                'categorie' => 'classique'
+            ],
+            
+            [
+                'id' => 16,
+                'titre' => 'The Crown',
+                'resume' => 'Une série dramatique qui retrace la vie de la reine Elizabeth II depuis ses débuts jusquà nos jours, mettant en lumière les événements historiques majeurs et les complexités de la monarchie britannique.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/vYzpuEEOfSxCUdf7jJn0OvxLLrF.jpg',
+                'duree' => '5 saisons',
+                'realisateur_id' => 13,
+                'producteur_id' => 14,
+                'annee' => 2016,
+                'cote' => '4,5 étoiles',
+                'categorie' => 'série'
+            ],
+            
+            [
+                'id' => 17,
+                'titre' => 'Jurassic Park',
+                'resume' => 'Un milliardaire crée un parc dattractions rempli de dinosaures clonés, mais les choses tournent mal lorsque les dinosaures séchappent et menacent les visiteurs.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/7IExsflWmb0aeODJdfzTNM6fNK4.jpg',
+                'duree' => '2h7min',
+                'realisateur_id' => 15,
+                'producteur_id' => 16,
+                'annee' => 1993,
+                'cote' => '4 étoiles',
+                'categorie' => 'classique'
+            ],
+            [
+                'id' => 18,
+                'titre' => 'Friends',
+                'resume' => 'Une série comique mettant en scène un groupe damis à New York alors quils traversent les hauts et les bas de la vie, les relations et les carrières.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/yTGOZJ13m2XvPjlurTu7SgMZPc5.jpg',
+                'duree' => '10 saisons',
+                'realisateur_id' => 17,
+                'producteur_id' => 18,
+                'annee' => 1994,
+                'cote' => '4,5 étoiles',
+                'categorie' => 'série'
+            ],
+            
+            [
+                'id' => 19,
+                'titre' => 'Gladiator',
+                'resume' => 'Lhistoire de Maximus, un général romain déchu qui cherche à se venger de lempereur corrompu qui a assassiné sa famille et la condamné à lesclavage.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/6WBIzCgmDCYrqh64yHXL2CjHQJG.jpg',
+                'duree' => '2h35min',
+                'realisateur_id' => 19,
+                'producteur_id' => 20,
+                'annee' => 2000,
+                'cote' => '4,5 étoiles',
+                'categorie' => 'classique'
+            ],
+            [
+                'id' => 20,
+                'titre' => 'Game of Thrones',
+                'resume' => 'Une série médiévale-fantastique basée sur les romans de George R.R. Martin. Elle suit les intrigues politiques et les conflits de puissance entre les grandes familles des Sept Couronnes de Westeros.',
+                'affiche' => 'https://image.tmdb.org/t/p/original/gwPSoYUHAKmdyVywgLpKKA4BjRr.jpg',
+                'duree' => '8 saisons',
+                'realisateur_id' => 27,
+                'producteur_id' => 28,
+                'annee' => 2011,
+                'cote' => '4,5 étoiles',
+                'categorie' => 'série'
+            ]
+            
+
           
             
             ]);
