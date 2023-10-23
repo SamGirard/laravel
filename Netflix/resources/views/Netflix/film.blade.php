@@ -14,8 +14,6 @@
 
         @if(count($films))
             @foreach($films as $film)
-                <h1>{{$film->titre}}</h1>
-                <p>{{$film->resume}}</p>
                 <img src="{{$film->affiche}}" width="200px" height="400px">
             @endforeach
         @else
