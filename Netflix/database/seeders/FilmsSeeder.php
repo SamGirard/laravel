@@ -372,8 +372,8 @@ class FilmsSeeder extends Seeder
                 'resume' => 'Dans le Wyoming après la guerre civile, huit étrangers sont piégés dans un chalet pendant une tempête de neige, mais certains dentre eux ne sont pas ce quils semblent être.',
                 'affiche' => 'https://th.bing.com/th/id/R.4d9fa8b2905f5fdde2f490b24cdab90e?rik=dwIlG4Om%2f7IhYg&riu=http%3a%2f%2fwww.filmofilia.com%2fwp-content%2fuploads%2f2015%2f11%2fHateful_Eight_Payoff_poster.jpg&ehk=CP58Ig%2fUuuhPG2RWrZli3TWx0%2fG9Mf%2bVlgsu03uGWRI%3d&risl=&pid=ImgRaw&r=0',
                 'duree' => '3h8min',
-                'realisateur_id' => 9,
-                'producteur_id' => 3,
+                'realisateur_id' => 10,
+                'producteur_id' => 1,
                 'annee' => 2015,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir'
