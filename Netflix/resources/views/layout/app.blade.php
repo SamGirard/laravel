@@ -19,14 +19,13 @@
     <!-- header -->
     <header class="banner">
       <div class="banner__contents">
-        <h1 class="banner__title">Money Heist</h1>
+        <h1 class="banner__title">La Casa de Papel</h1>
         <div class="banner__buttons">
-          <button class="banner__button">Play</button>
-          <button class="banner__button">My List</button>
+          <button class="banner__button">Lecture</button>
+          <button class="banner__button">Ma Liste</button>
         </div>
         <h1 class="banner__description">
-          To carry out the biggest heist in history, a mysterious man called The Professor recruits
-          a band of eight robbers who have a single characteristic: n...
+        Huit voleurs mènent une prise d'otage dans la Maison royale de la Monnaie d'Espagne, tandis qu'un génie criminel manipule la police pour mettre son plan à exécution.
         </h1>
       </div>
       <div class="banner--fadeBottom"></div>

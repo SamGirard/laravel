@@ -20,23 +20,15 @@
 
     <!-- Trending Now -->
     <div class="row">
-      <h2>Trending Now</h2>
+      <h2>Tendances Actuelles</h2>
       <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+          @if(count($tendances))
+                @foreach($tendances as $tendance)
+                    <img class="row__poster row__posterLarge" src="{{$tendance->affiche}}" width="200px" height="400px">
+                @endforeach
+            @else
 
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+            @endif
       </div>
     </div>
 
