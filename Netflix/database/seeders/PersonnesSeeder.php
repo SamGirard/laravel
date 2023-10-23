@@ -16,7 +16,7 @@ class PersonnesSeeder extends Seeder
         DB::table('personnes')->insert([
                 [
                     'id' => 1,
-                    'nom' => 'Christopher Nolan',
+                    'nom' => 'Christopher Nolannnnnn',
                     'dateNaissance' => '30 juillet 1970',
                     'lieuNaissance' => 'Royaume-Uni',
                     'portrait' => 'nolan.jpg',

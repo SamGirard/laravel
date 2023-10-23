@@ -20,10 +20,10 @@ class FilmsSeeder extends Seeder
                 'resume' => 'Lhistoire épique dune famille mafieuse italienne aux États-Unis.',
                 'affiche' => 'godfather.jpg',
                 'duree' => '2h55min',
-                'realisateur_id' => 5, 
+                'realisateur_id' => 5,
                 'producteur_id' => 3,
                 'annee' => 1972,
-                'rating' => '4,9 étoiles',
+                'cote' => '4,9 étoiles',
             ],
             [
                 'id' => 2,
@@ -34,7 +34,7 @@ class FilmsSeeder extends Seeder
                 'realisateur_id' => 1, 
                 'producteur_id' => 9,
                 'annee' => 1999,
-                'rating' => '4,7 étoiles',
+                'cote' => '4,7 étoiles',
             ],
               [
                 'id' => 3,
@@ -45,7 +45,7 @@ class FilmsSeeder extends Seeder
                 'realisateur_id' => 3, 
                 'producteur_id' => 4, 
                 'annee' => 2010,
-                'rating' => '4 étoiles',
+                'cote' => '4 étoiles',
             ],
             [
                 'id' => 4,
@@ -56,7 +56,7 @@ class FilmsSeeder extends Seeder
                 'realisateur_id' => 5, 
                 'producteur_id' => 6, 
                 'annee' => 2014,
-                'rating' => '4,5 étoiles',
+                'cote' => '4,5 étoiles',
             ],
             [
                 'id' => 5,
@@ -67,7 +67,7 @@ class FilmsSeeder extends Seeder
                 'realisateur_id' => 7, 
                 'producteur_id' => 8, 
                 'annee' => 2009,
-                'rating' => '4 étoiles',
+                'cote' => '4 étoiles',
             ],
             [
                 'id' => 6,
@@ -78,7 +78,7 @@ class FilmsSeeder extends Seeder
                 'realisateur_id' => 3, 
                 'producteur_id' => 4, 
                 'annee' => 2008,
-                'rating' => '4,5 étoiles',
+                'cote' => '4,5 étoiles',
             ],
             [
               'id' => 7,
@@ -89,7 +89,7 @@ class FilmsSeeder extends Seeder
               'realisateur_id' => 9,
               'producteur_id' => 10,
               'annee' => 1994,
-              'rating' => '4,5 étoiles',
+              'cote' => '4,5 étoiles',
             ],
             [
                 'id' => 8,
@@ -100,7 +100,7 @@ class FilmsSeeder extends Seeder
                 'realisateur_id' => 8,
                 'producteur_id' => 7,
                 'annee' => 1994,
-                'rating' => '4,8 étoiles',
+                'cote' => '4,8 étoiles',
             ],
             [
                 'id' => 9,
@@ -111,7 +111,7 @@ class FilmsSeeder extends Seeder
                 'realisateur_id' => 10,
                 'producteur_id' => 9,
                 'annee' => 2001,
-                'rating' => '4,7 étoiles',
+                'cote' => '4,7 étoiles',
             ],
             [
                 'id' => 10,
@@ -122,7 +122,7 @@ class FilmsSeeder extends Seeder
                 'realisateur_id' => 1,
                 'producteur_id' => 2,
                 'annee' => 2003,
-                'rating' => '4 étoiles',
+                'cote' => '4 étoiles',
             ],
           
             

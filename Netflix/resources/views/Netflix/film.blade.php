@@ -10,7 +10,16 @@
     <title>Document</title>
 </head>
 <body>
-      <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
+        <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
 
+        @if(count($films))
+            @foreach($films as $film)
+                <h1>{{$film->titre}}</h1>
+                <p>{{$film->resume}}</p>
+                <img src="{{$film->affiche}}" width="200px" height="400px">
+            @endforeach
+        @else
+
+        @endif
 </body>
 </html>
