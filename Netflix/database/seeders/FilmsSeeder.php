@@ -20,8 +20,8 @@ class FilmsSeeder extends Seeder
                 'resume' => 'Lhistoire épique dune famille mafieuse italienne aux États-Unis.',
                 'affiche' => 'https://i.pinimg.com/originals/e0/0c/65/e00c65ab6a7dacccd276c2fd434de8f5.jpg',
                 'duree' => '2h55min',
-                'realisateur_id' => 5,
-                'producteur_id' => 3,
+                'realisateur_id' => 999,
+                'producteur_id' => 999,
                 'annee' => 1972,
                 'cote' => '4,9 étoiles',
                 'categorie' => 'classique'
