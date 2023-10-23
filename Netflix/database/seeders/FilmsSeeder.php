@@ -264,8 +264,8 @@ class FilmsSeeder extends Seeder
                 'resume' => "L'histoire de Jay Gatsby, un homme mystérieux et richissime qui organise de somptueuses fêtes à Long Island dans les années 1920. Le film explore la fascination, la richesse et les excès de l'époque.",
                 'affiche' => 'https://th.bing.com/th/id/R.79e4245b68c75b3c66f8237234bb032d?rik=8ubtJE8r3bPfpA&pid=ImgRaw&r=0',
                 'duree' => '2h23min',
-                'realisateur_id' => 31,
-                'producteur_id' => 32,
+                'realisateur_id' => 1,
+                'producteur_id' => 2,
                 'annee' => 2013,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir'
@@ -276,112 +276,104 @@ class FilmsSeeder extends Seeder
                 'resume' => 'Dans la France occupée par les nazis, un groupe de soldats juifs américains connus sous le nom de "Basterds" mène une vendetta brutale contre les nazis.',
                 'affiche' => 'https://picfiles.alphacoders.com/147/147078.jpg',
                 'duree' => '2h33min',
-                'realisateur_id' => 29,
-                'producteur_id' => 30,
+                'realisateur_id' => 9,
+                'producteur_id' => 9,
                 'annee' => 2009,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'À revoir'
             ],
-            
             [
                 'id' => 23,
                 'titre' => 'Django Unchained',
                 'resume' => 'Dans le Sud des États-Unis avant la guerre civile, un chasseur de primes libère un esclave et lentraîne dans une mission pour retrouver sa femme et se venger des propriétaires desclaves.',
                 'affiche' => 'https://th.bing.com/th/id/R.c6d14d953842d6c9f8cea20207198243?rik=3wTbj%2f5h8QetRw&pid=ImgRaw&r=0',
                 'duree' => '2h45min',
-                'realisateur_id' => 29,
-                'producteur_id' => 30,
+                'realisateur_id' => 9,
+                'producteur_id' => 7,
                 'annee' => 2012,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'À revoir'
             ],
-            
             [
                 'id' => 24,
                 'titre' => 'Kill Bill: Vol. 1',
                 'resume' => 'Une femme se réveille dun coma et se lance dans une mission de vengeance contre ceux qui ont tenté de la tuer, en particulier le leader dun gang de tueurs à gages.',
                 'affiche' => 'https://www.themoviedb.org/t/p/original/btM7n4I7qXdMMiYJ4WZGh4SRuWt.jpg',
                 'duree' => '1h51min',
-                'realisateur_id' => 29,
-                'producteur_id' => 30,
+                'realisateur_id' => 9,
+                'producteur_id' => 3,
                 'annee' => 2003,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir'
             ],
-            
             [
                 'id' => 25,
                 'titre' => 'Kill Bill: Vol. 2',
                 'resume' => 'La femme continue sa quête de vengeance en poursuivant les membres restants du gang de tueurs à gages et en cherchant à éliminer le leader.',
                 'affiche' => 'https://th.bing.com/th/id/R.a5e6fc5a436bb3fadd93409357d64ac4?rik=AO9R7p3crobcAQ&pid=ImgRaw&r=0',
                 'duree' => '2h17min',
-                'realisateur_id' => 29,
-                'producteur_id' => 30,
+                'realisateur_id' => 9,
+                'producteur_id' => 7,
                 'annee' => 2004,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir'
             ],
-            
             [
                 'id' => 26,
                 'titre' => 'Once Upon a Time in Hollywood',
                 'resume' => 'À Hollywood en 1969, un acteur vieillissant et sa doublure tentent de trouver leur place dans une industrie en pleine évolution, tout en étant mêlés aux événements de lépoque.',
                 'affiche' => 'https://th.bing.com/th/id/OIP.9X6msnpv4vmCJ2Zv-L2OrgHaK_?pid=ImgDet&rs=1',
                 'duree' => '2h41min',
-                'realisateur_id' => 29,
-                'producteur_id' => 30,
+                'realisateur_id' => 9,
+                'producteur_id' => 7,
                 'annee' => 2019,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir'
             ],
-            
             [
                 'id' => 27,
                 'titre' => 'Reservoir Dogs',
                 'resume' => 'Un groupe de voleurs professionnels tente de découvrir le traître parmi eux après quun braquage de diamant ait mal tourné.',
                 'affiche' => 'https://image.tmdb.org/t/p/original/g7spS2Y4SZoQoC6Hn7zoqEqdYqR.jpg',
                 'duree' => '1h39min',
-                'realisateur_id' => 29,
-                'producteur_id' => 30,
+                'realisateur_id' => 2,
+                'producteur_id' => 3,
                 'annee' => 1992,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir'
             ],
-            
             [
                 'id' => 28,
                 'titre' => 'Jackie Brown',
                 'resume' => 'Une hôtesse de lair manipulatrice, un trafiquant darmes, un détective de la police et une agente fédérale se croisent dans une histoire de crime et de tromperie.',
                 'affiche' => 'https://th.bing.com/th/id/OIP.UF84LZu13cCC_QuLQreCfgHaJ_?pid=ImgDet&rs=1',
                 'duree' => '2h34min',
-                'realisateur_id' => 29,
-                'producteur_id' => 30,
+                'realisateur_id' => 2,
+                'producteur_id' => 3,
                 'annee' => 1997,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir'
             ],
-            
             [
                 'id' => 29,
                 'titre' => 'Death Proof',
                 'resume' => 'Un cascadeur psychopathe chasse des jeunes femmes au volant de sa voiture meurtrière, mais il ne sait pas à qui il a affaire.',
                 'affiche' => 'https://th.bing.com/th/id/R.838795bfecb371042caf5e42abc02729?rik=jLyy8eWgCUJ5yw&pid=ImgRaw&r=0',
                 'duree' => '1h53min',
-                'realisateur_id' => 29,
-                'producteur_id' => 30,
+                'realisateur_id' => 9,
+                'producteur_id' => 3,
                 'annee' => 2007,
                 'cote' => '3,5 étoiles',
                 'categorie' => 'À revoir'
             ],
-            
             [
                 'id' => 30,
                 'titre' => 'The Hateful Eight',
                 'resume' => 'Dans le Wyoming après la guerre civile, huit étrangers sont piégés dans un chalet pendant une tempête de neige, mais certains dentre eux ne sont pas ce quils semblent être.',
                 'affiche' => 'https://th.bing.com/th/id/R.4d9fa8b2905f5fdde2f490b24cdab90e?rik=dwIlG4Om%2f7IhYg&riu=http%3a%2f%2fwww.filmofilia.com%2fwp-content%2fuploads%2f2015%2f11%2fHateful_Eight_Payoff_poster.jpg&ehk=CP58Ig%2fUuuhPG2RWrZli3TWx0%2fG9Mf%2bVlgsu03uGWRI%3d&risl=&pid=ImgRaw&r=0',
                 'duree' => '3h8min',
-                'realisateur_id' => 29,
-                'producteur_id' => 30,
+                'realisateur_id' => 9,
+                'producteur_id' => 3,
                 'annee' => 2015,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir'
