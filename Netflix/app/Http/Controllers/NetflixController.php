@@ -16,7 +16,7 @@ class NetflixController extends Controller
         $tendances = Film::where('categorie', '=', 'tendance')->get();
         $classics = Film::where('categorie', '=', 'classique')->get();
         $films = Film::all();
-        return View('Netflix.netflix', compact('films', 'classics', 'tendances'));
+        return View('Netflix.netflix', compact('films', 'classics', 'tendances', 'revoirs'));
     }
 
 
