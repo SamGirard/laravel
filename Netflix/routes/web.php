@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PokemonsController;
 use App\Http\Controllers\NetflixController;
+use App\Http\Controllers\FilmsController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +17,11 @@ use App\Http\Controllers\NetflixController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('pokemons',
-[PokemonsController::class, 'index'])->name('pokemons.index');
-
-Route::get('Netflix',
+Route::get('/',
 [NetflixController::class, 'index'])->name('Netflix.index');
+
+Route::get('Netflix.create',
+[NetflixController::class, 'create'])->name('Netflix.create');
+
+Route::get('Netflix.film',
+[NetflixController::class, 'plus'])->name('Netflix.film');

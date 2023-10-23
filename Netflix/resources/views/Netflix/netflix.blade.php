@@ -1,38 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix Clone</title>
-    <link rel="stylesheet" href="netflix.css" />
-  </head>
-  <body>
-    <!-- nav -->
-    <div id="nav" class="nav">
-      <img class="nav__logo" src="images/netflix-logo.png" alt="" />
-      <img class="nav__avatar" src="images/netflix-avatar.png" alt="" />
-    </div>
+    @extends('layout.app')
+    
+    @section('title', "Page d'accueil")
 
-    <!-- header -->
-    <header class="banner">
-      <div class="banner__contents">
-        <h1 class="banner__title">Money Heist</h1>
-        <div class="banner__buttons">
-          <button class="banner__button">Play</button>
-          <button class="banner__button">My List</button>
-        </div>
-        <h1 class="banner__description">
-          To carry out the biggest heist in history, a mysterious man called The Professor recruits
-          a band of eight robbers who have a single characteristic: n...
-        </h1>
-      </div>
-      <div class="banner--fadeBottom"></div>
-    </header>
-
+    @section('contenu')
     <!-- Netflix Originals -->
     <div class="row">
       <h2>NETFLIX ORIGINALS</h2>
+      <a href="{{route('Netflix.film')}}">Voir plus de film</a>
       <div class="row__posters">
         <img class="row__poster row__posterLarge" src='images/large-movie1.jpg' alt="" />
 
@@ -206,6 +180,8 @@
       </div>
     </div>
     -->
+
+
     <script>
       const nav = document.getElementById('nav');
       window.addEventListener('scroll', () => {
@@ -215,6 +191,7 @@
           nav.classList.remove('nav__black');
         }
       });
-    </script>
+    </script>    
+    @endsection
   </body>
 </html>
