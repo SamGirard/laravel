@@ -24,6 +24,7 @@ return new class extends Migration
             $table->foreign('producteur_id')->references('id')->on('personnes');
             $table->integer('annee');
             $table->text('cote');
+            $table->text('categorie');
             $table->timestamps();
         });
     }
