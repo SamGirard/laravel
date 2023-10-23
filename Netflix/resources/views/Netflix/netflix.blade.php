@@ -6,23 +6,15 @@
     <!-- Netflix Originals -->
     <div class="row">
       <h2>Les Classiques</h2>
-      <a href="{{route('Netflix.film')}}">Voir plus de film</a>
       <div class="row__posters">
-        <img class="row__poster row__posterLarge" src='' alt="" />
 
-        <img class="row__poster row__posterLarge" src="images/large-movie2.jpg" alt="" />
+        @if(count($classics))
+            @foreach($classics as $classic)
+                <img class="row__poster row__posterLarge" src="{{$film->affiche}}" width="200px" height="400px">
+            @endforeach
+        @else
 
-        <img class="row__poster row__posterLarge" src="images/large-movie3.jpg" alt="" />
-
-        <img class="row__poster row__posterLarge" src="images/large-movie4.jpg" alt="" />
-
-        <img class="row__poster row__posterLarge" src="images/large-movie5.jpg" alt="" />
-
-        <img class="row__poster row__posterLarge" src="images/large-movie6.jpg" alt="" />
-
-        <img class="row__poster row__posterLarge" src="images/large-movie7.jpg" alt="" />
-
-        <img class="row__poster row__posterLarge" src="images/large-movie8.jpg" alt="" />
+        @endif
       </div>
     </div>
 

@@ -24,6 +24,7 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 3,
                 'annee' => 1972,
                 'cote' => '4,9 étoiles',
+                'categorie' => 'classique'
             ],
             [
                 'id' => 2,
@@ -35,6 +36,7 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 9,
                 'annee' => 1999,
                 'cote' => '4,7 étoiles',
+                'categorie' => 'classique'
             ],
               [
                 'id' => 3,
@@ -46,6 +48,7 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 4, 
                 'annee' => 2010,
                 'cote' => '4 étoiles',
+                'categorie' => 'classique'
             ],
             [
                 'id' => 4,
@@ -57,6 +60,7 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 6, 
                 'annee' => 2014,
                 'cote' => '4,5 étoiles',
+                'categorie' => 'classique'
             ],
             [
                 'id' => 5,
@@ -68,6 +72,7 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 8, 
                 'annee' => 2009,
                 'cote' => '4 étoiles',
+                'categorie' => 'classique'
             ],
             [
                 'id' => 6,
@@ -79,6 +84,7 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 4, 
                 'annee' => 2008,
                 'cote' => '4,5 étoiles',
+                'categorie' => 'classique'
             ],
             [
               'id' => 7,
@@ -90,6 +96,7 @@ class FilmsSeeder extends Seeder
               'producteur_id' => 10,
               'annee' => 1994,
               'cote' => '4,5 étoiles',
+              'categorie' => 'classique'
             ],
             [
                 'id' => 8,
@@ -101,6 +108,7 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 7,
                 'annee' => 1994,
                 'cote' => '4,8 étoiles',
+                'categorie' => 'classique'
             ],
             [
                 'id' => 9,
@@ -112,6 +120,7 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 9,
                 'annee' => 2001,
                 'cote' => '4,7 étoiles',
+                'categorie' => 'classique'
             ],
             [
                 'id' => 10,
@@ -123,6 +132,7 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 2,
                 'annee' => 2003,
                 'cote' => '4 étoiles',
+                'categorie' => 'classique'
             ],
           
             
