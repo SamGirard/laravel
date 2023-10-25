@@ -13,6 +13,8 @@
     <!-- nav -->
     <div id="nav" class="nav">
       <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
+      <a href="{{route ('Netflix.index')}}">Accueil</a>
+      <a href="">Acteurs</a>
       <img class="nav__avatar" src="../images/netflix-avatar.png" alt="" />
     </div>
 
@@ -28,7 +30,8 @@
         Huit voleurs mènent une prise d'otage dans la Maison royale de la Monnaie d'Espagne, tandis qu'un génie criminel manipule la police pour mettre son plan à exécution.
         </h1>
       </div>
-      <div class="banner--fadeBottom"></div>
+      <div class="banner--fadeBottom">
+      </div>
     </header>
 
 

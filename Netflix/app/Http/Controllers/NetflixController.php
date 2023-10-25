@@ -12,11 +12,13 @@ class NetflixController extends Controller
      */
     public function index()
     {
+        $siecles = Film::where('annee', '<=', 2000)->get();
+        $tarantinos = Film::where('realisateur_id', '=', '10')->get();
         $revoirs = Film::where('categorie', '=', 'À revoir')->get();
         $tendances = Film::where('categorie', '=', 'tendance')->get();
         $classics = Film::where('categorie', '=', 'classique')->get();
         $films = Film::all();
-        return View('Netflix.netflix', compact('films', 'classics', 'tendances', 'revoirs'));
+        return View('Netflix.netflix', compact('films', 'classics', 'tendances', 'revoirs', 'tarantinos', 'siecles'));
     }
 
 

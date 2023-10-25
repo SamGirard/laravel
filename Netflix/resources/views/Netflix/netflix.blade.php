@@ -45,117 +45,33 @@
               @endif
       </div>
     </div>
-<!--
-    Action Movies 
+
     <div class="row">
-      <h2>Action Movies</h2>
+      <h2>Film Spécial Tanrantino</h2>
       <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+          @if(count($revoirs))
+                  @foreach($tarantinos as $tarantino)
+                      <img class="row__poster row__posterLarge" src="{{$tarantino->affiche}}" width="200px" height="400px">
+                  @endforeach
+              @else
 
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+              @endif
       </div>
     </div>
 
-    Comedy Movies 
     <div class="row">
-      <h2>Comedy Movies</h2>
+      <h2>Année 90</h2>
       <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
+          @if(count($siecles))
+                  @foreach($siecles as $siecle)
+                      <img class="row__poster row__posterLarge" src="{{$siecle->affiche}}" width="200px" height="400px">
+                  @endforeach
+              @else
 
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
+              @endif
       </div>
     </div>
-
-     Horror Movies 
-    <div class="row">
-      <h2>Horror Movies</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-    Romance Movies
-    <div class="row">
-      <h2>Romance Movies</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-
-     Documentaries
-    <div class="row">
-      <h2>Documentaries</h2>
-      <div class="row__posters">
-        <img class="row__poster" src="images/small-movie1.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie2.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie3.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie4.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie5.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie6.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie7.jpg" alt="" />
-
-        <img class="row__poster" src="images/small-movie8.jpg" alt="" />
-      </div>
-    </div>
-    -->
+<!---->
 
 
     <script>
