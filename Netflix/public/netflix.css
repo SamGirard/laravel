@@ -157,11 +157,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     /*padding: 20px;*/
     /* background-color: #111; */
-    z-index: 1;
     transition-timing-function: ease-in;
     transition: all 0.5s;
   }
