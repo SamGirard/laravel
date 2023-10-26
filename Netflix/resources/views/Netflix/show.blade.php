@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        {{$classic->titre}}
-    </h1>
+
+    <h1>{{$film->titre}}</h1>
+ 
 </body>
 </html>
