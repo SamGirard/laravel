@@ -12,14 +12,10 @@ class PersonnesController extends Controller
      */
     public function index()
     {
-
-    }
-
-    public function plus()
-    {
         $personnes = Personne::all();
         return View('Netflix.personne', compact('personnes'));
     }
+
 
     /**
      * Show the form for creating a new resource.

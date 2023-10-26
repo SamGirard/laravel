@@ -21,11 +21,6 @@ class FilmsController extends Controller
         return View('Netflix.netflix', compact('films', 'classics', 'tendances', 'revoirs', 'tarantinos', 'siecles'));
     }
 
-    public function plus()
-    {
-        $films = Film::all();
-        return View('Netflix.film', compact('films'));
-    }
 
     /**
      * Show the form for creating a new resource.

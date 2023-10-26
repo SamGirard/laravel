@@ -14,7 +14,7 @@
     <div id="nav" class="nav">
       <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
       <a href="{{route ('Netflix.index')}}">Accueil</a>
-      <a href="">Acteurs</a>
+      <a href="{{route ('Netflix.personne')}}">Acteurs</a>
       <img class="nav__avatar" src="../images/netflix-avatar.png" alt="" />
     </div>
 

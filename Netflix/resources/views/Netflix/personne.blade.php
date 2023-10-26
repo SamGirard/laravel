@@ -13,7 +13,7 @@
         <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
 
         @if(count($personnes))
-            @foreach($personnes as $pesronne)
+            @foreach($personnes as $personne)
                 <img src="{{$personne->portrait}}" width="200px" height="400px">
             @endforeach
         @else
