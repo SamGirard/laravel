@@ -32,5 +32,5 @@ Route::get('Netflix.personne',
 Route::get('Netflix/{film}',
 [FilmsController::class, 'show'])->name('Netflix.show');
 
-Route::get('Netflix/{personne}',
+Route::get('Netflix.personne/{zoom}',
 [PersonnesController::class, 'show'])->name('Netflix.zoom');
