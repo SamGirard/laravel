@@ -10,8 +10,8 @@ class Film extends Model
     //protected $table = 'films';
     use HasFactory;
 
-    public function realisateur() : BelongsTo 
+    public function realisateur()
     {
-        return $this->belongsTo('App\Http\Models\Personne');
+        return $this->belongsTo(Personne::class);
     }
 }

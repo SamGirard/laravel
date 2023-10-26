@@ -10,7 +10,8 @@
 
         @if(count($classics))
             @foreach($classics as $classic)
-                <img class="row__poster row__posterLarge" src="{{$classic->affiche}}" width="200px" height="400px">
+                <a href="{{route('Netflix.show', [$classic] )}}" ><img src="{{$classic->affiche}}" class="row__poster row__posterLarge" width="200px" height="400px"></a>
+                <!--<h4>{{$classic->realisateur->nom}}</h4>-->
             @endforeach
         @else
 
