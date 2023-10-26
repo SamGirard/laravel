@@ -11,6 +11,10 @@
   h1, h2, h3, h4, h5, h6{
     color: white;
   }
+
+  .cNom{
+    text-align: center;
+  }
   
   .row__poster {
     width: 100%;
@@ -19,6 +23,10 @@
     margin-right: 10px;
     transition: transform 450ms;
   }
+
+  .portrait{
+    clip-path: ellipse(45% 33%);
+  }
   
   .row__posters {
     display: flex;
@@ -26,6 +34,17 @@
     overflow-x: scroll;
     padding: 20px;
   }
+
+  .row__posterss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajustez ceci en fonction de votre mise en page souhaitée */
+  }
+  
+  .image-container {
+    margin-bottom: 20px; /* Espace entre les images */
+  }
+  
   
   .row__poster:hover {
     transform: scale(1.08);
@@ -56,6 +75,10 @@
     color: white;
     object-fit: contain;
     height: 448px;
+  }
+
+  .bannerP{
+    height: 100px;
   }
   
   .banner__contents {

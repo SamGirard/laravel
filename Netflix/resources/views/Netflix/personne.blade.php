@@ -1,23 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="netflix.css">
+    @extends('layout.layoutP')
+    
+    @section('title', "Page d'accueil")
 
-    <title>Document</title>
-</head>
-<body>
-        <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
+    @section('contenu')
+    <div class="row">
+        <div class="row__posterss">
+            @if(count($personnes))
+                @foreach($personnes as $personne)
+                    <div class="image-container">
+                    <img src="{{$personne->portrait}}" class="row__poster row__posterLarge portrait" width="200px" height="400px">
+                    <h3 class="cNom">{{$personne->nom}}</h3>    
+                </div>
+                @endforeach
+            @else
+            @endif
 
-        @if(count($personnes))
-            @foreach($personnes as $personne)
-                <img src="{{$personne->portrait}}" width="200px" height="400px">
-            @endforeach
-        @else
+            
+  </div>
+</div>
 
-        @endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>    
+    @endsection
 </body>
 </html>
