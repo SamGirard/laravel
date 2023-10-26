@@ -36,9 +36,9 @@ class PersonnesController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Personne $personneZoom)
+    public function show(Personne $personne)
     {
-        return View('Netflix.zoom', compact('personneZoom'));
+        return View('Netflix.zoom', compact('personne'));
     }
 
     /**

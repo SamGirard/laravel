@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{personneZoom->nom}}</h1>
+    <h1>testse</h1>
+    <h1>{{$personne->nom}}</h1>
 </body>
 </html>
