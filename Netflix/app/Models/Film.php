@@ -13,5 +13,11 @@ class Film extends Model
     public function realisateur()
     {
         return $this->belongsTo(Personne::class);
+        //return $this->belongsTo('App\Models\Personne');
+    }
+
+    public function producteur()
+    {
+        return $this->belongsTo(Personne::class);
     }
 }
