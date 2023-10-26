@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PokemonsController;
 use App\Http\Controllers\NetflixController;
 use App\Http\Controllers\FilmsController;
+use App\Http\Controllers\PersonnesController;
 
 
 /*
@@ -17,11 +17,17 @@ use App\Http\Controllers\FilmsController;
 |
 */
 
-Route::get('/',
+/*Route::get('/',
 [NetflixController::class, 'index'])->name('Netflix.index');
 
-Route::get('Netflix.create',
-[NetflixController::class, 'create'])->name('Netflix.create');
+Route::get('Netflix.film',
+[NetflixController::class, 'plus'])->name('Netflix.film');*/
+
+Route::get('/',
+[FilmsController::class, 'index'])->name('Netflix.index');
 
 Route::get('Netflix.film',
-[NetflixController::class, 'plus'])->name('Netflix.film');
+[FilmsController::class, 'plus'])->name('Netflix.film');
+
+Route::get('Netflix.personne',
+[PersonnesController::class, 'plus'])->name('Netflix.personne');
