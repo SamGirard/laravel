@@ -26,6 +26,8 @@
 
   .portrait{
     clip-path: ellipse(45% 33%);
+    width: 200px;
+    height: 400px;
   }
   
   .row__posters {

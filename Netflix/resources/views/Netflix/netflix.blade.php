@@ -25,7 +25,7 @@
       <div class="row__posters">
           @if(count($tendances))
                 @foreach($tendances as $tendance)
-                    <img class="row__poster row__posterLarge" src="{{$tendance->affiche}}" width="200px" height="400px">
+                    <img class="row__poster row__posterLarge" src="{{$tendance->affiche}}">
                 @endforeach
             @else
 
@@ -86,5 +86,3 @@
       });
     </script>    
     @endsection
-  </body>
-</html>

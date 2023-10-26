@@ -8,14 +8,14 @@
             @if(count($personnes))
                 @foreach($personnes as $personne)
                     <div class="image-container">
-                    <img src="{{$personne->portrait}}" class="row__poster row__posterLarge portrait" width="200px" height="400px">
+                      <a href="{{route('Netflix.zoom', [$personne] )}}">
+                        <img src="{{$personne->portrait}}" class="row__poster row__posterLarge portrait" width="200px" height="400px">
+                      </a>
                     <h3 class="cNom">{{$personne->nom}}</h3>    
                 </div>
                 @endforeach
             @else
             @endif
-
-            
   </div>
 </div>
 
