@@ -1,6 +1,6 @@
     @extends('layout.app')
     
-    @section('title', "Page d'accueil")
+    @section('title', "Netflix - Réalisateurs")
 
     @section('contenu')
     <div class="row">
@@ -9,7 +9,7 @@
                 @foreach($personnes as $personne)
                     <div class="image-container">
                       <a href="{{route('Netflix.zoom', [$personne]) }}">
-                        <img src="{{$personne->portrait}}" class="row__poster row__posterLarge portrait" width="200px" height="400px">
+                        <img src="{{$personne->portrait}}" class="row__poster row__posterLarge portrait">
                       </a>
                     <h3 class="cNom">{{$personne->nom}}</h3>    
                 </div>
