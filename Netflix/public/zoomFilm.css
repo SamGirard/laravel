@@ -47,5 +47,18 @@
   .boiteZoom{
     background-color: #272727;
     border-radius: 10px;
+    margin-bottom: 100px;
   }
 
+  .videoBox{
+    position: relative;
+    height: 600px;
+  }
+
+  .trailer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

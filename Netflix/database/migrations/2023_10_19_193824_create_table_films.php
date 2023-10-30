@@ -25,6 +25,7 @@ return new class extends Migration
             $table->integer('annee');
             $table->text('cote');
             $table->text('categorie');
+            $table->text('bandeAnnonce');
             $table->timestamps();
         });
     }

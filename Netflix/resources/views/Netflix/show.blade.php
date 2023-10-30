@@ -12,30 +12,35 @@
 
         <div class="container-fluid">
             <div class="row mt-5">
-                <div class="col-md-8 offset-2 boiteZoom pb-5 ps-5 pe-5">
-                    <div class="row mt-5">
-                    <div class="col-md-1 offset-11 p-0">
-                        <a href="{{route ('Netflix.index')}}"><i class="fa-solid fa-xmark fa-2x" style="color: #ffffff;"></i></a>
+                <div class="col-md-8 offset-2 boiteZoom pb-5">
+                    <div class="row">
+                        <div class="col-md-12 videoBox">
+                            <iframe class="trailer" src="{{$film->bandeAnnonce}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>
+                        </div>
                     </div>
-                </div>
-                <h1 class="titre">{{$film->titre}}</h1>
+                    <div class="row mt-5">
+                        <div class="col-md-1 offset-11 p-0">
+                            <a href="{{route ('Netflix.index')}}"><i class="fa-solid fa-xmark fa-2x" style="color: #ffffff;"></i></a>
+                        </div>
+                    </div>
+                <h1 class="titre ms-5">{{$film->titre}}</h1>
                 <div class="row mb-5">
                     <div class="col-md-2">
-                        <button class="form-control mt-2"><i class="fa-solid fa-play" style="color: #1a1a1a;"></i> Lecture</button>
+                        <button class="form-control mt-2  ms-5"><i class="fa-solid fa-play" style="color: #1a1a1a;"></i> Lecture</button>
                     </div>
                 </div>
 
                 <div class="row mt-5">
                     <div class="col-md-6">
                         <div class="row">
-                            <p class="m-0"><span class="correspond">Correspond à 97 %</span> {{$film->annee}} <img src="../images/dolby2.png" class="dolby"></p>
+                            <p class="m-0 ms-5"><span class="correspond">Correspond à 97 %</span> {{$film->annee}} <img src="../images/dolby2.png" class="dolby"></p>
                         </div>
 
-                        <div class="row">
+                        <div class="row ms-5">
                             <p><span class="tv">TV-MA</span> Catégorie : {{$film->categorie}} </p>
                         </div>
 
-                        <div class="row mt-3">
+                        <div class="row mt-3  ms-5">
                             <p>{{$film->resume}}</p>
                         </div>
                     </div>
