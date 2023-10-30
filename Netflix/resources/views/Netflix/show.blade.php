@@ -27,11 +27,8 @@
                      </div>
                 </div>
 
-
-                
-
                 <div class="row mt-5">
-                    <div class="col-md-6">
+                    <div class="col-md-8">
                         <div class="row">
                             <p class="ms-5"><span class="correspond">Correspond à 97 %</span> {{$film->annee}} <img src="../images/dolby2.png" class="dolby"></p>
                         </div>
@@ -44,7 +41,7 @@
                             <p>{{$film->resume}}</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                         <div class="row">
                             <p><span class="infoTitre">Réalisateur et producteur : </span> {{$film->realisateur->nom}}, {{$film->producteur->nom}}</p>
                         </div>
@@ -58,6 +55,13 @@
                         </div>
                     </div>
                 </div>
+                <div class="rowFilm">
+                    <h2>Les Classiques</h2>
+                    <div class="row__posters">
+
+                       
+                    </div>
+                    </div>
                 </div>
             </div>
            
