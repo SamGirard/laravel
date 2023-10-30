@@ -25,7 +25,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 1972,
                 'cote' => '4,9 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/fB_8VCwXydM?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/UaVTIH8mujA?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
             ],
             [
                 'id' => 2,
