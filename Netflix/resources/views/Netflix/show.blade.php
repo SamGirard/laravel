@@ -12,10 +12,10 @@
 
         <div class="container-fluid">
             <div class="row mt-5">
-                <div class="col-md-8 offset-2 boiteZoom align-items-center">
+                <div class="col-md-8 offset-2 boiteZoom pb-5 ps-5 pe-5">
                     <div class="row mt-5">
                     <div class="col-md-1 offset-11 p-0">
-                        <i class="fa-solid fa-xmark fa-2x" style="color: #ffffff;"></i>
+                        <a href="{{route ('Netflix.index')}}"><i class="fa-solid fa-xmark fa-2x" style="color: #ffffff;"></i></a>
                     </div>
                 </div>
                 <h1 class="titre">{{$film->titre}}</h1>

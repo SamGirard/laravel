@@ -24,7 +24,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 11,
                 'annee' => 1972,
                 'cote' => '4,9 étoiles',
-                'categorie' => 'classique'
+                'categorie' => 'classique',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 2,
@@ -36,7 +37,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 13,
                 'annee' => 1999,
                 'cote' => '4,7 étoiles',
-                'categorie' => 'classique'
+                'categorie' => 'classique',
+                'bandeAnnonce' => ''
             ],
               [
                 'id' => 3,
@@ -48,7 +50,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 1, 
                 'annee' => 2010,
                 'cote' => '4 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 4,
@@ -60,7 +63,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 1, 
                 'annee' => 2014,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'classique'
+                'categorie' => 'classique',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 5,
@@ -72,7 +76,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 14, 
                 'annee' => 2009,
                 'cote' => '4 étoiles',
-                'categorie' => 'classique'
+                'categorie' => 'classique',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 6,
@@ -84,7 +89,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 1, 
                 'annee' => 2008,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'classique'
+                'categorie' => 'classique',
+                'bandeAnnonce' => ''
             ],
             [
               'id' => 7,
@@ -96,7 +102,8 @@ class FilmsSeeder extends Seeder
               'producteur_id' => 15,
               'annee' => 1994,
               'cote' => '4,5 étoiles',
-              'categorie' => 'classique'
+              'categorie' => 'classique',
+              'bandeAnnonce' => ''
             ],
             [
                 'id' => 8,
@@ -108,7 +115,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 16,
                 'annee' => 1994,
                 'cote' => '4,8 étoiles',
-                'categorie' => 'classique'
+                'categorie' => 'classique',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 9,
@@ -120,7 +128,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 3,
                 'annee' => 2000,
                 'cote' => '4,7 étoiles',
-                'categorie' => 'classique'
+                'categorie' => 'classique',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 10,
@@ -132,7 +141,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 8,
                 'annee' => 2003,
                 'cote' => '4 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 11,
@@ -144,7 +154,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 17,
                 'annee' => 2016,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             
             [
@@ -157,7 +168,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 18,
                 'annee' => 2018,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 13,
@@ -169,7 +181,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 19,
                 'annee' => 2008,
                 'cote' => '5 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 14,
@@ -181,7 +194,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 20,
                 'annee' => 2019,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 15,
@@ -193,7 +207,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 21,
                 'annee' => 2016,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             
             [
@@ -206,7 +221,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 22,
                 'annee' => 2016,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             
             [
@@ -219,7 +235,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 23,
                 'annee' => 1993,
                 'cote' => '4 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 18,
@@ -231,7 +248,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 24,
                 'annee' => 1994,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             
             [
@@ -244,7 +262,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 25,
                 'annee' => 2000,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 20,
@@ -256,7 +275,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 27,
                 'annee' => 2011,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 21,
@@ -268,7 +288,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 28,
                 'annee' => 2013,
                 'cote' => '4 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 22,
@@ -280,7 +301,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 15,
                 'annee' => 2009,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 23,
@@ -292,7 +314,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 10,
                 'annee' => 2012,
                 'cote' => '4,5 étoiles',
-                'categorie' => 'classique'
+                'categorie' => 'classique',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 24,
@@ -304,7 +327,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 10,
                 'annee' => 2003,
                 'cote' => '4 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 25,
@@ -316,7 +340,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 10,
                 'annee' => 2004,
                 'cote' => '4 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 26,
@@ -328,7 +353,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 6,
                 'annee' => 2019,
                 'cote' => '4 étoiles',
-                'categorie' => 'tendance'
+                'categorie' => 'tendance',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 27,
@@ -340,7 +366,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 15,
                 'annee' => 1992,
                 'cote' => '4 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 28,
@@ -352,7 +379,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 15,
                 'annee' => 1997,
                 'cote' => '4 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 29,
@@ -364,7 +392,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 10,
                 'annee' => 2007,
                 'cote' => '3,5 étoiles',
-                'categorie' => 'À revoir'
+                'categorie' => 'À revoir',
+                'bandeAnnonce' => ''
             ],
             [
                 'id' => 30,
@@ -376,7 +405,8 @@ class FilmsSeeder extends Seeder
                 'producteur_id' => 10,
                 'annee' => 2015,
                 'cote' => '4 étoiles',
-                'categorie' => 'classique'
+                'categorie' => 'classique',
+                'bandeAnnonce' => ''
             ]
 
             ]);
