@@ -12,28 +12,28 @@
 
         <div class="container-fluid">
             <div class="row mt-5">
-                <div class="col-md-8 offset-2 boiteZoom pb-5">
-                    <div class="row">
-                        <div class="col-md-12 videoBox">
-                            <iframe class="trailer" src="{{$film->bandeAnnonce}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen autoplay></iframe>
+                <div class="col-md-6 offset-3 boiteZoom pb-5">
+                <div class="row">
+                    <div class="col-md-12 videoBox" style="position: relative;">
+                        <iframe class="trailer" src="{{$film->bandeAnnonce}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="1" fs="1" autoplay ></iframe>
+                        <div style="position: absolute; top: 0; right: 0;">
+                            <a href="{{ route('Netflix.index') }}"><i class="fa-solid fa-xmark fa-2x mt-3 me-3 X"></i></a>
                         </div>
-                    </div>
-                    <div class="row mt-5">
-                        <div class="col-md-1 offset-11 p-0">
-                            <a href="{{route ('Netflix.index')}}"><i class="fa-solid fa-xmark fa-2x" style="color: #ffffff;"></i></a>
+                        <div class="position-absolute bottom-0 left-0">
+                            <h1 class="titre ms-5">{{$film->titre}}</h1>
+                            <!-- Ajoutez votre bouton ici -->
+                            <button class="form-control mt-2 mb-5 ms-5 lecture"><i class="fa-solid fa-play"></i> Lecture</button>
                         </div>
-                    </div>
-                <h1 class="titre ms-5">{{$film->titre}}</h1>
-                <div class="row mb-5">
-                    <div class="col-md-2">
-                        <button class="form-control mt-2  ms-5"><i class="fa-solid fa-play" style="color: #1a1a1a;"></i> Lecture</button>
-                    </div>
+                     </div>
                 </div>
+
+
+                
 
                 <div class="row mt-5">
                     <div class="col-md-6">
                         <div class="row">
-                            <p class="m-0 ms-5"><span class="correspond">Correspond à 97 %</span> {{$film->annee}} <img src="../images/dolby2.png" class="dolby"></p>
+                            <p class="ms-5"><span class="correspond">Correspond à 97 %</span> {{$film->annee}} <img src="../images/dolby2.png" class="dolby"></p>
                         </div>
 
                         <div class="row ms-5">
