@@ -1,4 +1,4 @@
-    @extends('layout.layoutP')
+    @extends('layout.app')
     
     @section('title', "Page d'accueil")
 
