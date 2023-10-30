@@ -12,45 +12,50 @@
 
         <div class="container-fluid">
             <div class="row mt-5">
-                <div class="col-md-1 offset-10">
-                    <i class="fa-solid fa-xmark fa-2x" style="color: #ffffff;"></i>
+                <div class="col-md-8 offset-2 boiteZoom align-items-center">
+                    <div class="row mt-5">
+                    <div class="col-md-1 offset-11 p-0">
+                        <i class="fa-solid fa-xmark fa-2x" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <h1 class="titre">{{$film->titre}}</h1>
+                <div class="row mb-5">
+                    <div class="col-md-2">
+                        <button class="form-control mt-2"><i class="fa-solid fa-play" style="color: #1a1a1a;"></i> Lecture</button>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <p class="m-0"><span class="correspond">Correspond à 97 %</span> {{$film->annee}} <img src="../images/dolby2.png" class="dolby"></p>
+                        </div>
+
+                        <div class="row">
+                            <p><span class="tv">TV-MA</span> Catégorie : {{$film->categorie}} </p>
+                        </div>
+
+                        <div class="row mt-3">
+                            <p>{{$film->resume}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <p><span class="infoTitre">Réalisateur et producteur : </span> {{$film->realisateur->nom}}, {{$film->producteur->nom}}</p>
+                        </div>
+
+                        <div class="row">
+                            <p><span class="infoTitre">Cote : </span> {{$film->cote}}</p>
+                        </div>
+
+                        <div class="row">
+                            <p><span class="infoTitre">Durée : </span> {{$film->duree}}</p>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
-            <h1 class="titre">{{$film->titre}}</h1>
-            <div class="row mb-5">
-                <div class="col-md-1">
-                    <button class="form-control mt-2"><i class="fa-solid fa-play" style="color: #1a1a1a;"></i> Lecture</button>
-                </div>
-            </div>
-
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <div class="row">
-                        <p class="m-0"><span class="correspond">Correspond à 97 %</span> {{$film->annee}} <img src="../images/dolby2.png" class="dolby"></p>
-                    </div>
-
-                    <div class="row">
-                        <p><span class="tv">TV-MA</span> Catégorie : {{$film->categorie}} </p>
-                    </div>
-
-                    <div class="row mt-3">
-                        <p>{{$film->resume}}</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <p><span class="infoTitre">Réalisateur et producteur : </span> {{$film->realisateur->nom}}, {{$film->producteur->nom}}</p>
-                    </div>
-
-                    <div class="row">
-                        <p><span class="infoTitre">Cote : </span> {{$film->cote}}</p>
-                    </div>
-
-                    <div class="row">
-                        <p><span class="infoTitre">Durée : </span> {{$film->duree}}</p>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     
         <script src="https://kit.fontawesome.com/2ad1095675.js" crossorigin="anonymous"></script>
