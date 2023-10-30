@@ -21,7 +21,7 @@
   }
 
   .titre{
-    font-size: 50pt
+    font-size: 70pt;
   }
 
   .correspond{
@@ -61,4 +61,52 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .X{
+    background-color: rgba(39, 39, 39, 0.8);
+    padding: 7px 10px 7px 10px;
+    border-radius: 100%;
+    color: white;
+  }
+
+  .lecture{
+    color: #1a1a1a;
+    width:200px !important;
+  }
+
+  .row__poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+  }
+
+  .row__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+  }
+
+  .row__posterLarge {
+    max-height: 250px;
+  }
+  
+  .row__posterLarge:hover {
+    transform: scale(1.09);
+  }
+  
+  .rowFilm {
+    color: white;
+    margin-left: 20px;
+  }
+
+  .row__poster:hover {
+    transform: scale(1.08);
+  }
+  
+  .row__posters::-webkit-scrollbar {
+    display: none;
   }
