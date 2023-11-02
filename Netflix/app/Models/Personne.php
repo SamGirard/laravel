@@ -9,15 +9,13 @@ class Personne extends Model
 {
     use HasFactory;
     
-    public function filmsRealises() : HasMany
+    public function filmsRealises()
     {
-        //return $this->belongsTo(Film::class);
         return $this->hasMany(Film::class, 'realisateur_id');
     }
 
-    public function filmsProduits() : HasMany
+    public function filmsProduits()
     {
-        //return $this->belongsTo(Film::class);
         return $this->hasMany(Film::class, 'producteur_id');
     }
 }

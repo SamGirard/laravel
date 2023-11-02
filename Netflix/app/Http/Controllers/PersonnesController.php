@@ -38,6 +38,7 @@ class PersonnesController extends Controller
      */
     public function show(Personne $personne)
     {
+        
         return View('Netflix.zoom', compact('personne'));
     }
 
