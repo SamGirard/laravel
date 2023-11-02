@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('dateNaissance');
             $table->text('lieuNaissance');
             $table->text('portrait');
-            $table->integer('age');
+            $table->text('age');
             $table->timestamps();
         });
     }
