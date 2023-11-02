@@ -27,7 +27,7 @@ class FilmsController extends Controller
      */
     public function create()
     {
-        
+        return View('Netflix.createFilm');
     }
 
     /**
@@ -35,7 +35,15 @@ class FilmsController extends Controller
      */
     public function store(Request $request)
     {
-        
+        try{
+            $film = new Film($request->all());
+            $film->save();
+        }
+        catch(\Throwable $e) {
+            Log::debug($e);
+        }
+
+        return redirect()->route('Netflix.index');
     }
 
     /**
