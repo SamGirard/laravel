@@ -14,7 +14,7 @@
 <body class="zoomPersonne">
     <div class="container-fluid">
         <div class="row mt-5">
-            <div class="col-8 col-md-10 offset-1 boiteZoom">
+            <div class="col-8 col-md-8 offset-2 boiteZoom">
                 <div class="row mt-5">
                     <div class="col-md-1 col-1">
                         <a href="{{route ('Netflix.personne')}}"><i class="fa-solid fa-arrow-left fa-2x" style="color: #ffffff;"></i></a>
