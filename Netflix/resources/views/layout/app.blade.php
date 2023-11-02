@@ -12,7 +12,7 @@
     <div id="nav" class="nav">
       <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
       <a href="{{route ('Netflix.index')}}">Accueil</a>
-      <a href="{{route ('Netflix.personne')}}">Acteurs</a>
+      <a href="{{route ('Netflix.personne')}}">Réalisateurs/producteurs</a>
       <a href="{{route('films.create' )}}">Ajouter un film</a>
       <img class="nav__avatar" src="../images/netflix-avatar.png" alt="" />
     </div>

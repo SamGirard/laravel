@@ -21,4 +21,8 @@ class Film extends Model
     {
         return $this->belongsTo(Personne::class);
     }
+
+    public function acteur(){
+        return $this->belongsTo(Acteur::class);
+    }
 }
