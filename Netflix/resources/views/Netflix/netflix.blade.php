@@ -38,9 +38,10 @@
     <div class="row">
       <h2>Tendances Actuelles</h2>
       <div class="row__posters">
+
           @if(count($tendances))
                 @foreach($tendances as $tendance)
-                    <img class="row__poster row__posterLarge" src="{{$tendance->affiche}}">
+                    <a href="{{route('Netflix.show', [$tendance] )}}"><img src="{{$tendance->affiche}}" class="row__poster row__posterLarge" src="{{$tendance->affiche}}"></a>
                 @endforeach
             @else
 
@@ -51,10 +52,11 @@
     <!-- Top Rated -->
     <div class="row">
       <h2>À Revoir en Boucle</h2>
+
       <div class="row__posters">
         @if(count($revoirs))
                   @foreach($revoirs as $revoir)
-                      <img class="row__poster row__posterLarge" src="{{$revoir->affiche}}" width="200px" height="400px">
+                      <a href="{{route('Netflix.show', [$revoir] )}}"><img src="{{$revoir->affiche}}" class="row__poster row__posterLarge" src="{{$revoir->affiche}}" width="200px" height="400px"></a>
                   @endforeach
               @else
 
@@ -65,9 +67,10 @@
     <div class="row">
       <h2>Film Spécial Tanrantino</h2>
       <div class="row__posters">
+
           @if(count($revoirs))
                   @foreach($tarantinos as $tarantino)
-                      <img class="row__poster row__posterLarge" src="{{$tarantino->affiche}}" width="200px" height="400px">
+                      <a href="{{route('Netflix.show', [$tarantino] )}}"><img src="{{$tarantino->affiche}}" class="row__poster row__posterLarge" src="{{$tarantino->affiche}}" width="200px" height="400px"></a>
                   @endforeach
               @else
 
@@ -78,9 +81,10 @@
     <div class="row">
       <h2>Année 90</h2>
       <div class="row__posters">
+
           @if(count($siecles))
                   @foreach($siecles as $siecle)
-                      <img class="row__poster row__posterLarge" src="{{$siecle->affiche}}" width="200px" height="400px">
+                      <a href="{{route('Netflix.show', [$siecle] )}}"><img src="{{$siecle->affiche}}" class="row__poster row__posterLarge" src="{{$siecle->affiche}}" width="200px" height="400px"></a>
                   @endforeach
               @else
 

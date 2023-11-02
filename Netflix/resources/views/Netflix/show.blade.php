@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                            <p><span class="infoTitre">Réalisateur et producteur : </span> {{$film->realisateur->nom}}, {{$film->producteur->nom}}</p>
+                            <p><span class="infoTitre">Réalisateur et producteur : </span> <a href="{{route('Netflix.zoom', [$film->realisateur]) }}">{{$film->realisateur->nom}}</a>, {{$film->producteur->nom}}</p>
                         </div>
 
                         <div class="row">
