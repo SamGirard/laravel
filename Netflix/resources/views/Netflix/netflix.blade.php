@@ -41,7 +41,7 @@
 
           @if(count($tendances))
                 @foreach($tendances as $tendance)
-                    <a href="{{route('Netflix.show', [$tendance] )}}"><img src="{{$tendance->affiche}}" class="row__poster row__posterLarge" src="{{$tendance->affiche}}"></a>
+                    <a href="{{route('Netflix.show', [$tendance] )}}"><img src="{{$tendance->affiche}}" class="row__poster row__posterLarge" src="{{$tendance->affiche}}" width="200px" height="400px"></a>
                 @endforeach
             @else
 

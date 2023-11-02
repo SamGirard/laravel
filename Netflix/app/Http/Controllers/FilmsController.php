@@ -27,7 +27,7 @@ class FilmsController extends Controller
      */
     public function create()
     {
-        //
+        
     }
 
     /**
@@ -35,7 +35,7 @@ class FilmsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
     }
 
     /**

@@ -8,6 +8,16 @@
     background-color: #111;
   }
 
+  .aPersonne{
+    color: white;
+    text-decoration: none;
+  }
+
+  .aPersonne:hover{
+    text-decoration: underline;
+    color: white;
+  }
+
   br{
     line-height: 0;
   }
