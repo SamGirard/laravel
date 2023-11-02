@@ -1,6 +1,6 @@
     @extends('layout.app')
     
-    @section('title', "Page d'accueil")
+    @section('title', "Netflix accueil")
     <!-- header -->
     <header class="banner">
       <div class="banner__contents">
