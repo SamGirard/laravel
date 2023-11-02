@@ -22,6 +22,8 @@ return new class extends Migration
             $table->foreign('realisateur_id')->references('id')->on('personnes');
             $table->unsignedBigInteger('producteur_id');
             $table->foreign('producteur_id')->references('id')->on('personnes');
+            $table->unsignedBigInteger('acteur_id');
+            $table->foreign('acteur_id')->references('id')->on('acteurs');
             $table->integer('annee');
             $table->text('cote');
             $table->text('categorie');
