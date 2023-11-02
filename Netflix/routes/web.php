@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NetflixController;
 use App\Http\Controllers\FilmsController;
 use App\Http\Controllers\PersonnesController;
+use App\Http\Controllers\SuggestionController;
 
 
 /*

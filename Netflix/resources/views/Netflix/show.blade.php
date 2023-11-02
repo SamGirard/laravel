@@ -43,7 +43,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="row">
-                            <p><span class="infoTitre">Réalisateur et producteur : </span> <a href="{{route('Netflix.zoom', [$film->realisateur]) }}">{{$film->realisateur->nom}}</a>, {{$film->producteur->nom}}</p>
+                            <p><span class="infoTitre">Réalisateur et producteur : </span> <a class="aPersonne" href="{{route('Netflix.zoom', [$film->realisateur]) }}">{{$film->realisateur->nom}}</a>, <a  class="aPersonne" href="{{route('Netflix.zoom', [$film->producteur]) }}">{{$film->producteur->nom}}</a></p>
                         </div>
 
                         <div class="row">
@@ -55,16 +55,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="rowFilm">
-                    <h2>Les Classiques</h2>
+                <div class="rowFilm mt-5">
+                    <h2>Suggestions</h2>
                     <div class="row__posters">
 
-                       
                     </div>
                     </div>
                 </div>
             </div>
-           
         </div>
     
         <script src="https://kit.fontawesome.com/2ad1095675.js" crossorigin="anonymous"></script>
