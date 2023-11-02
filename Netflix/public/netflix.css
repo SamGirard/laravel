@@ -177,3 +177,10 @@
   .nav__black {
     background-color: #111;
   }
+
+
+  .row__posterss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ajustez ceci en fonction de votre mise en page souhaitée */
+  }
