@@ -36,6 +36,12 @@
                     </div>
 
                     <div class="row">
+                        <h2>Films produits</h2>
+                        <div class="row_poster">
+                        @foreach($personne->filmsRealises as $test)
+                        <img src="{{  }}"/>
+                        @endforeach
+                        </div>
                     </div>
                     
                 </div>
