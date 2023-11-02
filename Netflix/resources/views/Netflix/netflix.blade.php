@@ -20,12 +20,14 @@
     @section('contenu')
     <!-- Netflix Originals -->
     <div class="row">
-      <h2>Les Classiques</h2>
-      <div class="row__posters">
+      <h2>Les Classiques</h2>row_colonne
+      <div class="row_colonne">
 
         @if(count($classics))
             @foreach($classics as $classic)
-                <a href="{{route('Netflix.show', [$classic] )}}" ><img src="{{$classic->affiche}}" class="row__poster row__posterLarge" width="200px" height="400px"></a>
+                <a href="{{route('Netflix.show', [$classic] )}}" >
+                  <img src="{{$classic->affiche}}" class="row_poster row_posterLarge">
+                </a>
                 <!--<h4>{{$classic->realisateur->nom}}</h4>-->
             @endforeach
         @else
@@ -37,11 +39,11 @@
     <!-- Trending Now -->
     <div class="row">
       <h2>Tendances Actuelles</h2>
-      <div class="row__posters">
+      <div class="row_colonne">
 
           @if(count($tendances))
                 @foreach($tendances as $tendance)
-                    <a href="{{route('Netflix.show', [$tendance] )}}"><img src="{{$tendance->affiche}}" class="row__poster row__posterLarge" src="{{$tendance->affiche}}"></a>
+                    <a href="{{route('Netflix.show', [$tendance] )}}"><img src="{{$tendance->affiche}}" class="row_poster row_posterLarge" src="{{$tendance->affiche}}"></a>
                 @endforeach
             @else
 
@@ -53,10 +55,10 @@
     <div class="row">
       <h2>À Revoir en Boucle</h2>
 
-      <div class="row__posters">
+      <div class="row_colonne">
         @if(count($revoirs))
                   @foreach($revoirs as $revoir)
-                      <a href="{{route('Netflix.show', [$revoir] )}}"><img src="{{$revoir->affiche}}" class="row__poster row__posterLarge" src="{{$revoir->affiche}}" width="200px" height="400px"></a>
+                      <a href="{{route('Netflix.show', [$revoir] )}}"><img src="{{$revoir->affiche}}" class="row_poster row_posterLarge" src="{{$revoir->affiche}}"></a>
                   @endforeach
               @else
 
@@ -66,11 +68,11 @@
 
     <div class="row">
       <h2>Film Spécial Tanrantino</h2>
-      <div class="row__posters">
+      <div class="row_colonne">
 
           @if(count($revoirs))
                   @foreach($tarantinos as $tarantino)
-                      <a href="{{route('Netflix.show', [$tarantino] )}}"><img src="{{$tarantino->affiche}}" class="row__poster row__posterLarge" src="{{$tarantino->affiche}}" width="200px" height="400px"></a>
+                      <a href="{{route('Netflix.show', [$tarantino] )}}"><img src="{{$tarantino->affiche}}" class="row_poster row_posterLarge" src="{{$tarantino->affiche}}"></a>
                   @endforeach
               @else
 
@@ -80,11 +82,11 @@
 
     <div class="row">
       <h2>Année 90</h2>
-      <div class="row__posters">
+      <div class="row_colonne">
 
           @if(count($siecles))
                   @foreach($siecles as $siecle)
-                      <a href="{{route('Netflix.show', [$siecle] )}}"><img src="{{$siecle->affiche}}" class="row__poster row__posterLarge" src="{{$siecle->affiche}}" width="200px" height="400px"></a>
+                      <a href="{{route('Netflix.show', [$siecle] )}}"><img src="{{$siecle->affiche}}" class="row_poster row_posterLarge" src="{{$siecle->affiche}}"></a>
                   @endforeach
               @else
 

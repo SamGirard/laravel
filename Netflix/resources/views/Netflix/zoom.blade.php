@@ -14,7 +14,7 @@
 <body class="zoomPersonne">
     <div class="container-fluid">
         <div class="row mt-5">
-            <div class="col-10 col-md-10 offset-1 boiteZoom">
+            <div class="col-8 col-md-10 offset-1 boiteZoom">
                 <div class="row mt-5">
                     <div class="col-md-1 col-1">
                         <a href="{{route ('Netflix.personne')}}"><i class="fa-solid fa-arrow-left fa-2x" style="color: #ffffff;"></i></a>
@@ -37,13 +37,14 @@
 
                     <div class="row">
                         <h2>Films produits</h2>
-                        <div class="row_poster">
-                        @foreach($personne->filmsRealises as $test)
-                        <img src="{{  }}"/>
-                        @endforeach
+                        <div class="row_colonne">
+                            @foreach($personne->filmsRealises as $films)
+                            <a href="{{route('Netflix.show', [$films] )}}">
+                                <img src="{{ $films->affiche }}" class="row_posterLarge row_poster" width="200px" height="400px"/>
+                            </a>
+                            @endforeach
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
