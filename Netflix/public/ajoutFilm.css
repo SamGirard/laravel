@@ -1,0 +1,53 @@
+body{
+    background-image: url("../images/ajouter.jpg");
+    background-size: cover;
+}
+
+.formulaireAjoutFilm{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 100px 50px 100px;
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+.formulaireAjoutFilm p{
+    color: gray;
+    margin-top: 10px;
+}
+
+.cap{
+    font-size: 10pt;
+}
+
+
+h2{
+    color: white;
+}
+
+.bouton{
+    background-color: rgb(255, 11, 11) !important;
+    color: white !important;
+    border: none !important;
+    font-weight: bold !important;
+    height: 50px !important;
+}
+
+input{
+    height: 50px;
+}
+
+.info{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.info p{
+    color: rgb(92, 92, 92);
+}
+
+.plusInfo p{
+    font-size: 10pt;
+}
+
+.plus{
+    color: rgb(0, 132, 255);
+}

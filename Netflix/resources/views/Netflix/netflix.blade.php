@@ -20,7 +20,7 @@
     @section('contenu')
     <!-- Netflix Originals -->
     <div class="row">
-      <h2>Les Classiques</h2>row_colonne
+      <h2>Les Classiques</h2>
       <div class="row_colonne">
 
         @if(count($classics))
