@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Film;
+use App\Models\Personne;
 
 class FilmsController extends Controller
 {
@@ -27,7 +28,9 @@ class FilmsController extends Controller
      */
     public function create()
     {
-        return View('Netflix.createFilm');
+        $realisateurs = Personne::pluck('nom', 'id');
+        $producteurs = Personne::pluck('nom', 'id');
+        return View('Netflix.createFilm', compact('realisateurs', 'producteurs'));
     }
 
     /**

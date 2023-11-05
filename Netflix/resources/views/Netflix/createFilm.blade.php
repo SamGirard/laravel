@@ -12,7 +12,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2">
-                    <img src="../images/Logonetflix.png" class="mt-3 ms-5" height="60px" width="190px">
+                    <a href="{{route('Netflix.index')}}"><img src="../images/Logonetflix.png" class="mt-3 ms-5" height="60px" width="190px"></a>
                 </div>
             </div>
             <div class="row">
@@ -29,10 +29,16 @@
 
                             <select class="form-control mb-3" name="realisateur">
                                 <option value="">Réalisateur</option>
+                                @foreach ($realisateurs as $realisateurId => $realisateurNom)
+                                    <option value="{{$realisateurId}}">{{$realisateurNom}}</option>
+                                @endforeach
                             </select>
 
                             <select class="form-control mb-3" name="producteur">
                                 <option value="">Producteur</option>
+                                @foreach ($producteurs as $producteurId => $producteurNom)
+                                    <option value="{{$producteurId}}">{{$producteurNom}}</option>
+                                @endforeach
                             </select>
 
                             <select class="form-control mb-3" name="acteur">
