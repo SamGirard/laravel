@@ -53,7 +53,19 @@ Route::get('/films/modifier/{film}',
 [FilmsController::class, 'edit'])->name('Netflix.modifierFilm');
 
 Route::patch('/films/modifier/{film}',
-[FilmsController::class, 'update'])->name('Netflix.update');
+[FilmsController::class, 'update'])->name('Netflix.updateFilm');
+
+Route::get('/personnes/modifier/{personne}', 
+[PersonnesController::class, 'edit'])->name('Netflix.modifierPersonne');
+
+Route::patch('/personnes/modifier/{personne}',
+[PersonnesController::class, 'update'])->name('Netflix.updatePersonne');
+
+Route::get('/acteurs/modifier/{acteur}', 
+[ActeursController::class, 'edit'])->name('Netflix.modifierActeur');
+
+Route::patch('/acteurs/modifier/{acteur}',
+[ActeursController::class, 'update'])->name('Netflix.updateActeur');
 
 /****************Les routes pour zoomer****************/
 Route::get('Netflix/{film}',
