@@ -31,7 +31,7 @@
                         <div class="col-5">
                             <p> Date de naissance : {{ $acteur->dateNaissance }}</p>
                             <p>Lieu de naissance : {{ $acteur->lieuNaissance }}</p>
-                            <p>Âge : {{ $acteur->age }} ans</p>
+                            <p>Âge : {{ $acteur->age }}</p>
                         </div>
                     </div>
 
