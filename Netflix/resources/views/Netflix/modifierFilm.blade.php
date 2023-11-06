@@ -25,7 +25,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 offset-4">
-                    <form method="post" action="{{route('Netflix.update')}}" class="formulaireAjoutFilm">
+                    <form method="patch" action="{{route('Netflix.update')}}" class="formulaireAjoutFilm">
                         @csrf
                         <div>
                             <h2>Modifier un film</h2>
@@ -66,7 +66,7 @@
 
                             <input type="text" class="form-control mb-3" id="bandeAnnonce" placeholder="Lien de la bande annonce" name="bandeAnnonce" value="{{$film->bandeAnnonce}}">
                         
-                            <button type="submit" class="bouton form-control">Ajouter</button>
+                            <button type="submit" class="bouton form-control">Modifier</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>
                         </div>

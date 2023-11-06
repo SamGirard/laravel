@@ -104,9 +104,17 @@ class FilmsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(FilmRequest $request, Film $film)
     {
-        //
+        try {
+            $film = new Film($request->all());
+            $film->save();
+        } catch (\Throwable $e) {
+            Log::debug($e);
+        }
+
+
+        return redirect()->route('Netflix.index');
     }
 
     /**
