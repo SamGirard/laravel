@@ -95,7 +95,7 @@ class FilmsController extends Controller
      */
     public function edit(Film $film)
     {
-        return View('Netflix.createFilm', compact('film'));
+        return View('Netflix.modifierFilm', compact('film'));
     }
 
     /**
