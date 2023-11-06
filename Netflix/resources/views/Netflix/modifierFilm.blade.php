@@ -37,21 +37,21 @@
                             <input type="text" class="form-control mb-3" id="duree" placeholder="Durée du film" name="duree" value="{{$film->duree}}">
 
                             <select class="form-control mb-3" name="realisateur_id">
-                                <option value="">{{$film->realisateur->nom}}</option>
+                                <option value="{{$film->realisateur->id}}">{{$film->realisateur->nom}}</option>
                                 @foreach ($realisateurs as $realisateurId => $realisateurNom)
                                     <option value="{{$realisateurId}}">{{$realisateurNom}}</option>
                                 @endforeach
                             </select>
 
                             <select class="form-control mb-3" name="producteur_id">
-                                <option value="">{{$film->producteur->nom}}</option>
+                                <option value="{{$film->producteur->id}}">{{$film->producteur->nom}}</option>
                                 @foreach ($producteurs as $producteurId => $producteurNom)
                                     <option value="{{$producteurId}}">{{$producteurNom}}</option>
                                 @endforeach
                             </select>
 
                             <select class="form-control mb-3" name="acteur_id">
-                                <option value="">{{$film->acteur->nom}}</option>
+                                <option value="{{$film->acteur->id}}">{{$film->acteur->nom}}</option>
                                 @foreach ($acteurs as $acteurId => $acteurNom)
                                     <option value="{{$acteurId}}">{{$acteurNom}}</option>
                                 @endforeach
