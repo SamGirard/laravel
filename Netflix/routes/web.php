@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NetflixController;
 use App\Http\Controllers\FilmsController;
 use App\Http\Controllers\PersonnesController;
-use App\Http\Controllers\SuggestionController;
+use App\Http\Controllers\ActeursController;
+
 
 
 /*
@@ -41,3 +42,9 @@ Route::get('Netflix/{film}',
 
 Route::get('Netflix.personne/{personne}',
 [PersonnesController::class, 'show'])->name('Netflix.zoom');
+
+Route::get('Netflix.acteur',
+[ActeursController::class, 'index'])->name('Netflix.acteur');
+
+Route::get('Netflix.acteur/{acteur}',
+[ActeursController::class, 'show'])->name('Netflix.zoomActeur');

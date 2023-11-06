@@ -13,6 +13,7 @@
       <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
       <a href="{{route ('Netflix.index')}}">Accueil</a>
       <a href="{{route ('Netflix.personne')}}">Réalisateurs/producteurs</a>
+      <a href="{{route ('Netflix.acteur')}}">Acteurs</a>
       <a href="{{route('Netflix.createFilm')}}">Ajouter un film</a>
       <img class="nav__avatar" src="../images/netflix-avatar.png" alt="" />
     </div>
@@ -20,7 +21,7 @@
     @yield('contenu')
 
 
-    <footer>Footer</footer>
+    <footer></footer>
     
 </body>
 </html>
