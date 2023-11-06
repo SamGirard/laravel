@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../ajoutFilm.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <title>Ajout d'un film</title>
+        <title>Ajout d'un réalisateur/producteur</title>
     </head>
     <body>
         @if(isset($errors) && $errors->any())
@@ -28,7 +28,7 @@
                     <form method="post" action="{{route('Personne.store')}}" class="formulaireAjoutFilm">
                         @csrf
                         <div>
-                            <h2>Ajouter un acteur</h2>
+                            <h2>Ajouter un réalisateur ou un producteur</h2>
                             <input name="nom" type="text" class="form-control mb-3 mt-5" id="nomFilm" placeholder="Nom" name="nom">
 
                             <input type="text" class="form-control mb-3" id="naissance" placeholder="Date de naissance" name="dateNaissance">

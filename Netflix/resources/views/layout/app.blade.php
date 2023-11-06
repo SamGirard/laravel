@@ -16,6 +16,7 @@
       <a href="{{route ('Netflix.acteur')}}">Acteurs</a>
       <a href="{{route('Netflix.createFilm')}}">Ajouter un film</a>
       <a href="{{route('Acteur.createActeur')}}">Ajouter un acteur</a>
+      <a href="{{route('Personne.createPersonnes')}}">Ajouter un réalisateurs/producteurs</a>
       <img class="nav__avatar" src="../images/netflix-avatar.png" alt="" />
     </div>
 
