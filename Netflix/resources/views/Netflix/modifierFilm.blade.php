@@ -25,8 +25,9 @@
             </div>
             <div class="row">
                 <div class="col-md-4 offset-4">
-                    <form method="patch" action="{{route('Netflix.update')}}" class="formulaireAjoutFilm">
+                    <form method="post" action="{{route('Netflix.update', ['film' => $film->id])}}" class="formulaireAjoutFilm">
                         @csrf
+                        @method('PATCH')
                         <div>
                             <h2>Modifier un film</h2>
                             <input name="titre" type="text" class="form-control mb-3 mt-5" id="nomFilm" placeholder="Titre du film" name="titre" value="{{$film->titre}}">
