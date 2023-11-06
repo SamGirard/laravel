@@ -25,13 +25,13 @@
             </div>
             <div class="row">
                 <div class="col-md-4 offset-4">
-                    <form method="post" action="{{route('Netflix.store')}}" class="formulaireAjoutFilm">
+                    <form method="post" action="{{route('Netflix.edit')}}" class="formulaireAjoutFilm">
                         @csrf
                         <div>
-                            <h2>Ajouter un film</h2>
+                            <h2>Modifier un film</h2>
                             <input name="titre" type="text" class="form-control mb-3 mt-5" id="nomFilm" placeholder="Titre du film" name="titre">
 
-                            <textarea type="text" name="resume" id="resumee" cols="30" rows="3" class="form-control mb-3" placeholder="Résumé"></textarea>
+                            <textarea type="text" name="resume" id="resumee" cols="30" rows="3" class="form-control mb-3" placeholder="Résumé">{{$film->titre}}</textarea>
 
                             <input type="text" class="form-control mb-3" id="duree" placeholder="Durée du film" name="duree">
 

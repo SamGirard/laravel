@@ -54,7 +54,7 @@
                             <p><span class="infoTitre">Durée : </span> {{$film->duree}}</p>
                         </div>
                         <div class="row">
-                            <a href="{{route ('Netflix.modifierFilm, [$film]')}}"><p>Modifier</p></a>
+                            <a href="{{route('Netflix.modifierFilm', [$film])}}"><p>Modifier</p></a>
                         </div>
                     </div>
                 </div>

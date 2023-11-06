@@ -95,7 +95,10 @@ class FilmsController extends Controller
      */
     public function edit(Film $film)
     {
-        return View('Netflix.modifierFilm', compact('film'));
+        $realisateurs = Personne::pluck('nom', 'id');
+        $producteurs = Personne::pluck('nom', 'id');
+        $acteurs = Acteur::pluck('nom', 'id');
+        return View('Netflix.modifierFilm', compact('film', 'realisateurs', 'producteurs', 'acteurs'));
     }
 
     /**
