@@ -36,6 +36,12 @@ Route::get('/films/creation',
 Route::post('/films',
 [FilmsController::class, 'store'])->name('Netflix.store');
 
+Route::post('/acteurs',
+[ActeursController::class, 'store'])->name('Acteur.store');
+
+Route::get('/acteurs/creation',
+[ActeursController::class, 'create'])->name('Acteur.createActeur');
+
 /****************Les routes pour modifier****************/
 Route::get('/films/modifier/{film}', 
 [FilmsController::class, 'edit'])->name('Netflix.modifierFilm');

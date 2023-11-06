@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Acteur;
+use App\Http\Requests\ActeurRequest;
+use Illuminate\Support\Facades\Log;
 
 class ActeursController extends Controller
 {
@@ -21,15 +23,22 @@ class ActeursController extends Controller
      */
     public function create()
     {
-        //
+        return View('Netflix.createActeurs');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(ActeurRequest $request)
     {
-        //
+        try {
+            $acteur = new Acteur($request->all());
+            $acteur->save();
+        } catch (\Throwable $e) {
+            Log::debug($e);
+        }
+
+        return redirect()->route('Netflix.index');
     }
 
     /**
