@@ -19,32 +19,37 @@ use App\Http\Controllers\ActeursController;
 |
 */
 
-/*Route::get('/',
-[NetflixController::class, 'index'])->name('Netflix.index');
-
-Route::get('Netflix.film',
-[NetflixController::class, 'plus'])->name('Netflix.film');*/
-
+/****************les routes pour voire tout****************/
 Route::get('/',
 [FilmsController::class, 'index'])->name('Netflix.index');
 
 Route::get('Netflix.personne',
 [PersonnesController::class, 'index'])->name('Netflix.personne');
 
+Route::get('Netflix.acteur',
+[ActeursController::class, 'index'])->name('Netflix.acteur');
+
+/****************Les routes pour formulaire créer****************/
 Route::get('/films/creation',
 [FilmsController::class, 'create'])->name('Netflix.createFilm');
 
 Route::post('/films',
 [FilmsController::class, 'store'])->name('Netflix.store');
 
+/****************Les routes pour modifier****************/
+Route::get('/films/modifier/{film}', 
+[FilmsController::class, 'edit'])->name('Netflix.modifierFilm');
+
+Route::patch('/films.modifier', 
+[FilmsController::class, 'update'])->name('Netflix.update');
+
+/****************Les routes pour zoomer****************/
 Route::get('Netflix/{film}',
 [FilmsController::class, 'show'])->name('Netflix.show');
 
 Route::get('Netflix.personne/{personne}',
 [PersonnesController::class, 'show'])->name('Netflix.zoom');
 
-Route::get('Netflix.acteur',
-[ActeursController::class, 'index'])->name('Netflix.acteur');
-
 Route::get('Netflix.acteur/{acteur}',
 [ActeursController::class, 'show'])->name('Netflix.zoomActeur');
+
