@@ -47,6 +47,10 @@
                         </div>
 
                         <div class="row">
+                            <p><span class="infoTitre">Acteur : </span> <a class="aPersonne" href="{{route('Netflix.zoomActeur', [$film->acteur]) }}">{{$film->acteur->nom}}</a></p>
+                        </div>
+
+                        <div class="row">
                             <p><span class="infoTitre">Cote : </span> {{$film->cote}}</p>
                         </div>
 
