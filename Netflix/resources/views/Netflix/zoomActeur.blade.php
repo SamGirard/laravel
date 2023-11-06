@@ -45,6 +45,9 @@
                             @endforeach
                         </div>
                     </div>
+                    <div class="row">
+                        <a href="{{route('Netflix.modifierActeur', [$acteur])}}">Modifier</a>
+                    </div>
                 </div>
             </div>
         </div>

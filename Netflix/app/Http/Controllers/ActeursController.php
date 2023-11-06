@@ -52,17 +52,23 @@ class ActeursController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Acteur $acteur)
     {
-        //
+        return View('Netflix.modifierActeur', compact('acteur'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(ActeurRequest $request, Acteur $acteur)
     {
-        //
+        try {
+            $acteur->update($request->all());
+        } catch (\Throwable $e) {
+            Log::debug($e);
+        }
+
+        return redirect()->route('Netflix.index');
     }
 
     /**
