@@ -62,7 +62,7 @@ class PersonnesController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Personne $personne)
+    public function update(PersonneRequest $request, Personne $personne)
     {
         try {
             $personne->update($request->all());
