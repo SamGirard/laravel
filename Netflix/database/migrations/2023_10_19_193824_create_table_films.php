@@ -15,7 +15,7 @@ return new class extends Migration
             Schema::dropIfExists('films');
             $table->id();
             $table->string('titre', 100);
-            $table->text('resume');
+            $table->text('resume')->nullable()->default(null);
             $table->text('affiche');
             $table->text('duree');
             $table->unsignedBigInteger('realisateur_id');
@@ -24,7 +24,7 @@ return new class extends Migration
             $table->foreign('producteur_id')->references('id')->on('personnes');
             $table->unsignedBigInteger('acteur_id');
             $table->foreign('acteur_id')->references('id')->on('acteurs');
-            $table->integer('annee');
+            $table->text('annee')->nullable()->default(null);
             $table->text('cote');
             $table->text('categorie');
             $table->text('bandeAnnonce');

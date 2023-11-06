@@ -9,6 +9,14 @@
         <title>Ajout d'un film</title>
     </head>
     <body>
+        @if(isset($errors) && $errors->any())
+        <div class="alert alert-danger">
+            @foreach($errors->all() as $error)
+                <p>{{$error}}</p>
+            @endforeach
+        </div>
+        @endif
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2">
@@ -21,35 +29,40 @@
                         @csrf
                         <div>
                             <h2>Ajouter un film</h2>
-                            <input type="text" class="form-control mb-3 mt-5" id="nomFilm" placeholder="Titre du film" name="titre">
+                            <input name="titre" type="text" class="form-control mb-3 mt-5" id="nomFilm" placeholder="Titre du film" name="titre">
 
-                            <textarea name="resumer" cols="30" rows="3" class="form-control mb-3" placeholder="Résumé"></textarea>
+                            <textarea type="text" name="resume" id="resumee" cols="30" rows="3" class="form-control mb-3" placeholder="Résumé"></textarea>
 
                             <input type="text" class="form-control mb-3" id="duree" placeholder="Durée du film" name="duree">
 
-                            <select class="form-control mb-3" name="realisateur">
+                            <select class="form-control mb-3" name="realisateur_id">
                                 <option value="">Réalisateur</option>
                                 @foreach ($realisateurs as $realisateurId => $realisateurNom)
                                     <option value="{{$realisateurId}}">{{$realisateurNom}}</option>
                                 @endforeach
                             </select>
 
-                            <select class="form-control mb-3" name="producteur">
+                            <select class="form-control mb-3" name="producteur_id">
                                 <option value="">Producteur</option>
                                 @foreach ($producteurs as $producteurId => $producteurNom)
                                     <option value="{{$producteurId}}">{{$producteurNom}}</option>
                                 @endforeach
                             </select>
 
-                            <select class="form-control mb-3" name="acteur">
+                            <select class="form-control mb-3" name="acteur_id">
                                 <option value="">Acteur principal</option>
+                                @foreach ($acteurs as $acteurId => $acteurNom)
+                                    <option value="{{$acteurId}}">{{$acteurNom}}</option>
+                                @endforeach
                             </select>
 
-                            <input type="date" class="form-control mb-3" id="date" placeholder="Date" name="date">
+                            <input type="text" class="form-control mb-3" id="annee" placeholder="Année de sortie" name="annee">
 
                             <input type="text" class="form-control mb-3" id="cote" placeholder="Côte du film" name="cote">
 
                             <input type="text" class="form-control mb-3" id="categorie" placeholder="Catégorie" name="categorie">
+
+                            <input type="affiche" class="form-control mb-3" id="affiche" placeholder="Lien de l'affiche" name="affiche">
 
                             <input type="text" class="form-control mb-3" id="bandeAnnonce" placeholder="Lien de la bande annonce" name="bandeAnnonce">
                         
