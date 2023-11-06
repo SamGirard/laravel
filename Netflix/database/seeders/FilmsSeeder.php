@@ -26,7 +26,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 1972,
                 'cote' => '4,9 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/UaVTIH8mujA?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/UaVTIH8mujA'
             ],
             [
                 'id' => 2,
@@ -40,7 +40,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 1999,
                 'cote' => '4,7 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/BdJKm16Co6M?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/BdJKm16Co6M'
             ],
               [
                 'id' => 3,
@@ -54,7 +54,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2010,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/HcoZbHBDHQA?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/HcoZbHBDHQA'
             ],
             [
                 'id' => 4,
@@ -68,7 +68,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2014,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/HsPP6xSzQoE?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/HsPP6xSzQoE'
             ],
             [
                 'id' => 5,
@@ -82,7 +82,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2009,
                 'cote' => '4 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/5PSNL1qE6VY?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/5PSNL1qE6VY'
             ],
             [
                 'id' => 6,
@@ -96,7 +96,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2008,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/EXeTwQWrcwY?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/EXeTwQWrcwY'
             ],
             [
               'id' => 7,
@@ -110,7 +110,7 @@ class FilmsSeeder extends Seeder
               'annee' => 1994,
               'cote' => '4,5 étoiles',
               'categorie' => 'classique',
-              'bandeAnnonce' => 'https://www.youtube.com/embed/EXeTwQWrcwY?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+              'bandeAnnonce' => 'https://www.youtube.com/embed/EXeTwQWrcwY'
             ],
             [
                 'id' => 8,
@@ -124,7 +124,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 1994,
                 'cote' => '4,8 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/NmzuHjWmXOc?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/NmzuHjWmXOc'
             ],
             [
                 'id' => 9,
@@ -138,7 +138,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2000,
                 'cote' => '4,7 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/nalLU8i4zgs?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/nalLU8i4zgs'
             ],
             [
                 'id' => 10,
@@ -152,7 +152,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2003,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/kYzz0FSgpSU?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/kYzz0FSgpSU'
             ],
             [
                 'id' => 11,
@@ -166,7 +166,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2016,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/b9EkMc79ZSU?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/b9EkMc79ZSU'
             ],
             
             [
@@ -181,7 +181,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2018,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/vP_VhBFdN4U?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/vP_VhBFdN4U'
             ],
             [
                 'id' => 13,
@@ -195,7 +195,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2008,
                 'cote' => '5 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/HhesaQXLuRY?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/HhesaQXLuRY'
             ],
             [
                 'id' => 14,
@@ -209,7 +209,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2019,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/ndl1W4ltcmg?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/ndl1W4ltcmg'
             ],
             [
                 'id' => 15,
@@ -223,7 +223,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2016,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/0pdqf4P9MB8?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/0pdqf4P9MB8'
             ],
             
             [
@@ -238,7 +238,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2016,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/JWtnJjn6ng0?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/JWtnJjn6ng0'
             ],
             
             [
@@ -253,7 +253,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 1993,
                 'cote' => '4 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/lc0UehYemQA?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/lc0UehYemQA'
             ],
             [
                 'id' => 18,
@@ -267,7 +267,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 1994,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/IEEbUzffzrk?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/IEEbUzffzrk'
             ],
             
             [
@@ -282,7 +282,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2000,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/P5ieIbInFpg?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/P5ieIbInFpg'
             ],
             [
                 'id' => 20,
@@ -296,7 +296,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2011,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/KPLWWIOCOOQ?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/KPLWWIOCOOQ'
             ],
             [
                 'id' => 21,
@@ -310,7 +310,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2013,
                 'cote' => '4 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/rARN6agiW7o?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/rARN6agiW7o'
             ],
             [
                 'id' => 22,
@@ -324,7 +324,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2009,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/qRYDNWXuip8?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/qRYDNWXuip8'
             ],
             [
                 'id' => 23,
@@ -338,7 +338,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2012,
                 'cote' => '4,5 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/0fUCuvNlOCg?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/0fUCuvNlOCg'
             ],
             [
                 'id' => 24,
@@ -352,7 +352,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2003,
                 'cote' => '4 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/7kSuas6mRpk?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/7kSuas6mRpk'
             ],
             [
                 'id' => 25,
@@ -366,7 +366,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2004,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/WTt8cCIvGYI?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/WTt8cCIvGYI'
             ],
             [
                 'id' => 26,
@@ -380,7 +380,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2019,
                 'cote' => '4 étoiles',
                 'categorie' => 'tendance',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/Scf8nIJCvs4?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/Scf8nIJCvs4'
             ],
             [
                 'id' => 27,
@@ -394,7 +394,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 1992,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/GLPJSmUHZvU?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/GLPJSmUHZvU'
             ],
             [
                 'id' => 28,
@@ -408,7 +408,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 1997,
                 'cote' => '4 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/G7HkBDNZV7s?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/G7HkBDNZV7s'
             ],
             [
                 'id' => 29,
@@ -422,7 +422,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2007,
                 'cote' => '3,5 étoiles',
                 'categorie' => 'À revoir',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/ndePUePt_OE?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/ndePUePt_OE'
             ],
             [
                 'id' => 30,
@@ -436,7 +436,7 @@ class FilmsSeeder extends Seeder
                 'annee' => 2015,
                 'cote' => '4 étoiles',
                 'categorie' => 'classique',
-                'bandeAnnonce' => 'https://www.youtube.com/embed/juaP_vRyIGY?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1'
+                'bandeAnnonce' => 'https://www.youtube.com/embed/juaP_vRyIGY'
             ]
 
         ]);
