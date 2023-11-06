@@ -15,7 +15,7 @@
                 <div class="col-md-6 offset-3 boiteZoom pb-5">
                 <div class="row">
                     <div class="col-md-12 videoBox" style="position: relative;">
-                        <iframe class="trailer" src="{{$film->bandeAnnonce}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="1" fs="1" autoplay ></iframe>
+                        <iframe class="trailer" src="{{$film->bandeAnnonce}}?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&autohide=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; modestbranding; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="1" fs="1" autoplay ></iframe>
                         <div style="position: absolute; top: 0; right: 0;">
                             <a href="{{ route('Netflix.index') }}"><i class="fa-solid fa-xmark fa-2x mt-3 me-3 X"></i></a>
                         </div>

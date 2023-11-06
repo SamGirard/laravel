@@ -37,6 +37,12 @@ Route::get('/films/creation',
 Route::post('/films',
 [FilmsController::class, 'store'])->name('Netflix.store');
 
+Route::post('/acteurs',
+[ActeursController::class, 'store'])->name('Acteur.store');
+
+Route::get('/acteurs/creation',
+[ActeursController::class, 'create'])->name('Acteur.createActeur');
+
 Route::get('Netflix/{film}',
 [FilmsController::class, 'show'])->name('Netflix.show');
 
