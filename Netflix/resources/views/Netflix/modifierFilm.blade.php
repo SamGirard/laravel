@@ -25,7 +25,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 offset-4">
-                    <form method="post" action="{{route('Netflix.edit')}}" class="formulaireAjoutFilm">
+                    <form method="post" action="{{route('Netflix.update')}}" class="formulaireAjoutFilm">
                         @csrf
                         <div>
                             <h2>Modifier un film</h2>
