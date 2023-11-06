@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Personne extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['nom', 'dateNaissance', 'lieuNaissance', 'portrait', 'age'];
     
     public function filmsRealises()
     {
