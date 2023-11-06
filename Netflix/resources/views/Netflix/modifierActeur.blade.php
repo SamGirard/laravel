@@ -29,7 +29,7 @@
                         @csrf
                         @method('PATCH')
                         <div>
-                            <h2>Ajouter un acteur</h2>
+                            <h2>Modifier un acteur</h2>
                             <input name="nom" type="text" class="form-control mb-3 mt-5" id="nomFilm" placeholder="Nom" name="nom" value="{{$acteur->nom}}">
 
                             <input type="text" class="form-control mb-3" id="naissance" placeholder="Date de naissance" name="dateNaissance" value="{{$acteur->dateNaissance}}">

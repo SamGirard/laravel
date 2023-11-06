@@ -32,6 +32,7 @@
                             <p> Date de naissance : {{ $acteur->dateNaissance }}</p>
                             <p>Lieu de naissance : {{ $acteur->lieuNaissance }}</p>
                             <p>Âge : {{ $acteur->age }}</p>
+                            <a href="{{route('Netflix.modifierActeur', [$acteur])}}"><p>Modifier</p></a>
                         </div>
                     </div>
 
@@ -45,9 +46,7 @@
                             @endforeach
                         </div>
                     </div>
-                    <div class="row">
-                        <a href="{{route('Netflix.modifierActeur', [$acteur])}}">Modifier</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
