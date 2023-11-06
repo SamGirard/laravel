@@ -59,7 +59,7 @@
     overflow-y: hidden;
     overflow-x: scroll;
     padding: 20px;
-    flex-wrap:wrap;
+    
 }
 
 .row_colonne::-webkit-scrollbar {
@@ -76,6 +76,30 @@
     margin-top: 20px;
   }
   
+
+  div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  div.scrollmenu::-webkit-scrollbar {
+    width: 2px;
+  }
+
+  div.scrollmenu::-webkit-scrollbar-track {
+      background: transparent; /* Fond de la barre de défilement */
+  }
+
+  div.scrollmenu::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.5); /* Couleur du bouton de la barre de défilement */
+      border-radius: 6px;
+  }
+
+  /* Barre de défilement verticale (si nécessaire) */
+  div.scrollmenu::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(0, 0, 0, 0.7); /* Couleur du bouton de la barre de défilement au survol */
+  }
+    
   /* banner */
   .banner {
     background-image: url('images/banner.jpg');
