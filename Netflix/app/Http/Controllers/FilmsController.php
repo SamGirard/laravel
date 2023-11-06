@@ -107,12 +107,10 @@ class FilmsController extends Controller
     public function update(FilmRequest $request, Film $film)
     {
         try {
-            $film = new Film($request->all());
-            $film->save();
+            $film->update($request->all());
         } catch (\Throwable $e) {
             Log::debug($e);
         }
-
 
         return redirect()->route('Netflix.index');
     }
