@@ -95,10 +95,11 @@
     </div>
 
     <div class="row">
-      <h2>Autres</h2>
-      <div class="row_colonne">
+
 
           @if(count($autres))
+          <h2>Autres</h2>
+          <div class="row_colonne">
                   @foreach($autres as $autre)
                       <a href="{{route('Netflix.show', [$autre] )}}"><img src="{{$autre->affiche}}" class="row_poster row_posterLarge" src="{{$autre->affiche}}"></a>
                   @endforeach
