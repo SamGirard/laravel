@@ -32,6 +32,7 @@
                             <p> Date de naissance : {{ $personne->dateNaissance }}</p>
                             <p>Lieu de naissance : {{ $personne->lieuNaissance }}</p>
                             <p>Âge : {{ $personne->age }} ans</p>
+                            <a href="{{route('Netflix.modifierPersonne', [$personne])}}"><p>Modifier</p></a>
                         </div>
                     </div>
 

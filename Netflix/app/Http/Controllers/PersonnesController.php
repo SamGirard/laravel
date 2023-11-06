@@ -54,17 +54,23 @@ class PersonnesController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Personne $personne)
     {
-        //
+        return View('Netflix.modifierPersonnes', compact('personne'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Personne $personne)
     {
-        //
+        try {
+            $personne->update($request->all());
+        } catch (\Throwable $e) {
+            Log::debug($e);
+        }
+
+        return redirect()->route('Netflix.index');
     }
 
     /**
