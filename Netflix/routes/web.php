@@ -52,7 +52,7 @@ Route::get('/acteurs/creation',
 Route::get('/films/modifier/{film}', 
 [FilmsController::class, 'edit'])->name('Netflix.modifierFilm');
 
-Route::patch('/films.modifier', 
+Route::patch('/films/modifier',
 [FilmsController::class, 'update'])->name('Netflix.update');
 
 /****************Les routes pour zoomer****************/
