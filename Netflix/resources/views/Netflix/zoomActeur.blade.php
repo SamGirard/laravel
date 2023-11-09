@@ -24,6 +24,7 @@
                         <h1 class="titre text-center">{{ $acteur->nom }}</h1>
                     </div>
 
+                    @if($acteur->id != 999)
                     <div class="row">
                         <div class="col-2">
                             <img class="portrait col-12" src="{{ $acteur->portrait}}"/>
@@ -33,8 +34,14 @@
                             <p>Lieu de naissance : {{ $acteur->lieuNaissance }}</p>
                             <p>Âge : {{ $acteur->age }}</p>
                             <a href="{{route('Netflix.modifierActeur', [$acteur])}}"><p>Modifier</p></a>
+                            <form method="POST" action="{{route('Acteurs.destroy', [$acteur->id])}}">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Supprimer</button>
+                            </form>
                         </div>
                     </div>
+                    @endif
 
                     <div class="row">
                         <h2>Films produits</h2>
