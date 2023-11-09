@@ -122,3 +122,11 @@
   .row__posters::-webkit-scrollbar {
     display: none;
   }
+
+  .bouton{
+    background-color: transparent;
+    border: none;
+    color: white;
+    text-align: left;
+    padding: 0;
+  }
