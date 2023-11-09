@@ -87,7 +87,8 @@ class FilmsController extends Controller
      */
     public function show(Film $film)
     {
-        return View('Netflix.show', compact('film'));
+        $suggestions = Film::where('id', '!=', $film->id)->get();
+        return View('Netflix.show', compact('film', 'suggestions'));
     }
 
     /**
