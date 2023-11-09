@@ -238,6 +238,14 @@ class PersonnesSeeder extends Seeder
                     'portrait' => 'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcR0HJXalTLp8-SlApw-bduDK_Jp9gT_B17XnM_AW0oUl4fVQEGanH4d6oTNuebhk3qb',
                     'age' => '61',
                 ],
+                [
+                    'id' => 999,
+                    'nom' => 'Non répertorié',
+                    'dateNaissance' => '',
+                    'lieuNaissance' => '',
+                    'portrait' => '',
+                    'age' => '',
+                ],
             ]);
     }
 }

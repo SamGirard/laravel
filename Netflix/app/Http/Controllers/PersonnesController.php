@@ -76,8 +76,30 @@ class PersonnesController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        try{
+            $personne = Personne::findOrFail($id);
+
+            $filmsRealises = $personne->filmsRealises()->get();
+            foreach ($filmsRealises as $filmRealise){
+                $filmRealise->realisateur_id = 999;
+                $filmRealise->save();
+            }
+
+            $filmsProduits = $personne->filmsProduits()->get();
+            foreach ($filmsProduits as $filmProduit){
+                $filmProduit->producteur_id = 999;
+                $filmProduit->save();
+            }
+
+            $personne->delete();
+            return redirect()->route('Netflix.personne')->with('message', "Suppression de ".$personne->titre." réussi!");
+        }
+        catch(\Throwable $e){
+            log::debug($e);
+            return redirect()->route('Netflix.personne')->withErrors(['la suppression du film '.$personne->titre.' a échoué']);
+        }
+        return redirect()->route('Netflix.personne');
     }
 }

@@ -23,7 +23,7 @@
                     <div class="row">
                         <h1 class="titre text-center">{{ $personne->nom }}</h1>
                     </div>
-
+                    @if($personne->id != 999)
                     <div class="row">
                         <div class="col-2">
                             <img class="portrait col-12" src="{{ $personne->portrait}}"/>
@@ -33,8 +33,14 @@
                             <p>Lieu de naissance : {{ $personne->lieuNaissance }}</p>
                             <p>Âge : {{ $personne->age }} ans</p>
                             <a href="{{route('Netflix.modifierPersonne', [$personne])}}"><p>Modifier</p></a>
+                            <form method="POST" action="{{route('Personne.destroy', [$personne->id])}}">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-danger">Supprimer</button>
+                            </form>
                         </div>
                     </div>
+                    @endif
 
                     <div class="row">
                         <h2>Films produits</h2>
