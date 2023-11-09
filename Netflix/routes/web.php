@@ -83,3 +83,9 @@ Route::get('Netflix.acteur/{acteur}',
 
 Route::delete('/films/{id}',
 [FilmsController::class, 'destroy'])->name('films.destroy');
+
+Route::delete('/personnes/{id}',
+[PersonnesController::class, 'destroy'])->name('Personne.destroy');
+
+Route::delete('/acteurs/{id}',
+[ActeursController::class, 'destroy'])->name('Acteurs.destroy');

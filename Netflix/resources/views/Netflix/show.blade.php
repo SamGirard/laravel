@@ -61,7 +61,7 @@
                             <a href="{{route('Netflix.modifierFilm', [$film])}}"><p>Modifier</p></a>
                         </div>
                         <div class="row">
-                        <form method="POST" action="{{route('films.destroy', [$film->id])}}">
+                            <form method="POST" action="{{route('films.destroy', [$film->id])}}">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Supprimer</button>
