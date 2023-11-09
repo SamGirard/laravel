@@ -61,7 +61,7 @@
                             <a href="{{route('Netflix.modifierFilm', [$film])}}"><p>Modifier</p></a>
                         </div>
                         <div class="row">
-                            <form method="POST" action="{{route('Netflix.modifierFilm', [$film])}}">
+                        <form method="POST" action="{{route('Netflix.modifierFilm', [$film])}}">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger">Supprimer</button>
@@ -71,9 +71,9 @@
                 </div>
                 <div class="rowFilm mt-5">
                     <h2>Suggestions</h2>
-                    <div class="row__posters">
-
-                    </div>
+                        <div class="row__posters">
+                            
+                        </div>
                     </div>
                 </div>
             </div>
