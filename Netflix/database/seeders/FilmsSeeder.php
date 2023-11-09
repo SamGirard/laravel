@@ -215,7 +215,7 @@ class FilmsSeeder extends Seeder
                 'id' => 15,
                 'titre' => 'La La Land',
                 'resume' => 'Lhistoire de Mia, une aspirante actrice, et Sebastian, un musicien de jazz, qui tombent amoureux à Los Angeles tout en poursuivant leurs rêves artistiques.',
-                'affiche' => 'https://www.goldenglobes.com/sites/default/files/articles/cover_images/2017-la_la_land.jpg',
+                'affiche' => 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQkbBv0hUn3-AmtnBKXhmI7bsnRp4u_RWnBw_utx1ZeW6gL6Vpn',
                 'duree' => '2h8min',
                 'realisateur_id' => 21,
                 'producteur_id' => 21,
