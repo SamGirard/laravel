@@ -231,6 +231,18 @@ class ActeursTableSeeder extends Seeder
                 'age' => '37 ans'
             ],
             [
+                'id' => 28,
+                'nom' => 'Álvaro Morte',
+                'dateNaissance' => '23 février 1975',
+                'lieuNaissance' => 'Algésiras, Espagne',
+                'portrait' => 'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTbjm9ayC4b2jPVttn9vCO-trwpvQzcveoZzmc8jt7dv1el5K52l7Aoq91q_MBqe3yv',
+                'age' => '48 ans'
+            ],
+
+
+
+
+            [
                 'id' => 999,
                 'nom' => 'Non Répertorié',
                 'dateNaissance' => '',

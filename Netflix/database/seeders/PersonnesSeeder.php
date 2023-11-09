@@ -239,6 +239,21 @@ class PersonnesSeeder extends Seeder
                     'age' => '61',
                 ],
                 [
+                    'id' => 29,
+                    'nom' => 'Álex Pina',
+                    'dateNaissance' => ' 23 juin 1967',
+                    'lieuNaissance' => 'Pampelune, Espagne',
+                    'portrait' => 'https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcR3v8HFeZA0KmkCKI9fJhT8wpuXbTPQloRuSm6EOqllCppLO4h6EFj9xrm_f1JxSMzR',
+                    'age' => '56',
+                ],
+
+
+
+
+
+
+
+                [
                     'id' => 999,
                     'nom' => 'Non répertorié',
                     'dateNaissance' => '',
