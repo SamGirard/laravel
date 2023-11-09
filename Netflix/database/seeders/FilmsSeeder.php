@@ -453,7 +453,7 @@ class FilmsSeeder extends Seeder
                 'bandeAnnonce' => 'https://www.youtube.com/embed/pBk4NYhWNMM'
             ],
             [
-                'id' => 31,
+                'id' => 32,
                 'titre' => 'La casa de Papel',
                 'resume' => 'Huit voleurs mènent une prise d\'otage dans la Maison royale de la Monnaie d\'Espagne, tandis qu\'un génie criminel manipule la police pour mettre son plan à exécution.',
                 'affiche' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6e6jhluRkqDTp8Ae7zBdGhg6xiFtaVBJCt4gNc_ShqgMxkSNq',
