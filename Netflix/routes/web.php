@@ -79,3 +79,8 @@ Route::get('Netflix.personne/{personne}',
 Route::get('Netflix.acteur/{acteur}',
 [ActeursController::class, 'show'])->name('Netflix.zoomActeur');
 
+/****************Les routes pour delete****************/
+/*
+Route::delete('/films/{id}',
+[FilmsController::class, 'destroy'])->name('films.destroy');
+*/

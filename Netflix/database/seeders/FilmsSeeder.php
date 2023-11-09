@@ -437,6 +437,20 @@ class FilmsSeeder extends Seeder
                 'cote' => '4 étoiles',
                 'categorie' => 'classique',
                 'bandeAnnonce' => 'https://www.youtube.com/embed/juaP_vRyIGY'
+            ],
+            [
+                'id' => 31,
+                'titre' => 'Barbie',
+                'resume' => 'Barbie, qui vit à Barbie Land, est expulsée du pays pour être loin dêtre une poupée à lapparence parfaite; nayant nulle part où aller, elle part pour le monde humain et cherche le vrai bonheur.',
+                'affiche' => 'https://fr.web.img4.acsta.net/pictures/23/06/16/12/04/4590179.jpg',
+                'duree' => '1h54',
+                'realisateur_id' => 12,
+                'producteur_id' => 12,
+                'acteur_id' => 20,
+                'annee' => 2023,
+                'cote' => '4 étoiles',
+                'categorie' => 'Autres',
+                'bandeAnnonce' => 'https://www.youtube.com/embed/pBk4NYhWNMM'
             ]
 
         ]);

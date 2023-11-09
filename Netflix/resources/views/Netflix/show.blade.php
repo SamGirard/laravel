@@ -60,6 +60,9 @@
                         <div class="row">
                             <a href="{{route('Netflix.modifierFilm', [$film])}}"><p>Modifier</p></a>
                         </div>
+                        <div class="row">
+                            <a href=""><p>Modifier</p></a>
+                        </div>
                     </div>
                 </div>
                 <div class="rowFilm mt-5">
