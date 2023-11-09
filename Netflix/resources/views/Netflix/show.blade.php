@@ -58,14 +58,17 @@
                             <p><span class="infoTitre">Durée : </span> {{$film->duree}}</p>
                         </div>
                         <div class="row">
-                            <a href="{{route('Netflix.modifierFilm', [$film])}}"><p>Modifier</p></a>
-                        </div>
-                        <div class="row">
-                            <form method="POST" action="{{route('films.destroy', [$film->id])}}">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Supprimer</button>
-                            </form>
+                            <div class="col-md-2 me-1">
+                                <a href="{{route('Netflix.modifierFilm', [$film])}}"><i class="fa-solid fa-file-pen fa-2x poubelle" style="color: #ffffff;"></i></a>
+                            </div>
+
+                            <div class="col-md-2">
+                                <form method="POST" action="{{route('films.destroy', [$film->id])}}">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="bouton"><i class="fa-solid fa-trash fa-2x" style="color: #ffffff;"></i></button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
