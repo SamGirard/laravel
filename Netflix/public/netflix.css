@@ -91,13 +91,13 @@
   }
 
   div.scrollmenu::-webkit-scrollbar-thumb {
-      background-color: rgba(0, 0, 0, 0.5); /* Couleur du bouton de la barre de défilement */
+      background-color: rgba(37, 37, 37, 0.5); /* Couleur du bouton de la barre de défilement */
       border-radius: 6px;
   }
 
   /* Barre de défilement verticale (si nécessaire) */
   div.scrollmenu::-webkit-scrollbar-thumb:hover {
-      background-color: rgba(0, 0, 0, 0.7); /* Couleur du bouton de la barre de défilement au survol */
+      background-color: rgba(37, 37, 37, 0.5); /* Couleur du bouton de la barre de défilement au survol */
   }
     
   /* banner */

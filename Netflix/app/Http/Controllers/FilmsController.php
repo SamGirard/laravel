@@ -17,12 +17,12 @@ class FilmsController extends Controller
      */
     public function index()
     {
-        $autres = Film::where('categorie', '=', 'Autres')->get();
-        $siecles = Film::where('annee', '<=', 2000)->get();
-        $tarantinos = Film::where('realisateur_id', '=', '10')->get();
-        $revoirs = Film::where('categorie', '=', 'À revoir')->get();
-        $tendances = Film::where('categorie', '=', 'tendance')->get();
-        $classics = Film::where('categorie', '=', 'classique')->get();
+        $autres = Film::where('categorie', '=', 'Autres')->inRandomOrder()->get();
+        $siecles = Film::where('annee', '<=', 2000)->inRandomOrder()->get();
+        $tarantinos = Film::where('realisateur_id', '=', '10')->inRandomOrder()->get();
+        $revoirs = Film::where('categorie', '=', 'À revoir')->inRandomOrder()->get();
+        $tendances = Film::where('categorie', '=', 'tendance')->inRandomOrder()->get();
+        $classics = Film::where('categorie', '=', 'classique')->inRandomOrder()->get();
         $films = Film::all();
         return View('Netflix.netflix', compact('films', 'classics', 'tendances', 'revoirs', 'tarantinos', 'siecles', 'autres'));
     }
