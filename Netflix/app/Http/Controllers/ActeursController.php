@@ -74,8 +74,24 @@ class ActeursController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        try{
+            $acteur = Acteur::findOrFail($id);
+
+            $filmsJoues = $acteur->filmsJoues()->get();
+            foreach ($filmsJoues as $filmJoue){
+                $filmJoue->acteur_id = 999;
+                $filmJoue->save();
+            }
+
+            $acteur->delete();
+            return redirect()->route('Netflix.acteur')->with('message', "Suppression de ".$acteur->titre." réussi!");
+        }
+        catch(\Throwable $e){
+            log::debug($e);
+            return redirect()->route('Netflix.acteur')->withErrors(['la suppression du film '.$acteur->titre.' a échoué']);
+        }
+        return redirect()->route('Netflix.acteur');
     }
 }

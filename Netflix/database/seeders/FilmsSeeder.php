@@ -441,7 +441,7 @@ class FilmsSeeder extends Seeder
             [
                 'id' => 31,
                 'titre' => 'Barbie',
-                'resume' => 'Barbie, qui vit à Barbie Land, est expulsée du pays pour être loin dêtre une poupée à lapparence parfaite; nayant nulle part où aller, elle part pour le monde humain et cherche le vrai bonheur.',
+                'resume' => 'Barbie, qui vit à Barbie Land, est expulsée du pays pour être loin d\'être une poupée à l\'apparence parfaite; nayant nulle part où aller, elle part pour le monde humain et cherche le vrai bonheur.',
                 'affiche' => 'https://fr.web.img4.acsta.net/pictures/23/06/16/12/04/4590179.jpg',
                 'duree' => '1h54',
                 'realisateur_id' => 12,
@@ -451,6 +451,20 @@ class FilmsSeeder extends Seeder
                 'cote' => '4 étoiles',
                 'categorie' => 'Autres',
                 'bandeAnnonce' => 'https://www.youtube.com/embed/pBk4NYhWNMM'
+            ],
+            [
+                'id' => 31,
+                'titre' => 'La casa de Papel',
+                'resume' => 'Huit voleurs mènent une prise d\'otage dans la Maison royale de la Monnaie d\'Espagne, tandis qu\'un génie criminel manipule la police pour mettre son plan à exécution.',
+                'affiche' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6e6jhluRkqDTp8Ae7zBdGhg6xiFtaVBJCt4gNc_ShqgMxkSNq',
+                'duree' => '5 saisons',
+                'realisateur_id' => 29,
+                'producteur_id' => 29,
+                'acteur_id' => 28,
+                'annee' => 2017,
+                'cote' => '5 étoiles',
+                'categorie' => 'tendance',
+                'bandeAnnonce' => 'https://www.youtube.com/embed/_InqQJRqGW4'
             ]
 
         ]);
