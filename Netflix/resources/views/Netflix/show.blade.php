@@ -70,9 +70,17 @@
                     </div>
                 </div>
                 <div class="rowFilm mt-5">
-                    <h2>Suggestions</h2>
+                    <h2 class="suggestion text-center mb-3 mt-5">Suggestions</h2>
+                    <div class="cSugg text-center">
                         <div class="row__posters">
-                            
+                            @if(count($suggestions))
+                                @foreach($suggestions as $suggestion)
+                                    <a href="{{route('Netflix.show', [$suggestion] )}}"><img src="{{$suggestion->affiche}}" class="row_poster row_posterLarge mt-3" src="{{$suggestion->affiche}}" height="250px"></a>
+                                @endforeach
+                            @else
+
+                            @endif
+                        </div>
                         </div>
                     </div>
                 </div>

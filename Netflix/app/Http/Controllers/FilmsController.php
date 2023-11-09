@@ -87,7 +87,7 @@ class FilmsController extends Controller
      */
     public function show(Film $film)
     {
-        $suggestions = Film::where('id', '!=', $film->id)->get();
+        $suggestions = Film::where('id', '!=', $film->id)->limit(15)->inRandomOrder()->get();
         return View('Netflix.show', compact('film', 'suggestions'));
     }
 
