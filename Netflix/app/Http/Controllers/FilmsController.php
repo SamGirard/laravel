@@ -119,14 +119,14 @@ class FilmsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(int $id)
+    public function destroy($id)
     {
         try{
             $film = Film::findOrFail($id);
 
-            $film->acteurs->detach();
-            $film->producteurs()->detach();
-            $film->realisateurs()->detach();
+            $film->acteur()->dissociate();
+            $film->producteur()->dissociate();
+            $film->realisateur()->dissociate();
     
             $film->delete();
             return redirect()->route('Netflix.index')->with('message', "Suppression de ".$film->titre." réussi!");
