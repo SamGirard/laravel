@@ -14,9 +14,15 @@
       <a href="{{route ('Netflix.index')}}">Accueil</a>
       <a href="{{route ('Netflix.personne')}}">Réalisateurs/producteurs</a>
       <a href="{{route ('Netflix.acteur')}}">Acteurs</a>
-      <a href="{{route('Netflix.createFilm')}}">Ajouter un film</a>
-      <a href="{{route('Acteur.createActeur')}}">Ajouter un acteur</a>
-      <a href="{{route('Personne.createPersonnes')}}">Ajouter un réalisateurs/producteurs</a>
+
+      @auth
+        @if(Auth::user()->role == 'admin')
+          <a href="{{route('Netflix.createFilm')}}">Ajouter un film</a>
+          <a href="{{route('Acteur.createActeur')}}">Ajouter un acteur</a>
+          <a href="{{route('Personne.createPersonnes')}}">Ajouter un réalisateurs/producteurs</a>
+        @endif
+      @endauth
+
       <form action="{{ route('logout') }}" method="POST">
           @csrf
           <button class="deco" type="submit">Déconnexion</button>

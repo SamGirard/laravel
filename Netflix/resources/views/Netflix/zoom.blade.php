@@ -32,12 +32,16 @@
                             <p> Date de naissance : {{ $personne->dateNaissance }}</p>
                             <p>Lieu de naissance : {{ $personne->lieuNaissance }}</p>
                             <p>Âge : {{ $personne->age }} ans</p>
-                            <a href="{{route('Netflix.modifierPersonne', [$personne])}}"><p>Modifier</p></a>
-                            <form method="POST" action="{{route('Personne.destroy', [$personne->id])}}">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Supprimer</button>
-                            </form>
+                            @auth
+                                @if(Auth::user()->role == 'admin')
+                                    <a href="{{route('Netflix.modifierPersonne', [$personne])}}"><p>Modifier</p></a>
+                                    <form method="POST" action="{{route('Personne.destroy', [$personne->id])}}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                                    </form>
+                                @endif
+                            @endauth
                         </div>
                     </div>
                     @endif
