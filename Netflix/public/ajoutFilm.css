@@ -51,3 +51,7 @@ input{
 .plus{
     color: rgb(0, 132, 255);
 }
+
+.rowLogin{
+    min-height: 80vh;
+}
