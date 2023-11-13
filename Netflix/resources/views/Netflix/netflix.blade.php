@@ -1,6 +1,7 @@
     @extends('layout.app')
     
     @section('title', "Netflix accueil")
+    @auth
     <!-- header -->
     <a href="{{route('Netflix.show', ['film' => 32]) }}" class="aBanner"><header class="banner">
     <header>
@@ -128,5 +129,10 @@
           nav.classList.remove('nav__black');
         }
       });
-    </script>    
+    </script>
+    @else
+    <h1>Veuillez vous connecter!</h1>
+    <a href="{{route('login')}}" class="btn btn-primary">Page de connexion</a>  
+    @endauth
+
     @endsection

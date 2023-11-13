@@ -3,6 +3,7 @@
     @section('title', "Netflix - Acteurs")
 
     @section('contenu')
+    @auth
     <div class="row">
         <div class="row__posterss">
             @if(count($acteurs))
@@ -30,7 +31,12 @@
           nav.classList.remove('nav__black');
         }
       });
-    </script>    
+    </script>   
+    @else
+    <h1>Veuillez vous connecter!</h1>
+    <a href="{{route('login')}}" class="btn btn-primary">Page de connexion</a>
+    @endauth
+    
     @endsection
 </body>
 </html>
