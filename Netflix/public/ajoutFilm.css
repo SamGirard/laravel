@@ -34,6 +34,8 @@ h2{
 
 input{
     height: 50px;
+    background-color: #333 !important;
+    border: none !important;
 }
 
 .info{
@@ -50,4 +52,8 @@ input{
 
 .plus{
     color: rgb(0, 132, 255);
+}
+
+.rowLogin{
+    min-height: 80vh;
 }

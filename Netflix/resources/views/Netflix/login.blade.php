@@ -12,18 +12,18 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2">
-                    <a href="{{route('Netflix.index')}}"><img src="../images/Logonetflix.png" class="mt-3 ms-5" height="60px" width="190px"></a>
+                    <img src="../images/Logonetflix.png" class="mt-3 ms-5" height="60px" width="190px">
                 </div>
             </div>
-            <div class="row">
+            <div class="row rowLogin">
                 <div class="col-md-4 offset-4">
-                    <form method="post" action="{{route('Acteur.store')}}" class="formulaireAjoutFilm">
+                    <form method="post" action="{{route('login')}}" class="formulaireAjoutFilm">
                         @csrf
                         <div>
                             <h2>Ouvrir une session</h2>
-                            <input name="email" type="text" class="form-control mb-3 mt-5" id="email" placeholder="email" name="email">
+                            <input name="email" type="text" class="form-control mb-3 mt-5" id="email" placeholder="Email" name="email">
 
-                            <input type="password" class="form-control mb-3" id="naissance" placeholder="Mot de passe" name="password">
+                            <input type="password" class="form-control mb-5" id="naissance" placeholder="Mot de passe" name="password">
                        
                             <button type="submit" class="bouton form-control">Ouvrir une session</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
