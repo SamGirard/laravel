@@ -23,7 +23,7 @@
                             <h2>Ouvrir une session</h2>
                             <input name="email" type="text" class="form-control mb-3 mt-5" id="email" placeholder="Email" name="email">
 
-                            <input type="password" class="form-control mb-3" id="naissance" placeholder="Mot de passe" name="password">
+                            <input type="password" class="form-control mb-5" id="naissance" placeholder="Mot de passe" name="password">
                        
                             <button type="submit" class="bouton form-control">Ouvrir une session</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
