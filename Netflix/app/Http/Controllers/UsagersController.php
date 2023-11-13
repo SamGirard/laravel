@@ -23,5 +23,10 @@ class UsagersController extends Controller
         return View('Netflix.login');
     }
 
+    public function logout()
+    {
+        return View('Netflix.login');
+    }
+
 }
 
