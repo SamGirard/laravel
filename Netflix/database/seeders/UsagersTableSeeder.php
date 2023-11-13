@@ -18,7 +18,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'admin',
                 'username' => 'admin',
                 'email' => 'admin@gmail.com',
-                'password' => Hash::make($motDePasse),
+                'password' => Hash::make('admin'),
                 'role' => 'admin'
             ],
             [
@@ -27,7 +27,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'Félix',
                 'username' => 'Felix1',
                 'email' => 'felix@gmail.com',
-                'password' => Hash::make($motDePasse),
+                'password' => Hash::make('Felix'),
                 'role' => 'normal'
             ],
             [
@@ -36,7 +36,7 @@ class UsagersTableSeeder extends Seeder
                 'prenom' => 'Antoine',
                 'username' => 'Tony123',
                 'email' => 'tony_sc@gmail.com',
-                'password' => Hash::make($motDePasse),
+                'password' => Hash::make('Antoine'),
                 'role' => 'enfant'
             ],
             /*
