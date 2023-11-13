@@ -18,6 +18,10 @@
       <a href="{{route('Acteur.createActeur')}}">Ajouter un acteur</a>
       <a href="{{route('Personne.createPersonnes')}}">Ajouter un réalisateurs/producteurs</a>
       <img class="nav__avatar" src="../images/netflix-avatar.png" alt="" />
+      <form action="{{ route('logout') }}" method="POST">
+        @csrf
+        <button class="form-control" type="submit">Déconnexion</button>
+      </form>
     </div>
 
     @yield('contenu')
