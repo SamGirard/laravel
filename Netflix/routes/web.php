@@ -61,13 +61,11 @@ Route::get('/films/modifier/{film}',
 Route::patch('/films/modifier/{film}',
 [FilmsController::class, 'update'])->name('Netflix.updateFilm')->middleware(['auth', 'admin']);
 
-
 Route::get('/personnes/modifier/{personne}', 
 [PersonnesController::class, 'edit'])->name('Netflix.modifierPersonne')->middleware(['auth', 'admin']);
 
 Route::patch('/personnes/modifier/{personne}',
 [PersonnesController::class, 'update'])->name('Netflix.updatePersonne')->middleware(['auth', 'admin']);
-
 
 Route::get('/acteurs/modifier/{acteur}', 
 [ActeursController::class, 'edit'])->name('Netflix.modifierActeur')->middleware(['auth', 'admin']);
@@ -92,7 +90,6 @@ Route::get('Netflix.acteur/{acteur}',
 
 
 /****************Les routes pour delete****************/
-
 Route::delete('/films/{id}',
 [FilmsController::class, 'destroy'])->name('films.destroy')->middleware(['auth', 'admin']);
 
@@ -105,7 +102,6 @@ Route::delete('/acteurs/{id}',
 
 
 /************************Login*****************************/
-
 Route::get('/login',
 [UsagersController::class, 'showLoginForm'])->name('login');
 

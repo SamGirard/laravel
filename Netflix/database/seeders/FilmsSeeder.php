@@ -456,7 +456,7 @@ class FilmsSeeder extends Seeder
                 'id' => 32,
                 'titre' => 'La casa de Papel',
                 'resume' => 'Huit voleurs mènent une prise d\'otage dans la Maison royale de la Monnaie d\'Espagne, tandis qu\'un génie criminel manipule la police pour mettre son plan à exécution.',
-                'affiche' => 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6e6jhluRkqDTp8Ae7zBdGhg6xiFtaVBJCt4gNc_ShqgMxkSNq',
+                'affiche' => 'https://th.bing.com/th/id/R.afcf8ec4b763622943e018ee5ea61c24?rik=frijD0HG8doi1w&riu=http%3a%2f%2fwww.mulderville.net%2fimages%2fNetflix%2fLaCasaDePapel%2fLaCasaDePapel_001.jpg&ehk=0Y0tS%2fZeKFVhEjKcIBHmi1H8zw%2b74D7LCIrUDWWz1Sw%3d&risl=&pid=ImgRaw&r=0',
                 'duree' => '5 saisons',
                 'realisateur_id' => 29,
                 'producteur_id' => 29,
