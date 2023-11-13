@@ -30,7 +30,6 @@
                 <a href="{{route('Netflix.show', [$classic] )}}" >
                   <img src="{{$classic->affiche}}" class="row_poster row_posterLarge">
                 </a>
-                <!--<h4>{{$classic->realisateur->nom}}</h4>-->
             @endforeach
         @else
 

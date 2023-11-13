@@ -12,7 +12,7 @@ class UsagersController extends Controller
         $reussi = Auth::attempt(['email' => $request->email, 'password' => $request->password]);
 
         if($reussi){
-            return redirect()->route('Netflix.index') ->with('message', 'Connexion réussie');
+            return redirect()->route('Netflix.index')->with('message', "Connexion réussie");
         } else {
             return redirect()->route('login')->withErrors(['Informations invalides']);
         }
