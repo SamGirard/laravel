@@ -28,6 +28,7 @@ return new class extends Migration
             $table->text('cote');
             $table->text('categorie');
             $table->text('bandeAnnonce');
+            $table->integer('audience');
             $table->timestamps();
         });
     }
