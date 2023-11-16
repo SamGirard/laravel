@@ -9,14 +9,6 @@
         <title>Ajout d'un réalisateur/producteur</title>
     </head>
     <body>
-        @if(isset($errors) && $errors->any())
-        <div class="alert alert-danger">
-            @foreach($errors->all() as $error)
-                <p>{{$error}}</p>
-            @endforeach
-        </div>
-        @endif
-
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2">
@@ -30,15 +22,30 @@
                         <div>
                             <h2>Ajouter un réalisateur ou un producteur</h2>
                             <input name="nom" type="text" class="form-control mb-3 mt-5" id="nomFilm" placeholder="Nom" name="nom">
+                            @if(isset($errors) && $errors->any())
+                                <p class="text-danger">{{$errors->first('nom')}}</p>
+                            @endif
 
                             <input type="text" class="form-control mb-3" id="naissance" placeholder="Date de naissance" name="dateNaissance">
+                            @if(isset($errors) && $errors->any())
+                                <p class="text-danger">{{$errors->first('dateNaissance')}}</p>
+                            @endif
 
                             <input type="text" class="form-control mb-3" id="lieu" placeholder="Lieu de naissance" name="lieuNaissance">
+                            @if(isset($errors) && $errors->any())
+                                <p class="text-danger">{{$errors->first('lieuNaissance')}}</p>
+                            @endif
 
                             <input type="text" class="form-control mb-3" id="portrait" placeholder="Portrait" name="portrait">
+                            @if(isset($errors) && $errors->any())
+                                <p class="text-danger">{{$errors->first('portrait')}}</p>
+                            @endif
 
                             <input type="text" class="form-control mb-3" id="age" placeholder="Âge" name="age">
-                       
+                            @if(isset($errors) && $errors->any())
+                                <p class="text-danger">{{$errors->first('age')}}</p>
+                            @endif
+
                             <button type="submit" class="bouton form-control">Ajouter</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>

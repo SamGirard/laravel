@@ -1,6 +1,6 @@
     @extends('layout.app')
     
-    @section('title', "Netflix accueil")
+    @section('title', "Netflix - Accueil")
     @auth
     <!-- header -->
     <a href="{{route('Netflix.show', ['film' => 32]) }}" class="aBanner"><header class="banner">
@@ -9,7 +9,6 @@
         <h1 class="banner__title">La Casa de Papel</h1>
         <div class="banner__buttons">
           <a href="https://www.youtube.com/watch?v=_InqQJRqGW4&embeds_referring_euri=https%3A%2F%2Fwww.bing.com%2F&embeds_referring_origin=https%3A%2F%2Fwww.bing.com&source_ve_path=Mjg2NjY&feature=emb_logo"><button class="banner__button">Lecture</button></a>
-          <button class="banner__button">Ma Liste</button>
         </div>
         <h1 class="banner__description">
         Huit voleurs mènent une prise d'otage dans la Maison royale de la Monnaie d'Espagne, tandis qu'un génie criminel manipule la police pour mettre son plan à exécution.
