@@ -39,6 +39,12 @@ input{
     color: white !important;
 }
 
+select, textarea{
+    background-color: #333 !important;
+    border: none !important;
+    color: white !important;
+}
+
 .info{
     background-color: rgba(0, 0, 0, 0.7);
 }

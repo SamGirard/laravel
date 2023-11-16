@@ -9,13 +9,13 @@
         <title>Ajout d'un film</title>
     </head>
     <body>
-        @if(isset($errors) && $errors->any())
+        <!--@if(isset($errors) && $errors->any())
         <div class="alert alert-danger">
             @foreach($errors->all() as $error)
                 <p>{{$error}}</p>
             @endforeach
         </div>
-        @endif
+        @endif-->
 
         <div class="container-fluid">
             <div class="row">
@@ -24,47 +24,131 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 offset-4">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 offset-xl-4 offset-lg-3 offset-4">
                     <form method="post" action="{{route('Netflix.store')}}" class="formulaireAjoutFilm">
                         @csrf
                         <div>
                             <h2>Ajouter un film</h2>
-                            <input name="titre" type="text" class="form-control mb-3 mt-5" id="nomFilm" placeholder="Titre du film" name="titre">
+                            <div>
+                            <label class="text-light">Titre</label>
+                                <input name="titre" type="text" class="form-control" id="nomFilm" placeholder="Titre du film" name="titre" value="{{ old('titre') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('titre')}}</div>
+                                @endif
+                                <br>
+                            </div>
 
-                            <textarea type="text" name="resume" id="resumee" cols="30" rows="3" class="form-control mb-3" placeholder="Résumé"></textarea>
+                            <div>
+                            <label class="text-light">Résumé</label>
+                                <textarea type="text" name="resume" id="resumee" cols="30" rows="3" class="form-control" placeholder="Résumé">{{ old('resume') }}</textarea>
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('resume')}}</div>
+                                @endif
+                                <br>
+                            </div>
 
-                            <input type="text" class="form-control mb-3" id="duree" placeholder="Durée du film" name="duree">
+                            <div>
+                            <label class="text-light">Durée</label>
+                                <input type="text" class="form-control" id="duree" placeholder="Durée du film" name="duree" value="{{ old('duree') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('duree')}}</div>
+                                @endif
+                                <br>
+                            </div>
+                            
+                            <div>
+                            <label class="text-light">Réalisateur</label>
+                                <select class="form-control" name="realisateur_id">
+                                    <option value="">Réalisateur</option>
+                                    @foreach ($realisateurs as $realisateurId => $realisateurNom)
+                                        <option value="{{$realisateurId}}" @if(old('realisateur_id') == $realisateurId) selected @endif>{{$realisateurNom}}</option>
+                                    @endforeach
+                                </select>
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('realisateur_id')}}</div>
+                                @endif
+                                <br>
+                            </div>
 
-                            <select class="form-control mb-3" name="realisateur_id">
-                                <option value="">Réalisateur</option>
-                                @foreach ($realisateurs as $realisateurId => $realisateurNom)
-                                    <option value="{{$realisateurId}}">{{$realisateurNom}}</option>
-                                @endforeach
-                            </select>
 
-                            <select class="form-control mb-3" name="producteur_id">
-                                <option value="">Producteur</option>
-                                @foreach ($producteurs as $producteurId => $producteurNom)
-                                    <option value="{{$producteurId}}">{{$producteurNom}}</option>
-                                @endforeach
-                            </select>
+                            <div>
+                            <label class="text-light">Producteur</label>
+                                <select class="form-control" name="producteur_id">
+                                    <option value="">Producteur</option>
+                                    @foreach ($producteurs as $producteurId => $producteurNom)
+                                        <option value="{{$producteurId}}" @if(old('producteur_id') == $producteurId) selected @endif>{{$producteurNom}}</option>
+                                    @endforeach
+                                </select>
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('producteur_id')}}</div>
+                                @endif
+                                <br>
+                            </div>
 
-                            <select class="form-control mb-3" name="acteur_id">
-                                <option value="">Acteur principal</option>
-                                @foreach ($acteurs as $acteurId => $acteurNom)
-                                    <option value="{{$acteurId}}">{{$acteurNom}}</option>
-                                @endforeach
-                            </select>
 
-                            <input type="text" class="form-control mb-3" id="annee" placeholder="Année de sortie" name="annee">
+                            <div>
+                            <label class="text-light">Acteur</label>
+                                <select class="form-control" name="acteur_id">
+                                    <option value="">Acteur principal</option>
+                                    @foreach ($acteurs as $acteurId => $acteurNom)
+                                        <option value="{{$acteurId}}" @if(old('acteur_id') == $acteurId) selected @endif>{{$acteurNom}}</option>
+                                    @endforeach
+                                </select>
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('acteur_id')}}</div>
+                                @endif
+                                <br>
+                            </div>
 
-                            <input type="text" class="form-control mb-3" id="cote" placeholder="Côte du film" name="cote">
 
-                            <input type="text" class="form-control mb-3" id="categorie" placeholder="Catégorie" name="categorie">
+                            <div>
+                            <label class="text-light">Année</label>
+                                <input type="text" class="form-control" id="annee" placeholder="Année de sortie" name="annee" value="{{ old('annee') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('annee')}}</div>
+                                @endif
+                                <br>
+                            </div>
+                            
 
-                            <input type="affiche" class="form-control mb-3" id="affiche" placeholder="Lien de l'affiche" name="affiche">
+                            <div>
+                            <label class="text-light">Côte</label>
+                                <input type="text" class="form-control" id="cote" placeholder="Côte du film" name="cote" value="{{ old('cote') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('cote')}}</div>
+                                @endif
+                                <br>
+                            </div>
+                            
 
-                            <input type="text" class="form-control mb-3" id="bandeAnnonce" placeholder="Lien de la bande annonce" name="bandeAnnonce">
+                            <div>
+                            <label class="text-light">Catégorie</label>
+                                <input type="text" class="form-control" id="categorie" placeholder="Catégorie" name="categorie" value="{{ old('categorie') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('categorie')}}</div>
+                                @endif
+                                <br>
+                            </div>
+                            
+                            <div>
+                            <label class="text-light">Affiche</label>
+                                <input type="affiche" class="form-control" id="affiche" placeholder="Lien de l'affiche" name="affiche" value="{{ old('affiche') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('affiche')}}</div>
+                                @endif
+                                <br>
+                            </div>
+                            
+
+                            <div>
+                            <label class="text-light">Bande annonce</label>
+                                <input type="text" class="form-control" id="bandeAnnonce" placeholder="Lien de la bande annonce" name="bandeAnnonce" value="{{ old('bandeAnnonce') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('bandeAnnonce')}}</div>
+                                @endif
+                                <br>
+                            </div>
+                            
                         
                             <button type="submit" class="bouton form-control">Ajouter</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
