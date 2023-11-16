@@ -189,7 +189,14 @@
     font-size: 12pt;
     margin: 16px;
     font-weight:light;
+    transition: 0.7s;
   }
+
+  .nav a:hover{
+    color: #9e9e9e;
+  }
+
+  
   
 
   .nav {
