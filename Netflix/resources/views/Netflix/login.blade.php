@@ -9,15 +9,6 @@
         <title>Ouvrir une session</title>
     </head>
     <body>
-        @if($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2">
@@ -34,6 +25,12 @@
 
                             <input type="password" class="form-control mb-5" id="naissance" placeholder="Mot de passe" name="password">
                        
+                            @if($errors->any())
+                                    @foreach($errors->all() as $error)
+                                        <p class="text-danger">{{ $error }}</p>
+                                    @endforeach
+                            @endif
+
                             <button type="submit" class="bouton form-control">Ouvrir une session</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>
