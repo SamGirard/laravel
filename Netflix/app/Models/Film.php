@@ -10,7 +10,7 @@ class Film extends Model
     protected $table = 'films';
     use HasFactory;
 
-    protected $fillable = ['titre', 'resume', 'affiche', 'duree', 'realisateur_id', 'producteur_id', 'acteur_id', 'annee', 'cote', 'categorie', 'bandeAnnonce'];
+    protected $fillable = ['titre', 'resume', 'affiche', 'duree', 'realisateur_id', 'producteur_id', 'acteur_id', 'annee', 'cote', 'categorie', 'bandeAnnonce', 'audience'];
 
     public function realisateur()
     {
