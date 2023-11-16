@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="row rowLogin">
-                <div class="col-md-4 offset-4">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 offset-xl-4 offset-lg-3 offset-4">
                     <form method="post" action="{{route('login')}}" class="formulaireAjoutFilm">
                         @csrf
                         <div>
