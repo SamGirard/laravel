@@ -33,6 +33,7 @@ class FilmRequest extends FormRequest
             'categorie' => 'required|string',
             'bandeAnnonce' => 'url',
             'affiche' => 'url',
+            'audience' => 'required',
         ];
     }
 
@@ -53,6 +54,7 @@ class FilmRequest extends FormRequest
             'categorie.required' => 'Le champ Catégorie est requis.',
             'bandeAnnonce.url' => 'Le champ Lien de la bande annonce doit être une URL valide.',
             'affiche.url' => 'Le champ URL de l\'affiche doit être une URL valide.',
+            'audience.required' => 'L\'audience est requis',
         ];
     }
 

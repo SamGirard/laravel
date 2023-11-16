@@ -67,6 +67,8 @@
 
                             <input type="text" class="form-control mb-3" id="bandeAnnonce" placeholder="Lien de la bande annonce" name="bandeAnnonce" value="{{$film->bandeAnnonce}}">
                         
+                            <input type="number" class="form-control mb-3" id="audience" placeholder="Audience" name="audience" value="{{$film->audience}}">
+
                             <button type="submit" class="bouton form-control">Modifier</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>

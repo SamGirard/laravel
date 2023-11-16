@@ -151,6 +151,15 @@
                                 @endif
                                 <br>
                             </div>
+
+                            <div>
+                            <label class="text-light">Audience</label>
+                                <input type="number" class="form-control" id="audience" placeholder="Audience" name="audience" value="{{ old('audience') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('audience')}}</div>
+                                @endif
+                                <br>
+                            </div>
                             
                         
                             <button type="submit" class="bouton form-control">Ajouter</button>
