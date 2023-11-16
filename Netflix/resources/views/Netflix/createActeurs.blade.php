@@ -21,31 +21,54 @@
                     <form method="post" action="{{route('Acteur.store')}}" class="formulaireAjoutFilm">
                         @csrf
                         <div>
-                            <h2>Ajouter un acteur</h2>
-                            <input name="nom" type="text" class="form-control mb-3 mt-5" id="nomFilm" placeholder="Nom" name="nom">
-                            @if(isset($errors) && $errors->any())
-                                <p class="text-danger">{{$errors->first('nom')}}</p>        
-                            @endif
+                            <div class="d-flex justify-content-center">
+                                <h2 class="text-center">Ajouter un acteur</h2>
+                            </div>
 
-                            <input type="text" class="form-control mb-3" id="naissance" placeholder="Date de naissance" name="dateNaissance">
-                            @if(isset($errors) && $errors->any())
-                                <p class="text-danger">{{$errors->first('dateNaissance')}}</p>        
-                            @endif
+                            <div>
+                            <label class="text-light">Nom</label>
+                                <input name="nom" type="text" class="form-control" id="nomFilm" placeholder="Nom complet" name="nom" value="{{ old('nom') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('nom')}}</div>        
+                                @endif
+                                <br>
+                            </div>
 
-                            <input type="text" class="form-control mb-3" id="lieu" placeholder="Lieu de naissance" name="lieuNaissance">
-                            @if(isset($errors) && $errors->any())
-                                <p class="text-danger">{{$errors->first('lieuNaissance')}}</p>        
-                            @endif
+                            <div>
+                            <label class="text-light">Date de naissance</label>
+                                <input type="text" class="form-control" id="naissance" placeholder="Date de naissance" name="dateNaissance" value="{{ old('dateNaissance') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('dateNaissance')}}</div>        
+                                @endif
+                                <br>
+                            </div>
 
-                            <input type="text" class="form-control mb-3" id="portrait" placeholder="Portrait" name="portrait">
-                            @if(isset($errors) && $errors->any())
-                                <p class="text-danger">{{$errors->first('portrait')}}</p>        
-                            @endif
+                            <div>
+                            <label class="text-light">Lieu de naissance</label>
+                                <input type="text" class="form-control" id="lieu" placeholder="Lieu de naissance" name="lieuNaissance" value="{{ old('lieuNaissance') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('lieuNaissance')}}</div>        
+                                @endif
+                                <br>
+                            </div>
 
-                            <input type="text" class="form-control mb-3" id="age" placeholder="Âge" name="age">
-                            @if(isset($errors) && $errors->any())
-                                <p class="text-danger">{{$errors->first('age')}}</p>        
-                            @endif
+                            <div>
+                            <label class="text-light">Portrait</label>
+                                <input type="text" class="form-control" id="portrait" placeholder="Portrait" name="portrait" value="{{ old('portrait') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('portrait')}}</div>        
+                                @endif
+                                <br>
+                            </div>
+
+                            <div>
+                            <label class="text-light">Âge</label>
+                                <input type="text" class="form-control" id="age" placeholder="Âge" name="age" value="{{ old('age') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('age')}}</div>        
+                                @endif
+                                <br>
+                            </div>
 
                             <button type="submit" class="bouton form-control">Ajouter</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>

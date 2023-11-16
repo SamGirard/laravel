@@ -28,7 +28,10 @@
                     <form method="post" action="{{route('Netflix.store')}}" class="formulaireAjoutFilm">
                         @csrf
                         <div>
-                            <h2>Ajouter un film</h2>
+                            <div class="d-flex justify-content-center">
+                                <h2 class="text-center">Ajouter un film</h2>
+                            </div>
+
                             <div>
                             <label class="text-light">Titre</label>
                                 <input name="titre" type="text" class="form-control" id="nomFilm" placeholder="Titre du film" name="titre" value="{{ old('titre') }}">
