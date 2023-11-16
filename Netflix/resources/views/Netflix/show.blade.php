@@ -37,6 +37,10 @@
                             <p><span class="tv">TV-MA</span> Catégorie : {{$film->categorie}} </p>
                         </div>
 
+                        <div class="row ms-5">
+                            <p>Audience : {{$film->audience}} </p>
+                        </div>
+
                         <div class="row mt-3  ms-5">
                             <p>{{$film->resume}}</p>
                         </div>
