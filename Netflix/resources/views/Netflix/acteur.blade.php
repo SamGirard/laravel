@@ -5,21 +5,20 @@
     @section('contenu')
     @auth
     <!--
-    <div class="row">
-        <div class="row__posterss">
-            @if(count($acteurs))
-                @foreach($acteurs as $acteur)
-                    <div class="image-container">
-                      <a href="{{route('Netflix.zoomActeur', [$acteur]) }}">
-                        <img src="{{$acteur->portrait}}" class="row_poster row_posterLarge portrait">
-                      </a>
-                    <h3 class="cNom">{{$acteur->nom}}</h3>    
-                </div>
-                @endforeach
-            @else
-            @endif
+  <div class="row">
+    <div class="row__posterss">
+      @if(count($acteurs))
+        @foreach($acteurs as $acteur)
+          <div class="image-container">
+            <a href="{{route('Netflix.zoomActeur', [$acteur]) }}">
+              <img src="{{$acteur->portrait}}" class="row_poster row_posterLarge portrait">
+            </a>
+            <h3 class="cNom">{{$acteur->nom}}</h3>    
+          </div>
+        @endforeach
+      @endif
+    </div>
   </div>
-</div>
 -->
 
 <div class="row">
