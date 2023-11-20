@@ -19,7 +19,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Leonardo DiCaprio',
                 'dateNaissance' => '11 novembre 1974',
                 'lieuNaissance' => 'Los Angeles, Californie, États-Unis',
-                'portrait' => 'https://prod-images.tcm.com/Master-Profile-Images/LeonardoDiCaprio.jpg',
+                'portrait' => '../images/acteurs/leonardodicaprio.jpg',
                 'age' => '48 ans'
             ],
             [
@@ -27,7 +27,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Al Pacino',
                 'dateNaissance' => '25 avril 1940',
                 'lieuNaissance' => 'Spanish Harlem, New York, État de New York, États-Unis',
-                'portrait' => 'https://upload.wikimedia.org/wikipedia/commons/9/98/Al_Pacino.jpg',
+                'portrait' => '../images/acteurs/AlPacino.jpg',
                 'age' => '83 ans'
             ],
             [
@@ -35,7 +35,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Marlon Brando',
                 'dateNaissance' => '3 avril 1924',
                 'lieuNaissance' => 'Omaha, Nebraska, États-Unis',
-                'portrait' => 'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQ5-5i-xd0ny8Rk_Ck1C803Tdg4uIrXDBJPSjQbjQcgWmi6fJcBR-E3hFfYBu7yd-Yi',
+                'portrait' => '../images/acteurs/MarlonBrando.jpg',
                 'age' => 'décédé'
             ],
             [
@@ -43,7 +43,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Matthew McConaughey',
                 'dateNaissance' => '4 novembre 1969',
                 'lieuNaissance' => 'Uvalde, Texas, États-Unis',
-                'portrait' => 'https://m.media-amazon.com/images/M/MV5BMTg0MDc3ODUwOV5BMl5BanBnXkFtZTcwMTk2NjY4Nw@@._V1_FMjpg_UX1000_.jpg',
+                'portrait' => '../images/acteurs/MatthewMcConaughey.jpg',
                 'age' => '54 ans'
             ],
             [
@@ -51,7 +51,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Sam Worthington',
                 'dateNaissance' => '2 août 1976',
                 'lieuNaissance' => 'Godalming, Royaume-Uni',
-                'portrait' => 'https://ntvb.tmsimg.com/assets/assets/218027_v9_bc.jpg',
+                'portrait' => '../images/acteurs/SamWorthington.jpg',
                 'age' => '47 ans'
             ],
             [
@@ -59,7 +59,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Christian Bale',
                 'dateNaissance' => '30 janvier 1974',
                 'lieuNaissance' => 'Haverfordwest, Pays de Galles, Royaume-Uni',
-                'portrait' => 'https://m.media-amazon.com/images/M/MV5BMTkxMzk4MjQ4MF5BMl5BanBnXkFtZTcwMzExODQxOA@@._V1_.jpg',
+                'portrait' => '../images/acteurs/ChristianBale.jpg',
                 'age' => '49 ans'
             ],
             [
@@ -67,7 +67,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Samuel L. Jackson',
                 'dateNaissance' => ' 21 décembre 1948',
                 'lieuNaissance' => 'Washington, D.C., États-Unis',
-                'portrait' => 'https://www.themoviedb.org/t/p/w500/nCJJ3NVksYNxIzEHcyC1XziwPVj.jpg',
+                'portrait' => '../images/acteurs/SamuelLJackson.jpg',
                 'age' => '74 ans'
             ],
             [
@@ -75,7 +75,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Morgan Freeman',
                 'dateNaissance' => '1er juin 1937',
                 'lieuNaissance' => 'Memphis, Tennessee, États-Unis',
-                'portrait' => 'https://resizing.flixster.com/qOJzL7PYRxocjLghhP4iTHs9114=/300x300/v2/http://media.baselineresearch.com/images/1260582/1260582_full.jpg',
+                'portrait' => '../images/acteurs/MorganFreeman.jpg',
                 'age' => '86 ans'
             ],
             [
@@ -83,7 +83,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Elijah Wood',
                 'dateNaissance' => '28 janvier 1981',
                 'lieuNaissance' => 'Cedar Rapids, Iowa, États-Unis',
-                'portrait' => 'https://static.independent.co.uk/2021/09/06/16/GettyImages-908475512.jpg',
+                'portrait' => '../images/acteurs/Wood.jpg',
                 'age' => '42 ans'
             ],
             [
@@ -91,7 +91,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Keanu Reeves',
                 'dateNaissance' => '2 septembre 1964',
                 'lieuNaissance' => 'Beyrouth, Liban',
-                'portrait' => 'https://m.media-amazon.com/images/M/MV5BNGJmMWEzOGQtMWZkNS00MGNiLTk5NGEtYzg1YzAyZTgzZTZmXkEyXkFqcGdeQXVyMTE1MTYxNDAw._V1_.jpg',
+                'portrait' => '../images/acteurs/KeanuReeves.jpg',
                 'age' => '59 ans'
             ],
             [
@@ -99,7 +99,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Henry Cavill',
                 'dateNaissance' => '5 mai 1983',
                 'lieuNaissance' => 'Jersey, Îles Anglo-Normandes, Royaume-Uni',
-                'portrait' => 'https://hips.hearstapps.com/hmg-prod/images/henry-cavill-6455184b166f4.jpg?crop=1.00xw:0.699xh;0,0.0227xh&resize=980:*',
+                'portrait' => '../images/acteurs/HenryCavill.jpg',
                 'age' => '40 ans'
             ],
             [
@@ -107,7 +107,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Sam Neill',
                 'dateNaissance' => '14 septembre 1947',
                 'lieuNaissance' => 'Omagh, Irlande du Nord',
-                'portrait' => 'https://static.foxnews.com/foxnews.com/content/uploads/2023/10/sam-neill.jpg',
+                'portrait' => '../images/acteurs/SamNeill.jpg',
                 'age' => '76 ans'
             ],
             [
@@ -115,7 +115,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Russell Crowe',
                 'dateNaissance' => '7 avril 1964',
                 'lieuNaissance' => 'Wellington, Nouvelle-Zélande',
-                'portrait' => 'https://people.com/thmb/y3pfKoTOfqCavmSfm0PpKnxvNYM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(799x739:801x741)/russell-crowe-655563de9223497f8efebefe05dce08f.jpg',
+                'portrait' => '../images/acteurs/RussellCrowe.jpg',
                 'age' => '59 ans'
             ],
             [
@@ -123,7 +123,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Harvey Keitel',
                 'dateNaissance' => '13 mai 1939',
                 'lieuNaissance' => 'Brooklyn, New York, États-Unis',
-                'portrait' => 'https://www.hollywoodreporter.com/wp-content/uploads/2022/07/MCDNATR_EC062-copy.jpg?w=1296',
+                'portrait' => '../images/acteurs/HarveyKeitel.jpg',
                 'age' => '84 ans'
             ],
             [
@@ -131,7 +131,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Tim Roth',
                 'dateNaissance' => '14 mai 1961',
                 'lieuNaissance' => 'Dulwich, Londres, Angleterre',
-                'portrait' => 'https://www.hollywoodreporter.com/wp-content/uploads/2011/09/lie_to_me_tim_roth_a_p.jpg',
+                'portrait' => '../images/acteurs/TimRoth.jpg',
                 'age' => '62 ans'
             ],
             [
@@ -139,7 +139,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Pam Grier',
                 'dateNaissance' => '26 mai 1949',
                 'lieuNaissance' => 'Winston-Salem, Caroline du Nord, États-Unis',
-                'portrait' => 'https://ntvb.tmsimg.com/assets/assets/74020_v9_bc.jpg',
+                'portrait' => '../images/acteurs/PamGrier.jpg',
                 'age' => '74 ans'
             ],
             [
@@ -147,7 +147,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Kurt Russell',
                 'dateNaissance' => '17 mars 1951',
                 'lieuNaissance' => 'Springfield, Massachusetts, États-Unis',
-                'portrait' => 'https://cdn.britannica.com/54/206654-050-31D54746/Kurt-Russell-2017.jpg',
+                'portrait' => '../images/acteurs/KurtRussel.jpg',
                 'age' => '72 ans'
             ],
             [
@@ -155,7 +155,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Jamie Foxx',
                 'dateNaissance' => '13 décembre 1967',
                 'lieuNaissance' => 'Terrell, Texas, États-Unis',
-                'portrait' => 'https://hips.hearstapps.com/hmg-prod/images/jamie-foxx-arrives-at-the-world-premiere-of-netflixs-day-news-photo-1692128774.jpg',
+                'portrait' => '../images/acteurs/JamieFoxx.jpg',
                 'age' => '55 ans'
             ],
             [
@@ -163,7 +163,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Uma Thurman',
                 'dateNaissance' => '29 avril 1970',
                 'lieuNaissance' => 'Boston, Massachusetts, États-Unis',
-                'portrait' => 'https://m.media-amazon.com/images/M/MV5BMjMxNzk1MTQyMl5BMl5BanBnXkFtZTgwMDIzMDEyMTE@._V1_FMjpg_UX1000_.jpg',
+                'portrait' => '../images/acteurs/UmaThurman.jpg',
                 'age' => '53 ans'
             ],
             [
@@ -171,7 +171,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Brad Pitt',
                 'dateNaissance' => '18 décembre 1963',
                 'lieuNaissance' => 'Shawnee, Oklahoma, États-Unis',
-                'portrait' => 'https://images.mubicdn.net/images/cast_member/2552/cache-207-1524922850/image-w856.jpg?size=800x',
+                'portrait' => '../images/acteurs/BradPitt.jpg',
                 'age' => '59 ans'
             ],
             [
@@ -179,7 +179,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Bryan Cranston',
                 'dateNaissance' => '18 décembre 1963',
                 'lieuNaissance' => 'Shawnee, Oklahoma, États-Unis',
-                'portrait' => 'https://www.earwolf.com/wp-content/uploads/2013/11/7495.jpg',
+                'portrait' => '../images/acteurs/BryanCranston.jpg',
                 'age' => '67 ans'
             ],
             [
@@ -187,7 +187,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Ryan Gosling',
                 'dateNaissance' => '18 décembre 1963',
                 'lieuNaissance' => 'Shawnee, Oklahoma, États-Unis',
-                'portrait' => 'https://www.parismatch.com/lmnr/var/pm/public/media/image/Ryan-Gosling_0.jpg?VersionId=WCgOXg9JVrpBupeo682T8HTnzTwfBb3p',
+                'portrait' => '../images/acteurs/RyanGosling.jpg',
                 'age' => '42 ans'
             ],
             [
@@ -195,7 +195,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Millie Bobby Brown',
                 'dateNaissance' => '19 février 2004',
                 'lieuNaissance' => 'Marbella, Andalousie, Espagne',
-                'portrait' => 'https://variety.com/wp-content/uploads/2023/10/GettyImages-1397284039.jpg',
+                'portrait' => '../images/acteurs/MillieBobbyBrown.jpg',
                 'age' => '19 ans'
             ],
             [
@@ -203,7 +203,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Bryce Dallas Howard',
                 'dateNaissance' => '2 mars 1981',
                 'lieuNaissance' => 'Los Angeles, Californie, États-Unis',
-                'portrait' => 'https://people.com/thmb/XD2-M-HchZ3DV4tf9fkJduTkqSM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(587x286:589x288)/bryce-dallas-howard-jurassic-0922-e81b66c77f4044a4a5f039e8a5ff3b03.jpg',
+                'portrait' => '../images/acteurs/BryceDallasHoward.jpg',
                 'age' => '42 ans'
             ],
             [
@@ -211,7 +211,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Winston Churchill',
                 'dateNaissance' => '30 novembre 1874',
                 'lieuNaissance' => 'Blenheim Palace, Angleterre',
-                'portrait' => 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Sir_Winston_Churchill_-_19086236948.jpg/800px-Sir_Winston_Churchill_-_19086236948.jpg',
+                'portrait' => '../images/acteurs/WinstonChurchill.jpg',
                 'age' => 'décedé ans'
             ],
             [
@@ -219,7 +219,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Jennifer Aniston',
                 'dateNaissance' => '11 février 1969',
                 'lieuNaissance' => 'Sherman Oaks, Los Angeles, Californie, États-Unis',
-                'portrait' => 'https://m.media-amazon.com/images/M/MV5BNjk1MjIxNjUxNF5BMl5BanBnXkFtZTcwODk2NzM4Mg@@._V1_FMjpg_UX1000_.jpg',
+                'portrait' => '../images/acteurs/JenniferAniston.jpg',
                 'age' => '54 ans'
             ],
             [
@@ -227,7 +227,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Emilia Clarke',
                 'dateNaissance' => '23 octobre 1986',
                 'lieuNaissance' => 'Londres, Angleterre',
-                'portrait' => 'https://resizing.flixster.com/3sgFPIIZhHd8nlJcnILLuePeMTk=/218x280/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/613075_v9_bb.jpg',
+                'portrait' => '../images/acteurs/EmiliaClarke.jpg',
                 'age' => '37 ans'
             ],
             [
@@ -235,7 +235,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Álvaro Morte',
                 'dateNaissance' => '23 février 1975',
                 'lieuNaissance' => 'Algésiras, Espagne',
-                'portrait' => 'https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTbjm9ayC4b2jPVttn9vCO-trwpvQzcveoZzmc8jt7dv1el5K52l7Aoq91q_MBqe3yv',
+                'portrait' => '../images/acteurs/AlvaroMorte.jpg',
                 'age' => '48 ans'
             ],
 
@@ -247,7 +247,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Non Répertorié',
                 'dateNaissance' => '',
                 'lieuNaissance' => '',
-                'portrait' => '',
+                'portrait' => '../images/acteurs/nonRepertorier.jpg',
                 'age' => ''
             ],
             

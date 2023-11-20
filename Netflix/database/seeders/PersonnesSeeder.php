@@ -258,7 +258,7 @@ class PersonnesSeeder extends Seeder
                     'nom' => 'Non répertorié',
                     'dateNaissance' => '',
                     'lieuNaissance' => '',
-                    'portrait' => '',
+                    'portrait' => '../images/acteurs/nonRepertorier.jpg',
                     'age' => '',
                 ],
             ]);
