@@ -17,7 +17,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 offset-xl-4 offset-lg-3 offset-4">
-                    <form method="post" action="{{route('Personne.store')}}" class="formulaireAjoutFilm">
+                    <form method="post" action="{{route('Personne.store')}}" class="formulaireAjoutFilm" enctype="multipart/form-data">
                         @csrf
                         <div>
                             <div class="d-flex justify-content-center">
@@ -52,7 +52,7 @@
 
                             <div>
                             <label class="text-light">Portrait</label>
-                                <input type="text" class="form-control" id="portrait" placeholder="Portrait" name="portrait" value="{{ old('portrait') }}">
+                                <input type="file" class="form-control" id="portrait" placeholder="Portrait" name="portrait" value="{{ old('portrait') }}">
                                 @if(isset($errors) && $errors->any())
                                     <div class="text-danger">{{$errors->first('portrait')}}</div>
                                 @endif

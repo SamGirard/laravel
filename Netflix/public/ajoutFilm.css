@@ -68,3 +68,7 @@ select, textarea{
 .upload{
     background-color: rgba(0, 0, 0, 0.7)!important;
 }
+/* Style pour le bouton de fichier */
+input[type="file"] {
+    height: auto;
+}
