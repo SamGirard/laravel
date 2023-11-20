@@ -4,7 +4,9 @@
 
     @section('contenu')
     @auth
-    <!--
+    
+  <!--
+    vieux look
   <div class="row">
     <div class="row__posterss">
       @if(count($acteurs))
@@ -19,9 +21,9 @@
       @endif
     </div>
   </div>
--->
+  -->
 
-<div class="row">
+  <div class="row">
     <div class="row__posterss">
       @if(count($acteurs))
         @foreach($acteurs as $acteur)
