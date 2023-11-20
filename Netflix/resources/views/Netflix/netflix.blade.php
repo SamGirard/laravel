@@ -51,23 +51,21 @@
     <div class="row">
       <h2>Tendances Actuelles</h2>
       <div class="row_colonne">
-      <div class="scrollMenu">
+        <div class="scrollMenu">
           @if(count($tendances))
-                @foreach($tendances as $tendance)
-                @if(Auth::check() && Auth::user()->role == 'kid' && $tendance->audience < 18)
+            @foreach($tendances as $tendance)
+              @if(Auth::check() && Auth::user()->role == 'kid' && $tendance->audience < 18)
 
-                    <a href="{{route('Netflix.show', [$tendance] )}}"><img src="{{$tendance->affiche}}" class="row_poster row_posterLarge" src="{{$tendance->affiche}}"></a>
+                <a href="{{route('Netflix.show', [$tendance] )}}"><img src="{{$tendance->affiche}}" class="row_poster row_posterLarge" src="{{$tendance->affiche}}"></a>
                     
-                    @elseif(Auth::check() && Auth::user()->role != 'kid')
-                    <a href="{{route('Netflix.show', [$tendance] )}}"><img src="{{$tendance->affiche}}" class="row_poster row_posterLarge" src="{{$tendance->affiche}}"></a>
+              @elseif(Auth::check() && Auth::user()->role != 'kid')
+                <a href="{{route('Netflix.show', [$tendance] )}}"><img src="{{$tendance->affiche}}" class="row_poster row_posterLarge" src="{{$tendance->affiche}}"></a>
 
-                    @endif
+              @endif
 
-                    @endforeach
-            @else
-
-            @endif
-            </div>
+            @endforeach
+          @endif
+          </div>
       </div>
     </div>
 
