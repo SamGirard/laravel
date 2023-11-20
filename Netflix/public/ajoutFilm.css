@@ -64,3 +64,11 @@ select, textarea{
 .rowLogin{
     min-height: 80vh;
 }
+
+
+/* Style pour le bouton de fichier */
+input[type="file"] {
+    height: auto;
+}
+
+

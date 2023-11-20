@@ -18,7 +18,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 offset-4">
-                    <form method="post" action="{{route('Acteur.store')}}" class="formulaireAjoutFilm">
+                    <form method="post" action="{{route('Acteur.store')}}" class="formulaireAjoutFilm" enctype="multipart/form-data">
                         @csrf
                         <div>
                             <div class="d-flex justify-content-center">
