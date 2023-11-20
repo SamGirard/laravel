@@ -233,6 +233,11 @@
     margin: 16px;
     background-color: transparent;
     border: none;
+    transition: 0.7s;
+  }
+
+  .deco:hover{
+    color: #9e9e9e;
   }
 
   .pluss{
