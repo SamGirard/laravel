@@ -38,7 +38,7 @@
                         </div>
 
                         <div class="row ms-5">
-                            <p>Audience : {{$film->audience}} </p>
+                            <p>Audience : {{$film->audience}} ans et +</p>
                         </div>
 
                         <div class="row mt-3  ms-5">

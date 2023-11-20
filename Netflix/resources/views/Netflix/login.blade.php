@@ -21,7 +21,7 @@
                         @csrf
                         <div>
                             <h2>Ouvrir une session</h2>
-                            <input name="email" type="text" class="form-control mb-3 mt-5" id="email" placeholder="Email ou username" name="email">
+                            <input name="email" type="text" class="form-control mb-3 mt-5" id="email" placeholder="Email ou nom d'utilisateur" name="email">
 
                             <input type="password" class="form-control mb-5" id="naissance" placeholder="Mot de passe" name="password">
                        
@@ -32,7 +32,7 @@
                             @endif
 
                             <button type="submit" class="bouton form-control">Ouvrir une session</button>
-                            <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
+                            <p class="fois">Première fois sur Netflix? Aller voir le centre d'aide aux besoins.</p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>
                         </div>
                     </form>
