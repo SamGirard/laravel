@@ -46,11 +46,21 @@ class FilmsController extends Controller
     {
         try {
             $film = new Film($request->all());
+
+            $uploadFile = $request->file('affiche');
+            $nomFichierUnique = '../images/films/' . str_replace(' ', '-',$film->titre). '-' . uniqid() . '.' . $uploadFile->extension();
+            try{
+                $request->affiche->move(public_path('images/films'), $nomFichierUnique);
+            }
+            catch(\Symfony\Component\HttpFoundation\File\Exception\FileException $e){
+                Log::error("Erreur lors du téléversement du fichier. ", [$e]);
+            }
+
+            $film->affiche = $nomFichierUnique;
             $film->save();
         } catch (\Throwable $e) {
             Log::debug($e);
         }
-
 
         return redirect()->route('Netflix.index');
     }
@@ -109,6 +119,20 @@ class FilmsController extends Controller
     {
         try {
             $film->update($request->all());
+            
+            $uploadFile = $request->file('affiche');
+            $nomFichierUnique = '../images/films/' . str_replace(' ', '-',$film->titre). '-' . uniqid() . '.' . $uploadFile->extension();
+            try{
+                $request->affiche->move(public_path('images/films'), $nomFichierUnique);
+            }
+            catch(\Symfony\Component\HttpFoundation\File\Exception\FileException $e){
+                Log::error("Erreur lors du téléversement du fichier. ", [$e]);
+            }
+
+            $film->affiche = $nomFichierUnique;
+            $film->save();
+
+
         } catch (\Throwable $e) {
             Log::debug($e);
         }

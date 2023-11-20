@@ -25,7 +25,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 offset-4">
-                    <form method="post" action="{{route('Netflix.updatePersonne', ['personne' => $personne->id])}}" class="formulaireAjoutFilm">
+                    <form method="post" action="{{route('Netflix.updatePersonne', ['personne' => $personne->id])}}" class="formulaireAjoutFilm" enctype="multipart/form-data">
                         @csrf
                         @method('PATCH')
                         <div>
@@ -36,7 +36,7 @@
 
                             <input type="text" class="form-control mb-3" id="lieu" placeholder="Lieu de naissance" name="lieuNaissance" value="{{$personne->lieuNaissance}}">
 
-                            <input type="text" class="form-control mb-3" id="portrait" placeholder="Portrait" name="portrait" value="{{$personne->portrait}}">
+                            <input type="file" class="form-control mb-3" id="portrait" placeholder="Portrait" name="portrait" value="{{$personne->portrait}}">
 
                             <input type="text" class="form-control mb-3" id="age" placeholder="Âge" name="age" value="{{$personne->age}}">
                        

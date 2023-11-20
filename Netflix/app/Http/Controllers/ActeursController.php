@@ -75,6 +75,18 @@ class ActeursController extends Controller
     {
         try {
             $acteur->update($request->all());
+
+            $uploadFile = $request->file('portrait');
+            $nomFichierUnique = '../images/acteurs/' . str_replace(' ', '-',$acteur->nom). '-' . uniqid() . '.' . $uploadFile->extension();
+            try{
+                $request->portrait->move(public_path('images/acteurs'), $nomFichierUnique);
+            }
+            catch(\Symfony\Component\HttpFoundation\File\Exception\FileException $e){
+                Log::error("Erreur lors du téléversement du fichier. ", [$e]);
+            }
+
+            $acteur->portrait = $nomFichierUnique;
+            $acteur->save();
         } catch (\Throwable $e) {
             Log::debug($e);
         }

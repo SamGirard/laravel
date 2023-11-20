@@ -32,7 +32,7 @@ class FilmRequest extends FormRequest
             'cote' => 'required',
             'categorie' => 'required|string',
             'bandeAnnonce' => 'url',
-            'affiche' => 'url',
+            'affiche' => 'required|image|mimes:png,jpeg,gif,webp,jfif|max:4096',
             'audience' => 'required',
         ];
     }
@@ -53,7 +53,9 @@ class FilmRequest extends FormRequest
             'cote.required' => 'Le champ Cote est requis.',
             'categorie.required' => 'Le champ Catégorie est requis.',
             'bandeAnnonce.url' => 'Le champ Lien de la bande annonce doit être une URL valide.',
-            'affiche.url' => 'Le champ URL de l\'affiche doit être une URL valide.',
+            'affiche.required' => 'Le champ Portrait est requis.',
+            'affiche.mimes' => 'Le type de fichier n\'est pas accepté (png, jpg, gif, jpeg, webp, jfif).',
+            'affiche.max' => 'La taille de l\'image ne peut pas dépasser 4096Kb.',
             'audience.required' => 'L\'audience est requis',
         ];
     }

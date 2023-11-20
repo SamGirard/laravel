@@ -34,22 +34,18 @@ class PersonnesController extends Controller
     {
         try {
             $personne = new Personne($request->all());
-            
-            $uploadedFile = $request->file('image');
-            $nomFichierUnique = str_replace(' ', '_', $personne->nom) . '_' . uniqid() . '.' . $uploadedFile->extension();
 
+            $uploadFile = $request->file('portrait');
+            $nomFichierUnique = '../images/realisateurs/' . str_replace(' ', '-',$personne->nom). '-' . uniqid() . '.' . $uploadFile->extension();
             try{
-                $request->image->move(public_path('../images/realisateurs'), $nomFichierUnique);
+                $request->portrait->move(public_path('images/realisateurs'), $nomFichierUnique);
             }
             catch(\Symfony\Component\HttpFoundation\File\Exception\FileException $e){
                 Log::error("Erreur lors du téléversement du fichier. ", [$e]);
             }
 
-            $personne->image = $nomFichierUnique;
+            $personne->portrait = $nomFichierUnique;
             $personne->save();
-            return redirect()->route('Netflix.index')->with('message', "Ajout du réalisateur " . $personne->nom . " réussi!");
-
-
         } catch (\Throwable $e) {
             Log::debug($e);
         }
@@ -81,6 +77,18 @@ class PersonnesController extends Controller
     {
         try {
             $personne->update($request->all());
+
+            $uploadFile = $request->file('portrait');
+            $nomFichierUnique = '../images/realisateurs/' . str_replace(' ', '-',$personne->nom). '-' . uniqid() . '.' . $uploadFile->extension();
+            try{
+                $request->portrait->move(public_path('images/realisateurs'), $nomFichierUnique);
+            }
+            catch(\Symfony\Component\HttpFoundation\File\Exception\FileException $e){
+                Log::error("Erreur lors du téléversement du fichier. ", [$e]);
+            }
+
+            $personne->portrait = $nomFichierUnique;
+            $personne->save();
         } catch (\Throwable $e) {
             Log::debug($e);
         }
