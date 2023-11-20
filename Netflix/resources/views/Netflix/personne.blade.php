@@ -4,6 +4,9 @@
 
     @section('contenu')
     @auth
+
+    <!--
+      L'ancien format en forme de boule
     <div class="row">
       <div class="row__posterss">
         @if(count($personnes))
@@ -18,6 +21,24 @@
         @endif
       </div>
     </div>
+  -->
+
+  <div class="row">
+    <div class="row__posterss">
+      @if(count($personnes))
+        @foreach($personnes as $personne)
+          <div class="card" >
+            <a href="{{route('Netflix.zoom', [$personne]) }}">
+              <img src="{{$personne->portrait}}" class="card-img-top row_poster row_posterLarge">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title cNomPersonne">{{$personne->nom}}</h5>
+            </div>
+          </div>
+        @endforeach
+      @endif
+    </div>
+  </div>
 
 
 
