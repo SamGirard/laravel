@@ -15,6 +15,11 @@ class PersonnesController extends Controller
     public function index()
     {
         $personnes = Personne::all();
+
+        $personnes = Personne::where('id', '<>', 999)->get();
+        $personne999 = Personne::find(999);
+        $personnes->push($personne999);
+        
         return View('Netflix.personne', compact('personnes'));
     }
 

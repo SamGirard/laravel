@@ -15,6 +15,11 @@ class ActeursController extends Controller
     public function index()
     {
         $acteurs = Acteur::all();
+
+        $acteurs = Acteur::where('id', '<>', 999)->get();
+        $acteur999 = Acteur::find(999);
+        $acteurs->push($acteur999);
+
         return View('Netflix.acteur', compact('acteurs'));
     }
 
