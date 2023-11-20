@@ -247,7 +247,7 @@ class ActeursTableSeeder extends Seeder
                 'nom' => 'Non Répertorié',
                 'dateNaissance' => '',
                 'lieuNaissance' => '',
-                'portrait' => '',
+                'portrait' => '../images/acteurs/nonRepertorier.jpg',
                 'age' => ''
             ],
             
