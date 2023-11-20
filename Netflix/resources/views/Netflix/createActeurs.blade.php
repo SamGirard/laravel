@@ -18,7 +18,7 @@
             </div>
             <div class="row">
                 <div class="col-md-4 offset-4">
-                    <form method="post" action="{{route('Acteur.store')}}" class="formulaireAjoutFilm">
+                    <form method="post" action="{{route('Acteur.store')}}" class="formulaireAjoutFilm" enctype="multipart/form-data">
                         @csrf
                         <div>
                             <div class="d-flex justify-content-center">
@@ -52,7 +52,15 @@
                                 <br>
                             </div>
 
-                            <div>
+                            <div class="form-group">
+                                <label class="text-light">Sélectionner l'image</label>
+                                <input type="file" class="form-control-file upload" id="portrait" placeholder="Portrait" name="portrait" value="{{ old('portrait') }}">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('portrait')}}</div>        
+                                @endif
+                                <br>
+                            </div>
+                            <!--
                             <label class="text-light">Portrait</label>
                                 <input type="text" class="form-control" id="portrait" placeholder="Portrait" name="portrait" value="{{ old('portrait') }}">
                                 @if(isset($errors) && $errors->any())
@@ -60,6 +68,7 @@
                                 @endif
                                 <br>
                             </div>
+                            -->
 
                             <div>
                             <label class="text-light">Âge</label>

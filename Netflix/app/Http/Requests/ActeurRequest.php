@@ -25,7 +25,7 @@ class ActeurRequest extends FormRequest
             'nom' => 'required|string|min:1',
             'dateNaissance' => 'required|string|min:1',
             'lieuNaissance' => 'required|string|min:1',
-            'portrait' => 'required|url',
+            'portrait' => 'required|image|mimes:png,jpeg,gif,webp,jfif|max:4096',
             'age' => 'required|string|min:1',
         ];
     }
@@ -37,6 +37,8 @@ class ActeurRequest extends FormRequest
             'dateNaissance.required' => 'Le champ Date de naissance est requis.',
             'lieuNaissance.required' => 'Le champ Lieu de naissance est requis.',
             'portrait.required' => 'Le champ Portrait est requis.',
+            'portrait.mimes' => 'Le type de fichier n\'est pas accepté (png, jpg, gif, jpeg, webp, jfif).',
+            'portrait.max' => 'La taille de l\'image ne peut pas dépasser 4096Kb.',
             'age.required' => 'Le champ Âge est requis.',
         ];
     }

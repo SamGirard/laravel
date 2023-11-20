@@ -64,3 +64,7 @@ select, textarea{
 .rowLogin{
     min-height: 80vh;
 }
+
+.upload{
+    background-color: rgba(0, 0, 0, 0.7)!important;
+}
