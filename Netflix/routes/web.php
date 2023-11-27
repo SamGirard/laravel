@@ -54,6 +54,12 @@ Route::post('/acteurs',
 Route::get('/acteurs/creation',
 [ActeursController::class, 'create'])->name('Acteur.createActeur')->middleware(['auth', 'admin']);
 
+Route::post('/usagers',
+[UsagersController::class, 'store'])->name('Usager.store');
+
+Route::get('/usagers/creation',
+[UsagersController::class, 'create'])->name('Usager.createUsager');
+
 
 
 
@@ -113,3 +119,6 @@ Route::post('/login',
 
 Route::post('/logout',
 [UsagersController::class, 'logout'])->name('logout');
+
+Route::get('/register',
+[UsagersController::class, 'showRegisterForm'])->name('Register');

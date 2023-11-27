@@ -1,6 +1,6 @@
 @extends('layout.formulaire')
     
-    @section('title', "Ajouter un réalisateur ou producteur")
+    @section('title', "Créer un compte")
     @auth
     @section('contenu')
         <div class="container-fluid">
@@ -15,7 +15,7 @@
                         @csrf
                         <div>
                             <div class="d-flex justify-content-center">
-                                <h2 class="mb-5 text-center">Ajouter un réalisateur/producteur</h2>
+                                <h2 class="mb-5 text-center">Se créer un compte</h2>
                             </div>
                             <div>
                                 <label class="text-light">Nom</label>
@@ -37,9 +37,30 @@
 
                             <div>
                             <label class="text-light">Nom d'usager</label>
-                                <input type="text" class="form-control" id="lieu" placeholder="nomUsager" name="nomUsager">
+                                <input type="text" class="form-control" id="lieu" placeholder="Nom d'usager" name="nomUsager">
                                 @if(isset($errors) && $errors->any())
                                     <div class="text-danger">{{$errors->first('nomUsager')}}</div>
+                                @endif
+                                <br>
+                            </div>
+
+                            <div>
+                            <label class="text-light">Image de profil</label>
+                                <input type="file" class="form-control" id="profil" name="profil">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('profil')}}</div>
+                                @endif
+                                <br>
+                            </div>
+
+                            <div>
+                            <label class="text-light">Type de compte</label>
+                                <Select class="type form-control">
+                                    <option value="normal">Normal</option>
+                                    <option value="kid">Enfant</option>
+                                </Select>
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('type')}}</div>
                                 @endif
                                 <br>
                             </div>
@@ -55,7 +76,7 @@
 
                             <div>
                             <label class="text-light">Mot de passe</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="pwd" name="pwd">
+                                <input type="password" class="form-control" id="pwd" placeholder="Mot de passe" name="pwd">
                                 @if(isset($errors) && $errors->any())
                                     <div class="text-danger">{{$errors->first('pwd')}}</div>
                                 @endif
@@ -63,12 +84,15 @@
                             </div>
 
                             <button type="submit" class="bouton form-control">Créer un compte</button>
-                            <p class="fois">Déja un compte? <a href="{{route('Netflix.login')}}">Connecter-vous.</a></p>
+                            <p class="fois">Déja un compte? <a href="{{route('login')}}">Connecter-vous.</a></p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>
                         </div>
                     </form>
                 </div>
             </div>
+
+
+
             <div class="row info">
                 <div class="col-md-6 offset-3 pt-5 pb-5">
                     <p>Des questions? Téléphonez au 1-844-640-3067</p>

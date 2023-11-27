@@ -27,7 +27,7 @@
                             @endif
 
                             <button type="submit" class="bouton form-control">Ouvrir une session</button>
-                            <p class="fois">Première fois sur Netflix? <a href="{{route('Netflix.register')}}" class="">Inscrivez-vous maintenant</a></p>
+                            <p class="fois">Première fois sur Netflix? <a href="{{route('Register')}}" class="">Inscrivez-vous maintenant</a></p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>
                         </div>
                     </form>
