@@ -21,7 +21,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Royaume-Uni',
                     'portrait' => '../images/realisateurs/christopherNolan.jpg',
                     'age' => '53',
-                    'sexe' => ''
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 2,
@@ -30,6 +30,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Montbéliard, France',
                     'portrait' => '../images/realisateurs/frankDarabont.png',
                     'age' => '64',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 3,
@@ -38,6 +39,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Nouvelle-Zélande',
                     'portrait' => '../images/realisateurs/peterJackson.png',
                     'age' => '61',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 4,
@@ -46,6 +48,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Chicago, Illinois, USA',
                     'portrait' => '../images/realisateurs/lanaWachowski.png',
                     'age' => '58',
+                    'sexe' => 'F'
                 ],
                 [
                     'id' => 5,
@@ -54,6 +57,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Londres, Royaume-Uni',
                     'portrait' => '../images/realisateurs/emmaThomas.jpg',
                     'age' => '51',
+                    'sexe' => 'F'
                 ],
                 [
                     'id' => 6,
@@ -62,6 +66,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'London, Royaume-Uni',
                     'portrait' => '../images/realisateurs/davidHeyman.png',
                     'age' => '62',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 7,
@@ -70,6 +75,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'San Carlos, Californie, USA',
                     'portrait' => '../images/realisateurs/kathrynBigelow.png',
                     'age' => '71',
+                    'sexe' => 'F'
                 ],
                 [
                     'id' => 8,
@@ -78,6 +84,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'South Orange, New Jersey, USA',
                     'portrait' => '../images/realisateurs/joelSilver.png',
                     'age' => '71',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 9,
@@ -86,6 +93,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'New York, USA',
                     'portrait' => '../images/realisateurs/martinScorsese.jpg',
                     'age' => '80',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 10,
@@ -94,6 +102,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Knoxville, Tennessee, USA',
                     'portrait' => '../images/realisateurs/quentinTarantino.png',
                     'age' => '60',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 11,
@@ -102,6 +111,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Détroit, Michigan, États-Unis',
                     'portrait' => '../images/realisateurs/francisFordCoppola.png',
                     'age' => '84',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 12,
@@ -110,6 +120,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Denver, Colorado, États-Unis',
                     'portrait' => '../images/realisateurs/davidFincher.png',
                     'age' => '61',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 13,
@@ -118,6 +129,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Chicago, Illinois, États-Unis',
                     'portrait' => '../images/realisateurs/artLinson.png',
                     'age' => '81',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 14,
@@ -126,6 +138,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Kapuskasing, Ontario, Canada',
                     'portrait' => '../images/realisateurs/jamesCameron.png',
                     'age' => '69',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 15,
@@ -134,6 +147,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'New York, État de New York, États-Unis',
                     'portrait' => '../images/realisateurs/lawrenceBender.png',
                     'age' => '66',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 16,
@@ -142,6 +156,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Inconnu',
                     'portrait' => '../images/realisateurs/nikiMarvin.png',
                     'age' => '71',
+                    'sexe' => 'F'
                 ],
                 [
                     'id' => 17,
@@ -150,6 +165,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Durham, Caroline du Nord, États-Unis',
                     'portrait' => '../images/realisateurs/mattDuffer.png',
                     'age' => '39',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 18,
@@ -158,6 +174,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Royaume-Uni',
                     'portrait' => '../images/realisateurs/davidSlade.png',
                     'age' => '54',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 19,
@@ -166,6 +183,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Richmond, Virginie, États-Unis',
                     'portrait' => '../images/realisateurs/vinceGilligan.png',
                     'age' => '56',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 20,
@@ -174,6 +192,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'États-Unis',
                     'portrait' => '../images/realisateurs/marcJobst.jpg',
                     'age' => '62',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 21,
@@ -182,6 +201,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Providence, Rhode Island, États-Unis',
                     'portrait' => '../images/realisateurs/damienChazelle.png',
                     'age' => '38',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 22,
@@ -190,6 +210,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Wimbledon, Londres, Royaume-Uni',
                     'portrait' => '../images/realisateurs/peterMorgan.png',
                     'age' => '60',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 23,
@@ -198,6 +219,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Cincinnati, Ohio, États-Unis',
                     'portrait' => '../images/realisateurs/stevenSpielberg.png',
                     'age' => '76',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 24,
@@ -206,6 +228,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Los Angeles, Californie, États-Unis',
                     'portrait' => '../images/realisateurs/jamesBurrows.jpg',
                     'age' => '82',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 25,
@@ -214,6 +237,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'South Shields, Royaume-Uni',
                     'portrait' => '../images/realisateurs/ridelyScott.png',
                     'age' => '85',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 26,
@@ -222,6 +246,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Bayonne, New Jersey, États-Unis',
                     'portrait' => '../images/realisateurs/georgeMartin.png',
                     'age' => '75',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 27,
@@ -230,6 +255,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'New York, État de New York, États-Unis',
                     'portrait' => '../images/realisateurs/davidBenioff.png',
                     'age' => '53',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 28,
@@ -238,6 +264,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Sydney, Australie',
                     'portrait' => '../images/realisateurs/bazLuhrmann.png',
                     'age' => '61',
+                    'sexe' => 'H'
                 ],
                 [
                     'id' => 29,
@@ -246,6 +273,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Pampelune, Espagne',
                     'portrait' => '../images/realisateurs/alexPina.png',
                     'age' => '56',
+                    'sexe' => 'H'
                 ],
 
 
@@ -261,6 +289,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => '',
                     'portrait' => '../images/acteurs/nonRepertorier.jpg',
                     'age' => '',
+                    'sexe' => null
                 ],
             ]);
     }
