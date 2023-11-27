@@ -19,8 +19,11 @@ class PersonnesController extends Controller
         $personnes = Personne::where('id', '<>', 999)->get();
         $personne999 = Personne::find(999);
         $personnes->push($personne999);
+        $hommes = Personne::where('sexe', '=', 'H');
+        $femmes = Personne::where('sexe', '=', 'F');
+        $autres = Personne::where('sexe', '=', null);
         
-        return View('Netflix.personne', compact('personnes'));
+        return View('Netflix.personne', compact('personnes', 'hommes', 'femmes', 'autres'));
     }
 
 

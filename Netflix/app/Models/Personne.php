@@ -9,7 +9,7 @@ class Personne extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nom', 'dateNaissance', 'lieuNaissance', 'portrait', 'age'];
+    protected $fillable = ['nom', 'dateNaissance', 'lieuNaissance', 'portrait', 'age', 'sexe'];
     
     public function filmsRealises()
     {
