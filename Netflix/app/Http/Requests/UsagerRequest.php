@@ -23,10 +23,12 @@ class PersonneRequest extends FormRequest
     {
         return [
             'nom' => 'required|string|min:1',
-            'dateNaissance' => 'required|string|min:1',
-            'lieuNaissance' => 'required|string|min:1',
-            'portrait' => 'required|image|mimes:png,jpeg,gif,webp,jfif|max:4096',
-            'age' => 'required|string|min:1',
+            'prenom' => 'required|string|min:1',
+            'nomUsager' => 'required|string|min:1',
+            'profil' => 'required|image|mimes:png,jpeg,gif,webp,jfif|max:4096',
+            'type' => 'required|string|min:1',
+            'email' => 'required|string|min:1',
+            'pwd' => 'required|string|min:1',
         ];
     }
 
