@@ -20,4 +20,26 @@
 
 .header {
     font-size: 30pt;
+    padding-bottom: 20px;
+}
+
+.icon{
+    width:200px;
+    height:200px;
+    border-radius: 10px;
+}
+
+.card{
+    height: 273px;
+    width: 205px;
+    text-align: center;
+    background-color: #141414 !important;
+}
+
+.button{
+    color:rgb(104, 104, 104);
+}
+
+.card-title{
+    color:rgb(104, 104, 104);
 }

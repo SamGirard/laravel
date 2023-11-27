@@ -10,24 +10,43 @@
 </head>
 <body class="bg">
 
+
+
+
     <div class="">
-        <h1 class="header text-light">Who's watching?</h2>
+        <h1 class="header text-light text-center">Who's watching?</h2>
 
         <div class="row_user">
 
             <div class="container">
-                <div class="card" >
-                <a href="{{route('Netflix.index') }}">
-                    <img src="../images/netflix-avatar.png" class="">
-                </a>
-                <div class="card-body">
-                    <h3 class="card-title">nom de la personne</h3>
-                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="card">
+                            <a href="{{route('Netflix.index') }}">
+                                <img src="../images/netflix-avatar.png" class="icon">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="card-title">nom</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="card">
+                            <a href="{{route('Netflix.index') }}">
+                                <img src="../images/add-icon.png" class="icon">
+                            </a>
+                            <div class="card-body">
+                                <h3 class="card-title">Add Profile</h3>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-
-            <div class="button">
-                Ici il va avoir bouton pour manage les profiles
+            
+            <div class="button text-center">
+                <h3>Manage profiles</h3>
             </div>
 
         </div>
