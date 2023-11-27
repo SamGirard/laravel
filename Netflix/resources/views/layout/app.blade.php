@@ -9,6 +9,11 @@
     <title>@yield('title')</title>
   </head>
   <body>
+  @if(session('success'))
+    <div class="success">
+        <h3>{{ session('success') }} <i class="fa-solid fa-circle-check" style="color: #44d930;"></i></h3>
+    </div>
+  @endif
     <!-- nav -->
     <div id="nav" class="nav">
       <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />

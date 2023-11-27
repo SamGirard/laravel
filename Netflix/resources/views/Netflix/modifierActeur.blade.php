@@ -43,7 +43,7 @@
                             <Select class="form-control mb-3" name="sexe">
                                 <option value="H">Homme</option>
                                 <option value="F">Femme</option>
-                                <option value="null">Autre</option>
+                                <option value="A">Autre</option>
                             </Select>
                        
                             <button type="submit" class="bouton form-control">Modifier</button>

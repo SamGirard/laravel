@@ -261,3 +261,9 @@
     font-size: 40pt;
     margin-top: 70px;
   }
+
+  .success{
+    color: rgb(253, 253, 253);
+    font-size: 20pt;
+    margin-left: 20px;
+  }

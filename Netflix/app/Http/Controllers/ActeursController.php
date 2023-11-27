@@ -20,7 +20,7 @@ class ActeursController extends Controller
 
         $hommes = Acteur::where('sexe', '=', 'H')->get();
         $femmes = Acteur::where('sexe', '=', 'F')->get();
-        $autres = Acteur::where('sexe', '=', null)->get();
+        $autres = Acteur::where('sexe', '=', 'A')->get();
 
         $acteur999 = Acteur::find(999);
         $acteurs->push($acteur999);
@@ -59,7 +59,7 @@ class ActeursController extends Controller
             Log::debug($e);
         }
 
-        return redirect()->route('Netflix.index');
+        return redirect()->route('Netflix.index')->with('success', 'Ajout confirmé!');;
     }
 
     /**
@@ -101,7 +101,7 @@ class ActeursController extends Controller
             Log::debug($e);
         }
 
-        return redirect()->route('Netflix.index');
+        return redirect()->route('Netflix.index')->with('success', 'Modification confirmé!');
     }
 
     /**
@@ -125,6 +125,6 @@ class ActeursController extends Controller
             log::debug($e);
             return redirect()->route('Netflix.acteur')->withErrors(['la suppression du film '.$acteur->titre.' a échoué']);
         }
-        return redirect()->route('Netflix.acteur');
+        return redirect()->route('Netflix.acteur')->with('success', 'Suppression confirmé!');;
     }
 }

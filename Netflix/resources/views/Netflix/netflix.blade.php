@@ -3,6 +3,7 @@
     @section('title', "Netflix - Accueil")
     @auth
     <!-- header -->
+
     <a href="{{route('Netflix.show', ['film' => 32]) }}" class="aBanner"><header class="banner">
     <header>
       <div class="banner__contents">

@@ -58,7 +58,7 @@ class PersonnesController extends Controller
             Log::debug($e);
         }
 
-        return redirect()->route('Netflix.index');
+        return redirect()->route('Netflix.index')->with('success', 'Ajout confirmé!');;
     }
 
     /**
@@ -101,7 +101,7 @@ class PersonnesController extends Controller
             Log::debug($e);
         }
 
-        return redirect()->route('Netflix.index');
+        return redirect()->route('Netflix.index')->with('success', 'Modification confirmé!');;
     }
 
     /**
@@ -131,6 +131,6 @@ class PersonnesController extends Controller
             log::debug($e);
             return redirect()->route('Netflix.personne')->withErrors(['la suppression du film '.$personne->titre.' a échoué']);
         }
-        return redirect()->route('Netflix.personne');
+        return redirect()->route('Netflix.personne')->with('success', 'Suppression confirmé!');;
     }
 }
