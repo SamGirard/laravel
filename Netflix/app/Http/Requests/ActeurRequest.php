@@ -27,6 +27,7 @@ class ActeurRequest extends FormRequest
             'lieuNaissance' => 'required|string|min:1',
             'portrait' => 'required|image|mimes:png,jpeg,gif,webp,jfif|max:4096',
             'age' => 'required|string|min:1',
+            'sexe' => 'required',
         ];
     }
 
@@ -40,6 +41,7 @@ class ActeurRequest extends FormRequest
             'portrait.mimes' => 'Le type de fichier n\'est pas accepté (png, jpg, gif, jpeg, webp, jfif).',
             'portrait.max' => 'La taille de l\'image ne peut pas dépasser 4096Kb.',
             'age.required' => 'Le champ Âge est requis.',
+            'sexe.required' => 'Le champ Sexe est requis.',
         ];
     }
 }

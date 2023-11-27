@@ -39,6 +39,12 @@
                             <input type="file" class="form-control mb-3" id="portrait" placeholder="Portrait" name="portrait" value="{{$acteur->portrait}}">
 
                             <input type="text" class="form-control mb-3" id="age" placeholder="Âge" name="age" value="{{$acteur->age}}">
+
+                            <Select class="form-control mb-3">
+                                <option name="sexe" value="{{$acteur->sexe}}"></option>
+                                <option name="sexe" value="">H</option>
+                                <option name="sexe" value="">F</option>
+                            </Select>
                        
                             <button type="submit" class="bouton form-control">Modifier</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>

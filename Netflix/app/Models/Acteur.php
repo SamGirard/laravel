@@ -10,7 +10,7 @@ class Acteur extends Model
     use HasFactory;
     protected $table = 'acteurs';
 
-    protected $fillable = ['nom', 'dateNaissance', 'lieuNaissance', 'portrait', 'age'];
+    protected $fillable = ['nom', 'dateNaissance', 'lieuNaissance', 'portrait', 'age', 'sexe'];
 
     public function filmsJoues()
     {

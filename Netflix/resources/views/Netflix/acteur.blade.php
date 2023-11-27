@@ -22,17 +22,16 @@
     </div>
   </div>
   -->
-
   <div class="row">
     <div class="row__posterss">
-      @if(count($acteurs))
-        @foreach($acteurs as $acteur)
+      @if(count($hommes))
+        @foreach($hommes as $homme)
           <div class="card" >
-            <a href="{{route('Netflix.zoomActeur', [$acteur]) }}">
-              <img src="{{$acteur->portrait}}" class="card-img-top row_poster row_posterLarge">
+            <a href="{{route('Netflix.zoomActeur', [$homme]) }}">
+              <img src="{{$homme->portrait}}" class="card-img-top row_poster row_posterLarge">
             </a>
             <div class="card-body">
-              <h3 class="card-title">{{$acteur->nom}}</h5>
+              <h3 class="card-title">{{$homme->nom}}</h5>
             </div>
           </div>
         @endforeach
@@ -42,14 +41,31 @@
 
   <div class="row">
     <div class="row__posterss">
-      @if(count($acteurs))
-        @foreach($acteurs as $acteur)
+      @if(count($femmes))
+        @foreach($femmes as $femme)
           <div class="card" >
-            <a href="{{route('Netflix.zoomActeur', [$acteur]) }}">
-              <img src="{{$acteur->portrait}}" class="card-img-top row_poster row_posterLarge">
+            <a href="{{route('Netflix.zoomActeur', [$femme]) }}">
+              <img src="{{$femme->portrait}}" class="card-img-top row_poster row_posterLarge">
             </a>
             <div class="card-body">
-              <h3 class="card-title">{{$acteur->nom}}</h5>
+              <h3 class="card-title">{{$femme->nom}}</h5>
+            </div>
+          </div>
+        @endforeach
+      @endif
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="row__posterss">
+      @if(count($autres))
+        @foreach($autres as $autre)
+          <div class="card" >
+            <a href="{{route('Netflix.zoomActeur', [$autre]) }}">
+              <img src="{{$autre->portrait}}" class="card-img-top row_poster row_posterLarge">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">{{$autre->nom}}</h5>
             </div>
           </div>
         @endforeach
