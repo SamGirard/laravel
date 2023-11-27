@@ -52,23 +52,12 @@
                                 <br>
                             </div>
 
-                            <div class="form-group">
-                                <label class="text-light">Sélectionner l'image</label>
-                                <input type="file" class="form-control-file upload" id="portrait" placeholder="Portrait" name="portrait" value="{{ old('portrait') }}">
+                            <label class="text-light">Sélectionner l'image</label>
+                                <input type="file" class="form-control file upload" id="portrait" placeholder="Portrait" name="portrait" value="{{ old('portrait') }}">
                                 @if(isset($errors) && $errors->any())
                                     <div class="text-danger">{{$errors->first('portrait')}}</div>        
                                 @endif
                                 <br>
-                            </div>
-                            <!--
-                            <label class="text-light">Portrait</label>
-                                <input type="text" class="form-control" id="portrait" placeholder="Portrait" name="portrait" value="{{ old('portrait') }}">
-                                @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('portrait')}}</div>        
-                                @endif
-                                <br>
-                            </div>
-                            -->
 
                             <div>
                             <label class="text-light">Âge</label>
@@ -81,14 +70,16 @@
 
                             <div>
                                 <label class="text-light">Sexe</label>
-                                <Select class="form-control mb-3">
-                                    <option name="sexe" value="">H</option>
-                                    <option name="sexe" value="">F</option>
+                                <Select class="form-control mb-3" name="sexe">
+                                    <option value="H">Homme</option>
+                                    <option value="F">Femme</option>
+                                    <option value="A">Autre</option>
                                 </Select>
                                 @if(isset($errors) && $errors->any())
                                     <div class="text-danger">{{$errors->first('sexe')}}</div>        
                                 @endif
                             </div>
+                            
                             <button type="submit" class="bouton form-control">Ajouter</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>
