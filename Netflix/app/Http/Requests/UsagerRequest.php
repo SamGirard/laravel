@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PersonneRequest extends FormRequest
+class UsagerRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -40,7 +40,6 @@ class PersonneRequest extends FormRequest
             'nomUsager.required' => 'Le champ Nom D\'usager est requis.',
             'profil.required' => 'Le champ Profil est requis.',
             'type.required' => 'Le champ Type est requis.',
-            'profil.required' => 'Le champ Image de Profile est requis.',
             'profil.mimes' => 'Le type de fichier n\'est pas accepté (png, jpg, gif, jpeg, webp, jfif).',
             'email.required' => 'Le champ Email est requis.',
             'pwd.required' => 'Le champ Mot de Passe est requis.',
