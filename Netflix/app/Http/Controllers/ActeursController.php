@@ -17,6 +17,11 @@ class ActeursController extends Controller
         $acteurs = Acteur::all();
 
         $acteurs = Acteur::where('id', '<>', 999)->get();
+
+        $hommes = Acteur::where('sexe', '=', 'H')->get();
+        $femmes = Acteur::where('sexe', '=', 'F')->get();
+        $autres = Acteur::where('sexe', '=', null)->get();
+        
         $acteur999 = Acteur::find(999);
         $acteurs->push($acteur999);
 

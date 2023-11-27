@@ -79,6 +79,16 @@
                                 <br>
                             </div>
 
+                            <div>
+                                <label class="text-light">Sexe</label>
+                                <Select class="form-control mb-3">
+                                    <option name="sexe" value="">H</option>
+                                    <option name="sexe" value="">F</option>
+                                </Select>
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('sexe')}}</div>        
+                                @endif
+                            </div>
                             <button type="submit" class="bouton form-control">Ajouter</button>
                             <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>
