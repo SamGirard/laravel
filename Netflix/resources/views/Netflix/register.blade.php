@@ -1,6 +1,6 @@
 @extends('layout.formulaire')
     
-    @section('title', "Ajouter un acteur")
+    @section('title', "Ajouter un réalisateur ou producteur")
     @auth
     @section('contenu')
         <div class="container-fluid">
@@ -10,71 +10,60 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 offset-4">
-                    <form method="post" action="{{route('Acteur.store')}}" class="formulaireAjoutFilm" enctype="multipart/form-data">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 offset-xl-4 offset-lg-3 offset-4">
+                    <form method="post" action="{{route('Personne.store')}}" class="formulaireAjoutFilm" enctype="multipart/form-data">
                         @csrf
                         <div>
                             <div class="d-flex justify-content-center">
-                                <h2 class="text-center">Ajouter un acteur</h2>
+                                <h2 class="mb-5 text-center">Ajouter un réalisateur/producteur</h2>
                             </div>
-
                             <div>
-                            <label class="text-light">Nom</label>
-                                <input name="nom" type="text" class="form-control" id="nomFilm" placeholder="Nom complet" name="nom" value="{{ old('nom') }}">
+                                <label class="text-light">Nom</label>
+                                <input name="nom" type="text" class="form-control" id="nom" placeholder="Nom" name="nom">
                                 @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('nom')}}</div>        
+                                    <div class="text-danger">{{$errors->first('nom')}}</div>
                                 @endif
                                 <br>
                             </div>
 
                             <div>
-                            <label class="text-light">Date de naissance</label>
-                                <input type="text" class="form-control" id="naissance" placeholder="Date de naissance" name="dateNaissance" value="{{ old('dateNaissance') }}">
+                            <label class="text-light">Prénom</label>
+                                <input type="text" class="form-control" id="prenom" placeholder="Prénom" name="prenom">
                                 @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('dateNaissance')}}</div>        
+                                    <div class="text-danger">{{$errors->first('prenom')}}</div>
                                 @endif
                                 <br>
                             </div>
 
                             <div>
-                            <label class="text-light">Lieu de naissance</label>
-                                <input type="text" class="form-control" id="lieu" placeholder="Lieu de naissance" name="lieuNaissance" value="{{ old('lieuNaissance') }}">
+                            <label class="text-light">Nom d'usager</label>
+                                <input type="text" class="form-control" id="lieu" placeholder="nomUsager" name="nomUsager">
                                 @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('lieuNaissance')}}</div>        
-                                @endif
-                                <br>
-                            </div>
-
-                            <label class="text-light">Sélectionner l'image</label>
-                                <input type="file" class="form-control file upload" id="portrait" placeholder="Portrait" name="portrait" value="{{ old('portrait') }}">
-                                @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('portrait')}}</div>        
-                                @endif
-                                <br>
-
-                            <div>
-                            <label class="text-light">Âge</label>
-                                <input type="text" class="form-control" id="age" placeholder="Âge" name="age" value="{{ old('age') }}">
-                                @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('age')}}</div>        
+                                    <div class="text-danger">{{$errors->first('nomUsager')}}</div>
                                 @endif
                                 <br>
                             </div>
 
                             <div>
-                                <label class="text-light">Sexe</label>
-                                <Select class="form-control mb-3" name="sexe">
-                                    <option value="H">Homme</option>
-                                    <option value="F">Femme</option>
-                                    <option value="A">Autre</option>
-                                </Select>
+                            <label class="text-light">Email</label>
+                                <input type="text" class="form-control" id="email" placeholder="Email" name="email">
                                 @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('sexe')}}</div>        
+                                    <div class="text-danger">{{$errors->first('email')}}</div>
                                 @endif
+                                <br>
                             </div>
-                            
-                            <button type="submit" class="bouton form-control">Ajouter</button>
-                            <p class="fois">Première fois sur l'ajout de film? Aller voir le centre d'aide.</p>
+
+                            <div>
+                            <label class="text-light">Mot de passe</label>
+                                <input type="password" class="form-control" id="pwd" placeholder="pwd" name="pwd">
+                                @if(isset($errors) && $errors->any())
+                                    <div class="text-danger">{{$errors->first('pwd')}}</div>
+                                @endif
+                                <br>
+                            </div>
+
+                            <button type="submit" class="bouton form-control">Créer un compte</button>
+                            <p class="fois">Déja un compte? <a href="{{route('Netflix.login')}}">Connecter-vous.</a></p>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>
                         </div>
                     </form>
