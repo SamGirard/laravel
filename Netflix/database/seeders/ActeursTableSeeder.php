@@ -264,7 +264,7 @@ class ActeursTableSeeder extends Seeder
                 'lieuNaissance' => 'Algésiras, Espagne',
                 'portrait' => '../images/acteurs/AlvaroMorte.jpg',
                 'age' => '48 ans',
-                'sexe' => null,
+                'sexe' => 'H',
             ],
 
 
@@ -277,7 +277,7 @@ class ActeursTableSeeder extends Seeder
                 'lieuNaissance' => '',
                 'portrait' => '../images/acteurs/nonRepertorier.jpg',
                 'age' => '',
-                'sexe' => 'H',
+                'sexe' => null,
             ],
             
 

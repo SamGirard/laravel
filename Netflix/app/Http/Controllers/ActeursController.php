@@ -21,11 +21,11 @@ class ActeursController extends Controller
         $hommes = Acteur::where('sexe', '=', 'H')->get();
         $femmes = Acteur::where('sexe', '=', 'F')->get();
         $autres = Acteur::where('sexe', '=', null)->get();
-        
+
         $acteur999 = Acteur::find(999);
         $acteurs->push($acteur999);
 
-        return View('Netflix.acteur', compact('acteurs'));
+        return View('Netflix.acteur', compact('acteurs', 'hommes', 'femmes', 'autres'));
     }
 
     /**
