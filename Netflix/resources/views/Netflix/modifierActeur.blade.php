@@ -41,9 +41,10 @@
                             <input type="text" class="form-control mb-3" id="age" placeholder="Âge" name="age" value="{{$acteur->age}}">
 
                             <Select class="form-control mb-3">
-                                <option name="sexe" value="{{$acteur->sexe}}"></option>
-                                <option name="sexe" value="">H</option>
-                                <option name="sexe" value="">F</option>
+                                <option name="sexe" value="{{$acteur->sexe}}">{{$acteur->sexe}}</option>
+                                <option name="sexe" value="H">H</option>
+                                <option name="sexe" value="F">F</option>
+                                <option name="sexe" value="null">Autre</option>
                             </Select>
                        
                             <button type="submit" class="bouton form-control">Modifier</button>
