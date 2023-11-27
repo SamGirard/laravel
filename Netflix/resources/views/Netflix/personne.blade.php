@@ -42,10 +42,10 @@
   </div>
   -->
 
+  
   <div class="row">
-    <h2>Hommes</h2>
-    <div class="row_colonne">
-      <div class="scrollMenu">
+  <h2 class="sexe">Hommes</h2>
+    <div class="row__posterss">
           @if(count($hommes))
             @foreach($hommes as $homme)
             <div class="card" >
@@ -58,7 +58,6 @@
             </div>
             @endforeach
           @endif
-      </div>
     </div>
   </div>
   
