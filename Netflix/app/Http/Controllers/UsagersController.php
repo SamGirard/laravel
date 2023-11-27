@@ -50,7 +50,7 @@ class UsagersController extends Controller
         }
 
         if($reussi){
-            return redirect()->route('Netflix.index')->with('message', "Connexion réussie");
+            return redirect()->route('chooseUser')->with('message', "Connexion réussie");
         } else {
             return redirect()->route('login')->withErrors(['Informations invalides']);
         }
