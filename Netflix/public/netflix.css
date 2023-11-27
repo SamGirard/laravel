@@ -80,6 +80,7 @@
   div.scrollmenu {
     overflow: auto;
     white-space: nowrap;
+    padding-top: 10px;
   }
 
   div.scrollmenu::-webkit-scrollbar {
