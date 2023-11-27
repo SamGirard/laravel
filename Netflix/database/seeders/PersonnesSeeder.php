@@ -21,6 +21,7 @@ class PersonnesSeeder extends Seeder
                     'lieuNaissance' => 'Royaume-Uni',
                     'portrait' => '../images/realisateurs/christopherNolan.jpg',
                     'age' => '53',
+                    'sexe' => ''
                 ],
                 [
                     'id' => 2,

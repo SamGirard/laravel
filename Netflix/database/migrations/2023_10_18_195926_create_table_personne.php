@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('lieuNaissance');
             $table->text('portrait');
             $table->text('age');
+            $table->enum('sexe', ['H', 'F'])->nullable();
             $table->timestamps();
         });
     }
