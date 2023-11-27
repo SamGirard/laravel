@@ -33,11 +33,11 @@
 
                     <div class="col-6">
                         <div class="card">
-                            <a href="{{route('Netflix.index') }}">
-                                <img src="../images/add-icon.png" class="icon">
+                            <a href="{{route('Netflix.index') }}" class="test">
+                                <img src="../images/add-icon.png" class="add">
                             </a>
                             <div class="card-body">
-                                <h3 class="card-title">Add Profile</h3>
+                                <h3 class="card-title add-title">Add Profile</h3>
                             </div>
                         </div>
                     </div>

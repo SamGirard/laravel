@@ -29,6 +29,17 @@
     border-radius: 10px;
 }
 
+.add{
+    width:100px;
+    height:100px;
+    margin-top: 50px;
+}
+
+.test{
+    width: 200px;
+    height: 200px;
+}
+
 .card{
     height: 273px;
     width: 205px;
