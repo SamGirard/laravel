@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PersonneRequest extends FormRequest
+class UsagerRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -23,10 +23,12 @@ class PersonneRequest extends FormRequest
     {
         return [
             'nom' => 'required|string|min:1',
-            'dateNaissance' => 'required|string|min:1',
-            'lieuNaissance' => 'required|string|min:1',
-            'portrait' => 'required|image|mimes:png,jpeg,gif,webp,jfif|max:4096',
-            'age' => 'required|string|min:1',
+            'prenom' => 'required|string|min:1',
+            'nomUsager' => 'required|string|min:1',
+            'profil' => 'required|image|mimes:png,jpeg,gif,webp,jfif|max:4096',
+            'type' => 'required',
+            'email' => 'required|string|min:1',
+            'pwd' => 'required|string|min:1',
         ];
     }
 
@@ -34,12 +36,13 @@ class PersonneRequest extends FormRequest
     {
         return [
             'nom.required' => 'Le champ Nom est requis.',
-            'dateNaissance.required' => 'Le champ Date de naissance est requis.',
-            'lieuNaissance.required' => 'Le champ Lieu de naissance est requis.',
-            'portrait.required' => 'Le champ Portrait est requis.',
-            'portrait.mimes' => 'Le type de fichier n\'est pas accepté (png, jpg, gif, jpeg, webp, jfif).',
-            'portrait.max' => 'La taille de l\'image ne peut pas dépasser 4096Kb.',
-            'age.required' => 'Le champ Âge est requis.',
+            'prenom.required' => 'Le champ Prenom est requis.',
+            'nomUsager.required' => 'Le champ Nom D\'usager est requis.',
+            'profil.required' => 'Le champ Profil est requis.',
+            'type.required' => 'Le champ Type est requis.',
+            'profil.mimes' => 'Le type de fichier n\'est pas accepté (png, jpg, gif, jpeg, webp, jfif).',
+            'email.required' => 'Le champ Email est requis.',
+            'pwd.required' => 'Le champ Mot de Passe est requis.',
         ];
     }
 }
