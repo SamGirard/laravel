@@ -223,7 +223,7 @@
   .row__posterss {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Ajustez ceci en fonction de votre mise en page souhaitée */
+    justify-content: flex-start; /* Ajustez ceci en fonction de votre mise en page souhaitée */
   }
 
   .deco{
@@ -249,6 +249,8 @@
 
   .card{
     /*border: 1px solid grey;*/
+    width:210px;
+    height:285px;
     text-align: center;
     margin-bottom:20px;
     align-items: center;
