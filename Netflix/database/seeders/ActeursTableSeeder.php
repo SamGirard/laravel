@@ -20,7 +20,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '11 novembre 1974',
                 'lieuNaissance' => 'Los Angeles, Californie, États-Unis',
                 'portrait' => '../images/acteurs/leonardodicaprio.jpg',
-                'age' => '48 ans'
+                'age' => '48 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 2,
@@ -28,7 +29,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '25 avril 1940',
                 'lieuNaissance' => 'Spanish Harlem, New York, État de New York, États-Unis',
                 'portrait' => '../images/acteurs/AlPacino.jpg',
-                'age' => '83 ans'
+                'age' => '83 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 3,
@@ -36,7 +38,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '3 avril 1924',
                 'lieuNaissance' => 'Omaha, Nebraska, États-Unis',
                 'portrait' => '../images/acteurs/MarlonBrando.jpg',
-                'age' => 'décédé'
+                'age' => 'décédé',
+                'sexe' => 'H',
             ],
             [
                 'id' => 4,
@@ -44,7 +47,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '4 novembre 1969',
                 'lieuNaissance' => 'Uvalde, Texas, États-Unis',
                 'portrait' => '../images/acteurs/MatthewMcConaughey.jpg',
-                'age' => '54 ans'
+                'age' => '54 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 5,
@@ -52,7 +56,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '2 août 1976',
                 'lieuNaissance' => 'Godalming, Royaume-Uni',
                 'portrait' => '../images/acteurs/SamWorthington.jpg',
-                'age' => '47 ans'
+                'age' => '47 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 6,
@@ -60,7 +65,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '30 janvier 1974',
                 'lieuNaissance' => 'Haverfordwest, Pays de Galles, Royaume-Uni',
                 'portrait' => '../images/acteurs/ChristianBale.jpg',
-                'age' => '49 ans'
+                'age' => '49 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 7,
@@ -68,7 +74,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => ' 21 décembre 1948',
                 'lieuNaissance' => 'Washington, D.C., États-Unis',
                 'portrait' => '../images/acteurs/SamuelLJackson.jpg',
-                'age' => '74 ans'
+                'age' => '74 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 8,
@@ -76,7 +83,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '1er juin 1937',
                 'lieuNaissance' => 'Memphis, Tennessee, États-Unis',
                 'portrait' => '../images/acteurs/MorganFreeman.jpg',
-                'age' => '86 ans'
+                'age' => '86 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 9,
@@ -84,7 +92,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '28 janvier 1981',
                 'lieuNaissance' => 'Cedar Rapids, Iowa, États-Unis',
                 'portrait' => '../images/acteurs/Wood.jpg',
-                'age' => '42 ans'
+                'age' => '42 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 10,
@@ -92,7 +101,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '2 septembre 1964',
                 'lieuNaissance' => 'Beyrouth, Liban',
                 'portrait' => '../images/acteurs/KeanuReeves.jpg',
-                'age' => '59 ans'
+                'age' => '59 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 11,
@@ -100,7 +110,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '5 mai 1983',
                 'lieuNaissance' => 'Jersey, Îles Anglo-Normandes, Royaume-Uni',
                 'portrait' => '../images/acteurs/HenryCavill.jpg',
-                'age' => '40 ans'
+                'age' => '40 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 12,
@@ -108,7 +119,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '14 septembre 1947',
                 'lieuNaissance' => 'Omagh, Irlande du Nord',
                 'portrait' => '../images/acteurs/SamNeill.jpg',
-                'age' => '76 ans'
+                'age' => '76 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 13,
@@ -116,7 +128,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '7 avril 1964',
                 'lieuNaissance' => 'Wellington, Nouvelle-Zélande',
                 'portrait' => '../images/acteurs/RussellCrowe.jpg',
-                'age' => '59 ans'
+                'age' => '59 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 14,
@@ -124,7 +137,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '13 mai 1939',
                 'lieuNaissance' => 'Brooklyn, New York, États-Unis',
                 'portrait' => '../images/acteurs/HarveyKeitel.jpg',
-                'age' => '84 ans'
+                'age' => '84 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 15,
@@ -132,7 +146,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '14 mai 1961',
                 'lieuNaissance' => 'Dulwich, Londres, Angleterre',
                 'portrait' => '../images/acteurs/TimRoth.jpg',
-                'age' => '62 ans'
+                'age' => '62 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 16,
@@ -140,7 +155,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '26 mai 1949',
                 'lieuNaissance' => 'Winston-Salem, Caroline du Nord, États-Unis',
                 'portrait' => '../images/acteurs/PamGrier.jpg',
-                'age' => '74 ans'
+                'age' => '74 ans',
+                'sexe' => 'F',
             ],
             [
                 'id' => 17,
@@ -148,7 +164,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '17 mars 1951',
                 'lieuNaissance' => 'Springfield, Massachusetts, États-Unis',
                 'portrait' => '../images/acteurs/KurtRussel.jpg',
-                'age' => '72 ans'
+                'age' => '72 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 18,
@@ -156,7 +173,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '13 décembre 1967',
                 'lieuNaissance' => 'Terrell, Texas, États-Unis',
                 'portrait' => '../images/acteurs/JamieFoxx.jpg',
-                'age' => '55 ans'
+                'age' => '55 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 19,
@@ -164,7 +182,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '29 avril 1970',
                 'lieuNaissance' => 'Boston, Massachusetts, États-Unis',
                 'portrait' => '../images/acteurs/UmaThurman.jpg',
-                'age' => '53 ans'
+                'age' => '53 ans',
+                'sexe' => 'F',
             ],
             [
                 'id' => 20,
@@ -172,7 +191,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '18 décembre 1963',
                 'lieuNaissance' => 'Shawnee, Oklahoma, États-Unis',
                 'portrait' => '../images/acteurs/BradPitt.jpg',
-                'age' => '59 ans'
+                'age' => '59 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 21,
@@ -180,7 +200,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '18 décembre 1963',
                 'lieuNaissance' => 'Shawnee, Oklahoma, États-Unis',
                 'portrait' => '../images/acteurs/BryanCranston.jpg',
-                'age' => '67 ans'
+                'age' => '67 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 22,
@@ -188,7 +209,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '18 décembre 1963',
                 'lieuNaissance' => 'Shawnee, Oklahoma, États-Unis',
                 'portrait' => '../images/acteurs/RyanGosling.jpg',
-                'age' => '42 ans'
+                'age' => '42 ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 23,
@@ -196,7 +218,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '19 février 2004',
                 'lieuNaissance' => 'Marbella, Andalousie, Espagne',
                 'portrait' => '../images/acteurs/MillieBobbyBrown.jpg',
-                'age' => '19 ans'
+                'age' => '19 ans',
+                'sexe' => 'F',
             ],
             [
                 'id' => 24,
@@ -204,7 +227,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '2 mars 1981',
                 'lieuNaissance' => 'Los Angeles, Californie, États-Unis',
                 'portrait' => '../images/acteurs/BryceDallasHoward.jpg',
-                'age' => '42 ans'
+                'age' => '42 ans',
+                'sexe' => 'F',
             ],
             [
                 'id' => 25,
@@ -212,7 +236,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '30 novembre 1874',
                 'lieuNaissance' => 'Blenheim Palace, Angleterre',
                 'portrait' => '../images/acteurs/WinstonChurchill.jpg',
-                'age' => 'décedé ans'
+                'age' => 'décedé ans',
+                'sexe' => 'H',
             ],
             [
                 'id' => 26,
@@ -220,7 +245,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '11 février 1969',
                 'lieuNaissance' => 'Sherman Oaks, Los Angeles, Californie, États-Unis',
                 'portrait' => '../images/acteurs/JenniferAniston.jpg',
-                'age' => '54 ans'
+                'age' => '54 ans',
+                'sexe' => 'F',
             ],
             [
                 'id' => 27,
@@ -228,7 +254,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '23 octobre 1986',
                 'lieuNaissance' => 'Londres, Angleterre',
                 'portrait' => '../images/acteurs/EmiliaClarke.jpg',
-                'age' => '37 ans'
+                'age' => '37 ans',
+                'sexe' => 'F',
             ],
             [
                 'id' => 28,
@@ -236,7 +263,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '23 février 1975',
                 'lieuNaissance' => 'Algésiras, Espagne',
                 'portrait' => '../images/acteurs/AlvaroMorte.jpg',
-                'age' => '48 ans'
+                'age' => '48 ans',
+                'sexe' => null,
             ],
 
 
@@ -248,7 +276,8 @@ class ActeursTableSeeder extends Seeder
                 'dateNaissance' => '',
                 'lieuNaissance' => '',
                 'portrait' => '../images/acteurs/nonRepertorier.jpg',
-                'age' => ''
+                'age' => '',
+                'sexe' => 'H',
             ],
             
 
