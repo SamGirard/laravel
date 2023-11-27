@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../../ajoutFilm.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <title>Ajout d'un acteur</title>
+        <title>Modification d'un acteur</title>
     </head>
     <body>
         @if(isset($errors) && $errors->any())
@@ -40,11 +40,10 @@
 
                             <input type="text" class="form-control mb-3" id="age" placeholder="Âge" name="age" value="{{$acteur->age}}">
 
-                            <Select class="form-control mb-3">
-                                <option name="sexe" value="{{$acteur->sexe}}">{{$acteur->sexe}}</option>
-                                <option name="sexe" value="H">H</option>
-                                <option name="sexe" value="F">F</option>
-                                <option name="sexe" value="null">Autre</option>
+                            <Select class="form-control mb-3" name="sexe">
+                                <option value="H">Homme</option>
+                                <option value="F">Femme</option>
+                                <option value="null">Autre</option>
                             </Select>
                        
                             <button type="submit" class="bouton form-control">Modifier</button>

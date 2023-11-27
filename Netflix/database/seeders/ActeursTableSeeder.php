@@ -277,7 +277,7 @@ class ActeursTableSeeder extends Seeder
                 'lieuNaissance' => '',
                 'portrait' => '../images/acteurs/nonRepertorier.jpg',
                 'age' => '',
-                'sexe' => null,
+                'sexe' => 'A',
             ],
             
 
