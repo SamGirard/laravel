@@ -23,6 +23,7 @@
     </div>
   -->
 
+  <!--
   <div class="row">
     <div class="row__posterss">
       @if(count($personnes))
@@ -39,6 +40,28 @@
       @endif
     </div>
   </div>
+  -->
+
+  <div class="row">
+    <h2>Hommes</h2>
+    <div class="row_colonne">
+      <div class="scrollMenu">
+          @if(count($hommes))
+            @foreach($hommes as $homme)
+            <div class="card" >
+              <a href="{{route('Netflix.zoom', [$homme]) }}">
+                <img src="{{$homme->portrait}}" class="card-img-top row_poster row_posterLarge">
+              </a>
+              <div class="card-body">
+                <h3 class="card-title cNomPersonne">{{$homme->nom}}</h5>
+              </div>
+            </div>
+            @endforeach
+          @endif
+      </div>
+    </div>
+  </div>
+  
 
 
 
