@@ -23,6 +23,9 @@ use App\Http\Controllers\UsagersController;
 Route::get('/',
 [FilmsController::class, 'index'])->name('Netflix.index')->middleware('auth');
 
+Route::get('/choose',
+[UsagersController::class, 'choose'])->name('chooseUser');
+
 Route::get('Netflix.personne',
 [PersonnesController::class, 'index'])->name('Netflix.personne')->middleware('auth');
 
