@@ -116,7 +116,7 @@ class PersonnesSeeder extends Seeder
                     'dateNaissance' => '16 mars 1942',
                     'lieuNaissance' => 'Chicago, Illinois, États-Unis',
                     'portrait' => '../images/realisateurs/artLinson.png',
-                    'age' => 81,
+                    'age' => '81',
                 ],
                 [
                     'id' => 14,

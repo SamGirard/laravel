@@ -209,8 +209,8 @@
     justify-content: space-between;
     display: flex;
     z-index: 1;
-
-    /*padding: 20px;*/
+    margin-bottom: auto;
+    
     /* background-color: #111; */
     transition-timing-function: ease-in;
     transition: all 0.5s;
