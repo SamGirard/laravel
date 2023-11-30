@@ -24,11 +24,11 @@ class UsagerRequest extends FormRequest
         return [
             'nom' => 'required|string|min:1',
             'prenom' => 'required|string|min:1',
-            'nomUsager' => 'required|string|min:1',
+            'username' => 'required|string|min:1',
             'profil' => 'required|image|mimes:png,jpeg,gif,webp,jfif|max:4096',
-            'type' => 'required',
+            'role' => 'required|string',
             'email' => 'required|string|min:1',
-            'pwd' => 'required|string|min:1',
+            'password' => 'required|string|min:1',
         ];
     }
 
@@ -37,12 +37,12 @@ class UsagerRequest extends FormRequest
         return [
             'nom.required' => 'Le champ Nom est requis.',
             'prenom.required' => 'Le champ Prenom est requis.',
-            'nomUsager.required' => 'Le champ Nom D\'usager est requis.',
+            'username.required' => 'Le champ Nom D\'usager est requis.',
             'profil.required' => 'Le champ Profil est requis.',
-            'type.required' => 'Le champ Type est requis.',
+            'role.required' => 'Le champ Type est requis.',
             'profil.mimes' => 'Le type de fichier n\'est pas accepté (png, jpg, gif, jpeg, webp, jfif).',
             'email.required' => 'Le champ Email est requis.',
-            'pwd.required' => 'Le champ Mot de Passe est requis.',
+            'password.required' => 'Le champ Mot de Passe est requis.',
         ];
     }
 }

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Usager;
 use App\Http\Requests\UsagerRequest;
+use Illuminate\Support\Facades\Log;
+
 
 class UsagersController extends Controller
 {

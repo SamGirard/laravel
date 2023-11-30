@@ -19,7 +19,8 @@ class UsagersTableSeeder extends Seeder
                 'username' => 'admin',
                 'email' => 'admin@gmail.com',
                 'password' => Hash::make('admin'),
-                'role' => 'admin'
+                'role' => 'admin',
+                'profil' => "",
             ],
             [
                 'id' => 2,
@@ -28,7 +29,8 @@ class UsagersTableSeeder extends Seeder
                 'username' => 'Felix1',
                 'email' => 'felix@gmail.com',
                 'password' => Hash::make('Felix'),
-                'role' => 'normal'
+                'role' => 'normal',
+                'profil' => "",
             ],
             [
                 'id' => 3,
@@ -37,7 +39,8 @@ class UsagersTableSeeder extends Seeder
                 'username' => 'Tony123',
                 'email' => 'tony_sc@gmail.com',
                 'password' => Hash::make('Antoine'),
-                'role' => 'kid'
+                'role' => 'kid',
+                'profil' => "",
             ],
             /*
             [

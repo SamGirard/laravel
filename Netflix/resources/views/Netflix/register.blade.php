@@ -37,9 +37,9 @@
 
                             <div>
                             <label class="text-light">Nom d'usager</label>
-                                <input type="text" class="form-control" id="lieu" placeholder="Nom d'usager" name="nomUsager">
+                                <input type="text" class="form-control" id="lieu" placeholder="Nom d'usager" name="username">
                                 @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('nomUsager')}}</div>
+                                    <div class="text-danger">{{$errors->first('username')}}</div>
                                 @endif
                                 <br>
                             </div>
@@ -55,12 +55,12 @@
 
                             <div>
                             <label class="text-light">Type de compte</label>
-                                <Select class="type form-control">
+                                <Select class="type form-control" name="role">
                                     <option value="normal">Normal</option>
                                     <option value="kid">Enfant</option>
                                 </Select>
                                 @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('type')}}</div>
+                                    <div class="text-danger">{{$errors->first('role')}}</div>
                                 @endif
                                 <br>
                             </div>
@@ -76,9 +76,9 @@
 
                             <div>
                             <label class="text-light">Mot de passe</label>
-                                <input type="password" class="form-control" id="pwd" placeholder="Mot de passe" name="pwd">
+                                <input type="password" class="form-control" id="pwd" placeholder="Mot de passe" name="password">
                                 @if(isset($errors) && $errors->any())
-                                    <div class="text-danger">{{$errors->first('pwd')}}</div>
+                                    <div class="text-danger">{{$errors->first('password')}}</div>
                                 @endif
                                 <br>
                             </div>
