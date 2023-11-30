@@ -82,6 +82,12 @@ Route::get('/acteurs/modifier/{acteur}',
 Route::patch('/acteurs/modifier/{acteur}',
 [ActeursController::class, 'update'])->name('Netflix.updateActeur')->middleware(['auth', 'admin']);
 
+Route::get('/usagers/modifier/{usager}', 
+[UsagersController::class, 'edit'])->name('Netflix.modifierUsager')->middleware(['auth', 'admin']);
+
+Route::patch('/usagers/modifier/{usager}',
+[UsagersController::class, 'update'])->name('Netflix.updateUsager')->middleware(['auth', 'admin']);
+
 
 
 
