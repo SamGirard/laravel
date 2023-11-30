@@ -9,8 +9,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<div></div>
-
 <body class="zoomPersonne">
     <div class="container-fluid">
         <div class="row mt-5">
@@ -35,11 +33,11 @@
                             <p>Âge : {{ $acteur->age }}</p>
                             @auth
                                 @if(Auth::user()->role == 'admin')
-                                    <a href="{{route('Netflix.modifierActeur', [$acteur])}}"><p>Modifier</p></a>
+                                    <a href="{{route('Netflix.modifierActeur', [$acteur])}}"><i class="fa-solid fa-file-pen fa-2x poubelle" style="color: #ffffff;"></i></a>
                                     <form method="POST" action="{{route('Acteurs.destroy', [$acteur->id])}}">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                                        <button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash fa-2x" style="color: #ffffff;"></i></button>
                                     </form>
                                 @endif
                             @endauth

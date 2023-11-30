@@ -41,6 +41,50 @@ class UsagersController extends Controller
 
 
 
+    public function edit(Usager $usager)
+    {
+        return View('Netflix.modifierUsagers', compact('usager'));
+    }
+
+
+
+    public function update(UsagerRequest $request, Usager $usager)
+    {
+        try {
+            $usager->update($request->all());
+
+            $uploadFile = $request->file('profil');
+            $nomFichierUnique = '../images/profils/' . str_replace(' ', '-',$usager->nom). '-' . uniqid() . '.' . $uploadFile->extension();
+            try{
+                $request->profil->move(public_path('images/profils'), $nomFichierUnique);
+            }
+            catch(\Symfony\Component\HttpFoundation\File\Exception\FileException $e){
+                Log::error("Erreur lors du téléversement du fichier. ", [$e]);
+            }
+
+            $usager->profil = $nomFichierUnique;
+            $usager->save();
+        } catch (\Throwable $e) {
+            Log::debug($e);
+        }
+
+        return redirect()->route('Netflix.index')->with('success', 'Modification confirmé!');
+    }
+
+    public function destroy($id)
+    {
+        try{
+            $usager = Usager::findOrFail($id);
+
+            $usager->delete();
+            return redirect()->route('Netflix.index')->with('message', "Suppression de ".$usager->nom." réussi!");
+        }
+        catch(\Throwable $e){
+            log::debug($e);
+            return redirect()->route('Netflix.index')->withErrors(['la suppression du film '.$usager->nom.' a échoué']);
+        }
+        return redirect()->route('Netflix.index')->with('success', 'Suppression confirmé!');;
+    }
 
 
 
