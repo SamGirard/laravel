@@ -20,7 +20,7 @@ class UsagersTableSeeder extends Seeder
                 'email' => 'admin@gmail.com',
                 'password' => Hash::make('admin'),
                 'role' => 'admin',
-                'profil' => "",
+                'profil' => "../images/profils/police.jpg",
             ],
             [
                 'id' => 2,
@@ -30,7 +30,7 @@ class UsagersTableSeeder extends Seeder
                 'email' => 'felix@gmail.com',
                 'password' => Hash::make('Felix'),
                 'role' => 'normal',
-                'profil' => "",
+                'profil' => "../images/profils/madame.png",
             ],
             [
                 'id' => 3,
@@ -40,7 +40,7 @@ class UsagersTableSeeder extends Seeder
                 'email' => 'tony_sc@gmail.com',
                 'password' => Hash::make('Antoine'),
                 'role' => 'kid',
-                'profil' => "",
+                'profil' => "../images/profils/kid.png",
             ],
             /*
             [
