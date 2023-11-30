@@ -114,6 +114,8 @@ Route::delete('/personnes/{id}',
 Route::delete('/acteurs/{id}',
 [ActeursController::class, 'destroy'])->name('Acteurs.destroy')->middleware(['auth', 'admin']);
 
+Route::delete('/usagers/{id}',
+[Usager::class, 'destroy'])->name('Usagers.destroy')->middleware(['auth', 'admin']);
 
 
 /************************Login*****************************/
