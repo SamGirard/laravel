@@ -34,11 +34,11 @@
                             <p>Âge : {{ $personne->age }} ans</p>
                             @auth
                                 @if(Auth::user()->role == 'admin')
-                                    <a href="{{route('Netflix.modifierPersonne', [$personne])}}"><p>Modifier</p></a>
+                                    <a href="{{route('Netflix.modifierPersonne', [$personne])}}"><i class="fa-solid fa-file-pen fa-2x poubelle" style="color: #ffffff;"></i></a>
                                     <form method="POST" action="{{route('Personne.destroy', [$personne->id])}}">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Supprimer</button>
+                                        <button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash fa-2x" style="color: #ffffff;"></i></button>
                                     </form>
                                 @endif
                             @endauth
