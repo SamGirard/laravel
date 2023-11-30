@@ -15,7 +15,7 @@
                         @csrf
                         <div>
                             <div class="d-flex justify-content-center">
-                                <h2 class="mb-5 text-center">Se créer un compte</h2>
+                                <h2 class="mb-5 text-center">Modifier un compte</h2>
                             </div>
                             <div>
                                 <label class="text-light">Nom</label>
