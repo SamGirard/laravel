@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Usager;
 use App\Models\Film;
 use App\Models\Personne;
 use App\Models\Acteur;
@@ -17,6 +18,7 @@ class FilmsController extends Controller
      */
     public function index()
     {
+        $usager = auth()->user();
         $autres = Film::where('categorie', '=', 'Autres')->inRandomOrder()->get();
         $siecles = Film::where('annee', '<=', 2000)->inRandomOrder()->get();
         $tarantinos = Film::where('realisateur_id', '=', '10')->inRandomOrder()->get();
@@ -24,7 +26,7 @@ class FilmsController extends Controller
         $tendances = Film::where('categorie', '=', 'tendance')->inRandomOrder()->get();
         $classics = Film::where('categorie', '=', 'classique')->inRandomOrder()->get();
         $films = Film::all();
-        return View('Netflix.netflix', compact('films', 'classics', 'tendances', 'revoirs', 'tarantinos', 'siecles', 'autres'));
+        return View('Netflix.netflix', compact('films', 'classics', 'tendances', 'revoirs', 'tarantinos', 'siecles', 'autres', 'usager'));
     }
 
 

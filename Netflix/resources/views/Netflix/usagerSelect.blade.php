@@ -22,8 +22,8 @@
                     @foreach($usagers as $usager)
                 <div class="col-lg-2">
                     <div class="card">
-                        <a href="{{route('Netflix.index') }}">
-                            <img src="../images/netflix-avatar.png" class="icon">
+                        <a href="{{route('Netflix.index', [$usager->id]) }}">
+                            <img src="{{$usager->profil}}" class="icon">
                         </a>
                         <div class="card-body">
                             <h3 class="card-title">{{$usager->username}}</h3>

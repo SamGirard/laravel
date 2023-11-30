@@ -16,10 +16,11 @@
   @endif
     <!-- nav -->
     <div id="nav" class="nav">
-      <img class="nav__logo" src="{{$usager->profil}}" alt="" />
+      <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
       <a href="{{route ('Netflix.index')}}">Accueil</a>
       <a href="{{route ('Netflix.personne')}}">Réalisateurs/producteurs</a>
       <a href="{{route ('Netflix.acteur')}}">Acteurs</a>
+      
 
       @auth
         @if(Auth::user()->role == 'admin')
@@ -33,7 +34,7 @@
           @csrf
           <button class="deco" type="submit">Déconnexion</button>
       </form>
-      <img class="nav__avatar" src="../images/netflix-avatar.png" alt="" />
+      <img class="nav__avatar" src="{{$usager->profil}}" alt="" />
     </div>
 
     @yield('contenu')
