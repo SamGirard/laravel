@@ -13,36 +13,37 @@
 
 
 
-    <div class="">
+    <div class="container">
         <h1 class="header text-light text-center">Who's watching?</h2>
 
         <div class="row_user">
-
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="card">
-                            <a href="{{route('Netflix.index') }}">
-                                <img src="../images/netflix-avatar.png" class="icon">
-                            </a>
-                            <div class="card-body">
-                                <h3 class="card-title">nom</h3>
-                            </div>
+            <div class="row justify-content-center">
+            @if(count($usagers))
+                    @foreach($usagers as $usager)
+                <div class="col-lg-2">
+                    <div class="card">
+                        <a href="{{route('Netflix.index') }}">
+                            <img src="../images/netflix-avatar.png" class="icon">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title">{{$usager->username}}</h3>
                         </div>
                     </div>
-
-                    <div class="col-6">
-                        <div class="card">
-                            <a href="{{route('Netflix.index') }}" class="test">
-                                <img src="../images/add-icon.png" class="add">
-                            </a>
-                            <div class="card-body">
-                                <h3 class="card-title add-title">Add Profile</h3>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
+                @endforeach
+                @endif
+
+                <div class="col-lg-2">
+                    <div class="card">
+                        <a href="{{route('Netflix.index') }}" class="test">
+                            <img src="../images/add-icon.png" class="add">
+                        </a>
+                        <div class="card-body">
+                            <h3 class="card-title add-title">Add Profile</h3>
+                        </div>
+                    </div>
+                </div>
+                    
             </div>
             
             <div class="button text-center">

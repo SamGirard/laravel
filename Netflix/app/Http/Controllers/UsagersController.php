@@ -70,7 +70,8 @@ class UsagersController extends Controller
 
     public function choose()
     {
-        return View('Netflix.usagerSelect');
+        $usagers = Usager::all();
+        return View('Netflix.usagerSelect', compact('usagers'));
     }
 
 
