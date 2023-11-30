@@ -16,7 +16,7 @@
   @endif
     <!-- nav -->
     <div id="nav" class="nav">
-      <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
+      <img class="nav__logo" src="{{$usager->profil}}" alt="" />
       <a href="{{route ('Netflix.index')}}">Accueil</a>
       <a href="{{route ('Netflix.personne')}}">Réalisateurs/producteurs</a>
       <a href="{{route ('Netflix.acteur')}}">Acteurs</a>
