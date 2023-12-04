@@ -32,7 +32,7 @@
                 <img src="{{$classic->affiche}}" class="row_poster row_posterLarge">
             </a>
             @elseif(Auth::check() && Auth::user()->role != 'kid')
-            <a href="{{route('Netflix.show', [$classic] )}}" >
+            <a href="{{route('Netflix.show', [$classic] )}}">
                 <img src="{{$classic->affiche}}" class="row_poster row_posterLarge">
             </a>
 
