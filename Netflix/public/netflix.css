@@ -267,3 +267,12 @@
     font-size: 20pt;
     margin-left: 20px;
   }
+
+  .zoomP{
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+
+  .monCompte{
+    background-color: rgb(233, 233, 233);
+  }

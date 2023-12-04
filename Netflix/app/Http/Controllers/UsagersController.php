@@ -16,6 +16,12 @@ class UsagersController extends Controller
         return View('Netflix.createUsager');
     }
 
+    public function show(Usager $usager)
+    {
+        
+        return View('Netflix.zoomProfil', compact('usager'));
+    }
+
     public function store(UsagerRequest $request)
     {
         try {
@@ -36,7 +42,7 @@ class UsagersController extends Controller
             Log::debug($e);
         }
 
-        return redirect()->route('Netflix.index')->with('success', 'Compte créer!');;
+        return redirect()->route('login')->with('success', 'Compte créer!');;
     }
 
 
@@ -83,7 +89,7 @@ class UsagersController extends Controller
             log::debug($e);
             return redirect()->route('Netflix.index')->withErrors(['la suppression du film '.$usager->nom.' a échoué']);
         }
-        return redirect()->route('Netflix.index')->with('success', 'Suppression confirmé!');;
+        return redirect()->route('login')->with('success', 'Suppression confirmé!');
     }
 
 

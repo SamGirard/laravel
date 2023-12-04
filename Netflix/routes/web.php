@@ -83,10 +83,10 @@ Route::patch('/acteurs/modifier/{acteur}',
 [ActeursController::class, 'update'])->name('Netflix.updateActeur')->middleware(['auth', 'admin']);
 
 Route::get('/usagers/modifier/{usager}', 
-[UsagersController::class, 'edit'])->name('Netflix.modifierUsager')->middleware(['auth', 'admin']);
+[UsagersController::class, 'edit'])->name('Netflix.modifierUsager')->middleware(['auth']);
 
 Route::patch('/usagers/modifier/{usager}',
-[UsagersController::class, 'update'])->name('Netflix.updateUsager')->middleware(['auth', 'admin']);
+[UsagersController::class, 'update'])->name('Netflix.updateUsager')->middleware(['auth']);
 
 
 
@@ -101,7 +101,8 @@ Route::get('Netflix.personne/{personne}',
 Route::get('Netflix.acteur/{acteur}',
 [ActeursController::class, 'show'])->name('Netflix.zoomActeur')->middleware('auth');
 
-
+Route::get('Netflix.usager/{usager}',
+[UsagersController::class, 'show'])->name('Netflix.zoomUsager')->middleware('auth');
 
 
 /****************Les routes pour delete****************/
@@ -115,7 +116,7 @@ Route::delete('/acteurs/{id}',
 [ActeursController::class, 'destroy'])->name('Acteurs.destroy')->middleware(['auth', 'admin']);
 
 Route::delete('/usagers/{id}',
-[Usager::class, 'destroy'])->name('Usagers.destroy')->middleware(['auth', 'admin']);
+[UsagersController::class, 'destroy'])->name('Usagers.destroy')->middleware(['auth']);
 
 
 /************************Login*****************************/

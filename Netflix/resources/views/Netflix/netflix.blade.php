@@ -136,7 +136,7 @@
       
             @if(count($autres))
             <div class="scrollMenu">
-            <h2>Autres</h2>
+            <h2>Autres Suggestions</h2>
             <div class="row_colonne">
                     @foreach($autres as $autre)
                     @if(Auth::check() && Auth::user()->role == 'kid' && $autre->audience < 18)

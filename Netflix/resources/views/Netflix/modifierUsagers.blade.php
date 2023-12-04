@@ -13,6 +13,7 @@
                 <div class="col-xl-4 col-lg-6 col-md-6 col-sm-6 col-6 offset-xl-4 offset-lg-3 offset-4">
                     <form method="post" action="{{route('Netflix.updateUsager', ['usager' => $usager->id])}}" class="formulaireAjoutFilm" enctype="multipart/form-data">
                         @csrf
+                        @method('PATCH')
                         <div>
                             <div class="d-flex justify-content-center">
                                 <h2 class="mb-5 text-center">Modifier un compte</h2>
@@ -83,7 +84,7 @@
                                 <br>
                             </div>
 
-                            <button type="submit" class="bouton form-control">Créer un compte</button>
+                            <button type="submit" class="bouton form-control">Modifier le compte</button>
                             <p class="cap">Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot logiciel. <span class="plus">En savoir plus.</span></p>
                         </div>
                     </form>
