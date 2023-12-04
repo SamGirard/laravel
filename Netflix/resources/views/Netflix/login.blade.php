@@ -1,9 +1,8 @@
-<!DOCTYPE html>
 @extends('layout.formulaire')
     
     @section('title', "Se connecter")
-    @auth
     @section('contenu')
+
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2">
@@ -61,6 +60,4 @@
                 </div>
             </div>
         </div>
-        @endauth
-
-@endsection
+        @endsection

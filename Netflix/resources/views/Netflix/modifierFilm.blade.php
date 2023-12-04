@@ -3,6 +3,7 @@
     @section('title', "Modifier un film")
     @auth
     @section('contenu')
+    
         @if(isset($errors) && $errors->any())
         <div class="alert alert-danger">
             @foreach($errors->all() as $error)
