@@ -19,7 +19,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4 offset-4">
+                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-8 col-10 offset-xl-4 offset-lg-3 offset-md-3 offset-sm-3 offset-2">
                     <form method="post" action="{{route('Netflix.updateActeur', ['acteur' => $acteur->id])}}" class="formulaireAjoutFilm" enctype="multipart/form-data">
                         @csrf
                         @method('PATCH')

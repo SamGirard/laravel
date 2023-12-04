@@ -34,7 +34,7 @@
           @csrf
           <button class="deco" type="submit">Déconnexion</button>
       </form>
-      <a href="{{route('Netflix.zoomUsager', [$usager] )}}"><img class="nav__avatar zoomP" src="{{$usager->profil}}" alt="" /></a>
+      
     </div>
 
     @yield('contenu')

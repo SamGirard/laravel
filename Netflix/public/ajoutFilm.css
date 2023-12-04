@@ -72,3 +72,29 @@ select, textarea{
 input[type="file"] {
     height: auto;
 }
+
+@media (min-width: 700px) and (max-width: 1600px) {
+
+    .formulaireAjoutFilm{
+      padding: 50px 70px 50px 70px;
+    }
+  }
+
+  
+@media (min-width: 0px) and (max-width: 1600px) {
+
+    .formulaireAjoutFilm{
+      padding: 50px 50px 50px 50px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 350px) {
+
+    .formulaireAjoutFilm{
+      padding: 50px 50px 50px 50px;
+    }
+
+    input{
+        height: 40%;
+    }
+}
