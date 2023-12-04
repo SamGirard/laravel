@@ -14,6 +14,7 @@ class PersonnesController extends Controller
      */
     public function index()
     {
+        $usager = auth()->user();
         $personnes = Personne::all();
 
         $personnes = Personne::where('id', '<>', 999)->get();
@@ -23,7 +24,7 @@ class PersonnesController extends Controller
         $femmes = Personne::where('sexe', '=', 'F')->get();;
         $autres = Personne::where('sexe', '=', null)->get();;
         
-        return View('Netflix.personne', compact('personnes', 'hommes', 'femmes', 'autres'));
+        return View('Netflix.personne', compact('personnes', 'hommes', 'femmes', 'autres', 'usager'));
     }
 
 

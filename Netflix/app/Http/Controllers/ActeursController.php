@@ -14,6 +14,7 @@ class ActeursController extends Controller
      */
     public function index()
     {
+        $usager = auth()->user();
         $acteurs = Acteur::all();
 
         $acteurs = Acteur::where('id', '<>', 999)->get();
@@ -25,7 +26,7 @@ class ActeursController extends Controller
         $acteur999 = Acteur::find(999);
         $acteurs->push($acteur999);
 
-        return View('Netflix.acteur', compact('acteurs', 'hommes', 'femmes', 'autres'));
+        return View('Netflix.acteur', compact('acteurs', 'hommes', 'femmes', 'autres', 'usager'));
     }
 
     /**
