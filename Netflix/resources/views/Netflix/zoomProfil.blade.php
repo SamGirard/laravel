@@ -12,7 +12,7 @@
 <body class="monCompte">
     <div class="container-fluid">
         <div class="row">
-            <div id="nav" class="nav">
+            <div id="nav" class="nav d-flex align-items-center">
                 <img class="nav__logo" src="../images/Netflix-Logo.png" alt="" />
                 <a href="{{route ('Netflix.index')}}">Accueil</a>
                 <a href="{{route ('Netflix.personne')}}">Réalisateurs/producteurs</a>
@@ -36,29 +36,86 @@
         </div>
 
         <div class="row information">
-            <div class="col-md-3 offset-2">
+            <div class="col-md-8 offset-2">
                 <h1>Mon Compte</h1>
                 <hr class="separation">
                 
-                <h3>ADHÉSION ET FACTURATION</h3>
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <h3>ADHÉSION ET FACTURATION</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>{{$usager->email}}</h5>
+                        <h5 class="pwd">Password : ********</h5>
+                    </div>
+                    <div class="col-md-4 lien offset-1">
+                        <a href="{{route('Netflix.modifierUsager', [$usager] )}}">Changer d'email</a>
+                        <br>
+                        <a href="{{route('Netflix.modifierUsager', [$usager] )}}">Changer de mot de passe</a>
+                    </div>
+                </div>
 
                 <hr class="separation">
                 
-                <h3>DÉTAIL DU PLAN</h3>
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <h3>DÉTAIL DU PLAN</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>4 écrans + ULTRA HD</h5>
+                        <hr class="separation">
+                        <h4>Vous avez un plan DVD</h4>
+                    </div>
+                    <div class="col-md-4 lien offset-1">
+                        <a href="{{route('Netflix.modifierUsager', [$usager] )}}">Changer de plan</a>
+                        <br>
+                        <a href="{{route('Usagers.destroy', [$usager->id])}}">Annuler le plan (Supprimer le profil)</a>
+                    </div>
+                </div>
                 <hr class="separation">
                 
-                <h3>RÉGLAGES</h3>
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <h3>RÉGLAGES</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="">Réglages de communications</a>
+                        <br>
+                        <a href="">Contrôle parental</a>
+                        <br>
+                        <a href="">Test de participation</a>
+                        <br>
+                        <a href="">Activer un appareil</a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="">DVD addresse de livraison</a>
+                        <br>
+                        <a href="">Accès Blu-ray</a>
+                        <br>
+                        <a href="">Assigner un DVD à un profile</a>
+                    </div>
+                </div>
                 <hr class="separation">
                 
-                <h3>MON PROFIL</h3>
-            </div>
-
-            <div class="col-md-5">
-                <h4>{{$usager->email}}</h4>
-                <hr class="separation">
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <h3>MON PROFIL</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <h4><img src="{{$usager->profil}}" height="40px" width="40px" class="me-3">{{$usager->prenom}}</h4>
+                        <hr class="separation">
+                        <h4>Rôle : {{$usager->role}}</h4>
+                        <h4>Nom complet : {{$usager->prenom}} {{$usager->nom}}</h4>
+                    </div>
+                    <div class="col-md-4 lien offset-1">
+                        <a href="{{route('Netflix.modifierUsager', [$usager] )}}">Modifier le profil</a>
+                        <br>
+                        <a href="{{route('Usagers.destroy', [$usager->id])}}">Supprimer le profil</a>
+                    </div>
+                </div>
             </div>
         </div>
-        
+
     </div>    
 
 

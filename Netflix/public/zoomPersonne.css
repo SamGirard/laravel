@@ -75,9 +75,38 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 .information h1{
-    margin-top: 100px;
+    margin-top: 120px;
     color: black;
 }
+
+.information h3{
+    font-size: 15pt;
+    color: gray;
+    font-weight: lighter;
+}
+
+.information h5{
+    color: black;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+.pwd{
+    font-size: 10pt !important;
+    color: gray !important;
+    font-weight: normal !important;
+}
+
+.information h4{
+    font-size: 15pt;
+    color: black;
+    font-weight: lighter;
+}
+
+.information a{
+    text-decoration: none;
+}
+
 
 .separation{
     color: rgb(48, 48, 48);
@@ -85,6 +114,10 @@ h1, h2, h3, h4, h5, h6, p{
 
 .monCompte{
     background-color: rgb(235, 235, 235);
+}
+
+.lien{
+    text-align: right;
 }
 
 .nav__logo {
