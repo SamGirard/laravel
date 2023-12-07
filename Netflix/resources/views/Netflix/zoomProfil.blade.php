@@ -119,7 +119,9 @@
                         <h3>USAGERS</h3>
                     </div>
                     <div class="col-md-4">
-                        
+                        @foreach($usagers as $user)
+                            <h4>{{$user->username}}</h4>
+                        @endforeach
                     </div>
                 </div>
             </div>
