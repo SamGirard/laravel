@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-2">
-                    <a href="{{route('Netflix.index')}}"><img src="../images/Logonetflix.png" class="mt-3 ms-5" height="60px" width="190px"></a>
+                    <a href="{{route('Netflix.index')}}"><img src="../../images/Logonetflix.png" class="mt-3 ms-5" height="60px" width="190px"></a>
                 </div>
             </div>
             <div class="row">
