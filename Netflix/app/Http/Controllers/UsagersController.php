@@ -18,8 +18,8 @@ class UsagersController extends Controller
 
     public function show(Usager $usager)
     {
-        
-        return View('Netflix.zoomProfil', compact('usager'));
+        $usagers = Usager::all();
+        return View('Netflix.zoomProfil', compact('usager', 'usagers'));
     }
 
     public function store(UsagerRequest $request)
