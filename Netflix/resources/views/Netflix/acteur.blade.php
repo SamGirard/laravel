@@ -59,7 +59,7 @@
     </div>
   </div>
 
-
+  <script src="https://kit.fontawesome.com/2ad1095675.js" crossorigin="anonymous"></script>
 
     <script>
       const nav = document.getElementById('nav');
