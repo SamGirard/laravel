@@ -113,6 +113,15 @@
                         <a href="{{route('Usagers.destroy', [$usager->id])}}">Supprimer le profil</a>
                     </div>
                 </div>
+                <hr class="separation">
+                <div class="row mb-5">
+                    <div class="col-md-3">
+                        <h3>USAGERS</h3>
+                    </div>
+                    <div class="col-md-4">
+                        
+                    </div>
+                </div>
             </div>
         </div>
 
